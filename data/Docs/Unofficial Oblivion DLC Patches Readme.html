@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en">
+<style type="text/css">
+body {
+background-color: #e2d8b6;
+color: #654B25;
+}
+.h {
+text-decoration: underline;
+font-weight: bold;
+font-size: 150%;
+background-color: #dacda3;
+}
+.m {
+background-color: #dacda3;
+}
+a:link {
+color: #654B25;
+font-weight: bold;
+}
+a:visited {
+color: #654B25;
+}
+</style>
+<title>Unofficial Oblivion DLC Patches: Readme</title>
+</head>
+
+<body>
+
+<p align="center" class="m"><b><font size="6">Unofficial Oblivion DLC Patches</font></b>
+<br>Twenty-Second Release
+By <b>Quarn</b>, <b>Kivan</b>, <b>Arthmoor</b>, and <b>PrinceShroob</b></p>
+
+1. <a href="#description">Description</a>
+<br>2. <a href="#notes">Known Issues, Incompatibilities & Notes</a>
+<br>3. <a href="#install">Installation (BAIN)</a>
+<br>4. <a href="#installM">Installation (Manual)</a>
+<br>5. <a href="#uninstall">Uninstalling (BAIN)</a>
+<br>6. <a href="#uninstallM">Uninstalling (Manual)</a>
+<br>7. <a href="#dis">Disclaimer</a>
+<br>8. <a href="#cre">Credits</a>
+
+<p class="h"><a name="description">1. Description</a></p>
+The aim of this mod is to fix the bugs existing in the official mods released by Bethesda.
+
+<br><br><b>NOTE:</b> These fixed plugins use the ESP master (aka mod de-isolation) method which means you still need the original plugins for these plugins to work! The plug-ins are not a redistribution of modified original Bethesda plug-ins, but contain only changes and have the original plug-ins set as masters. <b>Because of this, these are not standard plug-in ESP files. Merging, editing or otherwise modifying them using the Elder Scrolls Construction Set or other utilities may cause them to stop functioning or cause severe bugs in your game! The UODP plug-ins must load <i>after</i> the official plug-ins that they patch and <i>the official plug-ins must be present if the UODP patch ESP's are activated</i>, or Oblivion WILL crash on launch or load of a save.</b>
+
+<br><br>The one exception to merging is that the DLCThievesDen - Unofficial Patch.esp and DLCThievesDen - Unofficial Patch - SSSB.esp files <b>are</b> safe to merge as they are both dependent on the same masters.
+
+<br><br>It is recommended to not activate the Thieves Den' SSSB (Sigil Stone Sound Bug) fix plug-in <i>DLCThievesDen - Unofficial Patch - SSSB.esp</i> on an existing game, but rather only on a new game, as otherwise the middle deck of the Black Flag could lose its doors (as their position is stored in the save file) and/or any objects already dropped in this cell could be lost.
+
+<br><br>If you find any bugs with the fixes or bugs with the official mods themselves that we haven't fixed yet, please report them to us.</b>
+
+<p class="h"><a name="notes">2. Known Issues, Incompatibilities & Notes</a></p>
+<ul>
+<li>The Unofficial Oblivion DLC Patch (and anything else that uses ESP mastering/Mod De-Isolation to change the official plug-ins) <b>is not compatible with JOG's Official Plugins Unnerfed</b> as it modifies the original Bethesda ESP files; using the Unofficial Oblivion DLC Patch with Unnerfed plug-ins can cause Oblivion to crash on launch. The Unofficial Oblivion DLC Patches <b>is compatible with SM Plugins Refurbished</b> which does the same thing as Unnerfed but uses de-isolation instead of modifying the Bethesda files. If you use Refurbished, move its ESP files later than the Unofficial Oblivion DLC Patch ESP files in your load order to ensure that they work</li>
+<li>If you use the Horse Armor Pack patch with Slof's Armored Horses, the Slof's horses' reins may disappear. Use dev_akm's compatibility patch instead</li>
+</ul>
+
+<p class="h"><a name="install">3. Installation (BAIN)</a></p>
+<b>1.)</b> Copy the <b>Unofficial Oblivion DLC Patches.7z</b> into the folder you use for BAIN installers. The default for this would be <b>Bethesda Softworks\Oblivion Mods\</b>.
+<br><b>2.)</b> In the BAIN tab, make sure the UODP file is at the top of the package list, below the UOP and the USIP. Right click on it, select "Move To" and use slot 2.
+<br><b>3.)</b> Left click on the file after it's moved. Pick the ESP options you want from the Esp/m menu. Then right click on the file and select "Install".
+<br><b>4.)</b> Once installed, enable the .esp files you selected via the Mods tab. It is recommended to run BOSS at this point to verify load order placement.
+<br><b>5.)</b> Make sure you've got some form of archive invalidation set. You can use Wrye Bash, OBMM, or the <a href="http://www.nexusmods.com/oblivion/mods/10724">ArchiveInvalidation Invalidated!</a> for this.
+<br><br>If you are updating the UODP from an older version, after making sure Step 2 is done, you can right click the file and select "Anneal" and it will update the files accordingly while also preserving anything later in your setup that needs to override them.
+
+<p class="h"><a name="installM">4. Installation (Manual Version)</a></p>
+<b>1.)</b> Extract <b>Unofficial Oblivion DLC Patches.7z</b> into your <b>Bethesda Softworks\Oblivion\Data\</b> folder.
+<br><b>2.)</b> Enable Unofficial Oblivion DLC Patches.esp files in the Oblivion launcher and the other optional plugins from the package.
+<br><b>3.)</b> Make sure you've got some form of archive invalidation set. You can use Wrye Bash, OBMM, or the <a href="http://www.nexusmods.com/oblivion/mods/10724">ArchiveInvalidation Invalidated!</a> for this.
+<br><br>Manual installation of this or any other mod is STRONGLY discouraged. You should make use of Wrye Bash if at all possible. Using OBMM will work, but is not recommended. Absolutely <b>DO NOT</b> use Nexus Mod Manager to install this! NMM does not handle the installation of Oblivion files well and will cause things like missing meshes to crop up in your game because it seems to randomly skip files for no apparent reason.
+
+<p class="h"><a name="uninstall">5. Uninstalling (BAIN)</a></p>
+<b>1.)</b> Launch Wrye Bash, go to the Installers tab.
+<br><b>2.)</b> Right click on the Unofficial Oblivion DLC Patches package, select uninstall. That should be it.
+<br><br>Uninstalling the Unofficial Oblivion DLC Patches in the middle of a current save is not recommended. Doing so should only be done if you plan to start a new character.
+
+<p class="h"><a name="uninstallM">6. Uninstalling (Manual)</a></p>
+<b>1.)</b> Use the <b>Unofficial Oblivion DLC Patches.7z</b> archive as a reference to what files you need to delete.
+<br><br>Uninstalling the Unofficial Oblivion DLC Patches in the middle of a current save is not recommended. Doing so should only be done if you plan to start a new character.
+
+<p class="h"><a name="dis">7. Disclaimer</a></p>
+The Unofficial Oblivion DLC Patches are provided free and "as is" for use at your own risk; the creators cannot be held responsible/liable for anything that happens while using it. This product is not created by nor associated with Bethesda Game Studios, Bethesda Softworks, Zenimax Media, nor any of their affiliates. Feel free to host the Unofficial Oblivion DLC Patches anywhere you want but only in its original unmodified package; please do not release your own modified versions of it, and do not release patch mods that alter it indirectly.
+
+<p class="h"><a name="cre">8. Credits</a></p>
+<b>AlienSlof</b> - For help with icons<br>
+<b>ElminsterAU/EU</b> - For allowing his phenomenal one-click LOD generator to be bundled with the UODP<br>
+<b>Gothic251</b> - For the fixed icons<br>
+<b>Wormheart</b> - For the fixed alpha channels on the Battlehorn wine bottles<br>
+<b>Arthmoor, Fonger, Gothic251, Leydenne, Sialivi, Tru021 and WrinklyNinja</b> - for great beta-testing feedback<br>
+</body>
+</html>

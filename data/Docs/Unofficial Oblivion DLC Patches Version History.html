@@ -1,0 +1,801 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en">
+<style type="text/css">
+body {
+background-color: #e2d8b6;
+color: #654B25;
+}
+.h {
+text-decoration: underline;
+font-weight: bold;
+font-size: 100%;
+background-color: #dacda3;
+}
+.m {
+background-color: #dacda3;
+}
+a:link {
+color: #654B25;
+font-weight: bold;
+}
+a:visited {
+color: #654B25;
+}
+</style>
+<title>Unofficial Oblivion DLC Patches: Version History</title>
+</head>
+
+<body>
+
+<p align="center" class="m"><font size="6"><b>Unofficial Oblivion DLC Patches: Version History</b></font>
+<br>By <b>Quarn</b>, <b>Kivan</b>, <b>Arthmoor</b>, and <b>PrinceShroob</b></p>
+
+<p class="h">Twenty-Second Release (2015-Aug-02)</p>
+<b>Knights of the Nine bugs fixed (v1.1.7):</b>
+<ul>
+<li>Corrected all wayshrine scripts: fixed an unofficial patch error where it was impossible to complete the pilgrimage if your infamy exceeded your fame; fixed an unofficial patch error where wayshrines would not show a message about completing a pilgrimage to reset infamy, but would still reset infamy if the entire circuit was completed; corrected chapel altars failing to work if you completed the pilgrimage but did not receive the Pilgrim’s Grace power (i.e., you had infamy); corrected another loop through the wayshrines with no infamy “buffering” an infamy clearing, resulting in only having to go to one wayshrine.</li>
+<li>Corrected the altar of Zenithar not being edited by Knights.esp, resulting in the altar failing to give a blessing once the pilgrimage was done.</li>
+<li>Corrected Ancotar’s invisible creatures attacking the player despite their wearing the Boots of the Crusader.</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.11):</b>
+<ul>
+<li>Corrected several hellos for the player that were meant to play between 6 PM and 4 AM but were occurring at any time of day.</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.11):</b>
+<ul>
+<li>Repeatedly sending the Dark Minion out on missions will no longer result in the Minion failing to work properly due to certain variables not being reset.</li>
+</ul>
+
+<p class="h">Twenty-First Release (2015-Jan-31)</p>
+<b>Knights of the Nine bugs fixed (v1.1.6):</b>
+<ul>
+<li>Synchronized the AI pack fixes in Anvil for the incorrect chapel markers.</li>
+<li>NDBook2ReligiousSongofPelinalV5: "And to this the bull became shy, for he was a bull, and he felt his form too ugly for the Parvania at all times, especially when she disrobed for him." ["Parvania" -> "Paravania"]</li>
+<li>NDBook3ValuableKnightsoftheNine: "it was clear that the Knights of the Nine had become the Empire's most prestigious knightly order." ["prestigous" -> "prestigious"] / "The end of the order was as ignomonious as its beginning was glorious." ["ignomonious" -> "ignominious"]</li>
+<li>NDBook3ValuableShezarr: "The position Shezarr enjoys in Cyrodilic worship if often misconstrued." ["if often" -> "is often"] / "In 1E242, under the leadership of Alessia, her demigod lover, Morihaus-Breath-of-Kyne, and the infamous Pelinal Whitestrake, the Cyrodilic humans revolt." ["1E242" -> "1E 242"] / "(the Dragon Break, the War of Righteousness, the defeat at Gelnumbria Moors)" ["Gelnumbria Moors" -> "Glenumbria Moors"]</li>
+</ul>
+
+<b>The Orrery bugs fixed (v1.0.6):</b>
+<ul>
+<li>Modified an old fix for Bothiel dealing with the repair state of the Orrery when discussing Revenant with the player.</li>
+<li>Bothiel's wander AI pack needed to be adjusted so she'll actually wander inside the Orrery properly when the quest concludes.</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.10):</b>
+<ul>
+<li>DLCBattlehornChronicle: "a friend of my father's named Nilphas Omellian still holds many of the castle accoutrements in storage and on account." ["accoutrements" -> "accouterments"]</li>
+</ul>
+
+<b>Mehrunes' Razor bugs fixed (v1.0.7):</b>
+<ul>
+<li>DL9ApprenticeLetter: "I've never actually been to Vvardenfell; I've heard much of it's charm. ["it's charm" -> "its charm"] / "I'm pleased and suprised to hear that you've begun saving for our own home already." ["suprised" -> "surprised"]</li>
+<li>DL9StewardNote: "Commander Adrethi will debrief the troops as neccessary at his own discretion." ["neccessary" -> "necessary"]</li>
+</ul>
+
+<b>Thieves Den bugs fixed (v1.0.13):</b>
+<ul>
+<li>Fixed for the Dark08AlarmScript needed to be duplicated into this patch because Thieves Den overwrites it with an ITM.</li>
+<li>DLC06ThievesDenBook2: "Now, I ain't one to brag, but the empire had a bounty on me of forty thousand coins." ["empire" -> "Empire"]</li>
+<li>DLC06ThievesDenBook3: "What a terrible way to die -- not on the end of an enemy's cutless," ["cutless" -> "cutlass"] / "The Emporer gave him whatev'r he asked for to campaign again' us," ["Emporer" -> "Emperor"]</li>
+</ul>
+
+<p class="h">Twentieth Release (2014-Aug-31)</p>
+<b>Knights of the Nine bugs fixed (v1.1.5):</b>
+<ul>
+<li>When the UOMPKnightoftheNine class was created, nobody noticed that some of the Knights actually did have Destruction spells. So the class has dropped Blunt and added Destruction as class skills (none of the Knights use blunt weapons).</li>
+<li>Imperial NPCs will no longer occasionally greet other NPCs as the Divine Crusader.</li>
+<li>Corrected pretty much all Knights rumors: they will no longer be said by Dark Brotherhood members, Daedra worshippers, and M’aiq the Liar, as they were blocking their normal unique rumors.</li>
+<li>Corrected some rumors about Kellen only playing after he had already been cured and left the Chapel.</li>
+<li>Martin can no longer be asked about the Prophet or about the Anvil chapel attack, as he would revert to a standard Imperial male voice.</li>
+<li>Kinther had the wrong script, and it was causing him to never appear in the game at all.</li>
+<li>Avita Vesnia will now leave the CreatureFaction when recruited, as she was not hostile to many types of enemies as a follower.</li>
+<li>Created two missing audio lines for Gukimir and Geimund.</li>
+<li>Corrected an audio flub when asking Redguard males about the Knights of the Nine post-questline.</li>
+</ul>
+
+<p class="h">Nineteenth Release (2014-Jun-30)</p>
+<b>UODP Changes</b>
+<ul>
+<li>Distribution Note: The EXE installer is no longer supported and will not be distributed to hosting sites from this point forward.</li>
+<li>Distribution Note: The OMOD installer is no longer supported and will not be distributed to hosting sites from this point forward.</li>
+<li>The UODP files will now have the UOP linked as an explicit master file so that they will sort better when used with <a href="http://loot.github.io/">LOOT</a>.</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.1.4):</b>
+<ul>
+<li>Esbern has been adjusted to match the UOP's fixes for Hil the Tall so that he'll properly replace him as an Alteration trainer.</li>
+</ul>
+
+<b>Frostcrag Spire bugs fixed (v1.0.9):</b>
+<ul>
+<li>DLCFrostcragAtronachStorm is missing the AbAtronachStormEffect which causes them to lose the lighting effect and their paralysis immunity.</li>
+<li>DLCFrostcragAtronachFlame is missing AbAtronachFlameEffect which causes them to lose the flame effects.</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.9):</b>
+<ul>
+<li>DrinkColovianBattleCry did not have its food item flag set.</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.10):</b>
+<ul>
+<li>The Chokeberry effect needed the same tweaks that the Poisoned Apple got in the UOP.</li>
+</ul>
+
+<b>Thieves Den bugs fixed (v1.0.12):</b>
+<ul>
+<li>Reversed the change to DispositionBlockers that was causing NPCs who hate each other to trade rumors with each other, and instead blocked them from trading rumors to the player.</li>
+</ul>
+
+<p class="h">Eighteenth Release (2012-Dec-31)</p>
+<b>Frostcrag Spire bugs fixed (v1.0.8):</b>
+<ul>
+<li>The script on the teleport pad that goes to the destroyed version of the Bruma Mages Guild would constantly attempt to enable itself, which could lead to performance degredation. The script also did not have the weather change fix applied that the other script for the other teleport pads uses.</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.1.3)</b>
+<ul>
+<li>The lesser power "Lay Hands" (ND06LayHands) will now be immune to getting absorbed or silenced which could cause it to fail when the player uses it on Kellen.</li>
+</ul>
+
+<b>Horse Armor bugs fixed (v1.0.8):</b>
+<ul>
+<li>Script DLCHorseArmorDoorScript was not guarded against NPCs triggering the lengthy checks for the legal status of the player's horses.</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.9):</b>
+<ul>
+<li>The trap door exit from Deepscorn Cloister could not be used by NPCs.</li>
+</ul>
+
+<p class="h">Seventeenth Release (17.1 Hotfix) (2012-July-28)</p>
+
+<b>Battlehorn Castle bugs fixed (v1.0.8):</b>
+<ul>
+<li>The two marauders who had their questobject flag removed were vanilla base references and should not have had this done. Oops.</li>
+</ul>
+
+<p class="h">Seventeenth Release (2012-July-27)</p>
+
+<b>UODP Changes/Fixes</b>
+<ul>
+<li>Updated the UODP installer to Inno Setup v5.5.1a</li>
+<li>TES4LODGen is no longer included as part of the installer.</li>
+</ul>
+
+<b>Frostcrag Spire bugs fixed (v1.0.7):</b>
+<ul>
+<li>The far.nif file for the spire had not been properly cleaned.</li>
+<li>The empty Textures\Architecture\MagesTowerDLC has been removed. It is unclear what should have gone here.</li>
+<li>Lennasaan's Touch has been converted to a power with the absorb/reflect disabled so that the blessing from the grave won't get wasted if the player has any absorb/reflect effects. This is in line with changes made to similar spells in the UOP.</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.7):</b>
+<ul>
+<li>The far.nif file for the castle had not been properly cleaned.</li>
+<li>Quest object flags had not been removed on the dead marauders after the battle and first upgrade were purchased, so their corpses were never cleared from memory even after being disabled.</li>
+</ul>
+
+<b>Mehrunes' Razor bugs fixed (v1.0.6):</b>
+<ul>
+<li>Fort ruin piece with an exposed underside in cell 48,-6 (xx002073)</li>
+<li>Grounded several floating rocks and plants around the exterior of Sundercliff Watch</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.8):</b>
+<ul>
+<li>Fixed Rowley's greetings so that he'll use his special ones whenever he's sitting at either of his two main spots.</li>
+<li>Fixed Rowley's special chest to be marked as owned by him to prevent Nerussa from offering the unique items for sale.</li>
+<li>The Ichor Basin needed to be marked persistent due to being used as the target for an AI pack.</li>
+</ul>
+
+<b>Thieves' Den bugs fixed (v1.0.11):</b>
+<ul>
+<li>The map marker that was supposed to be moved for the hidden cave was never added in the previous update.</li>
+</ul>
+
+<p class="h">Sixteenth Release (2011-Nov.-05)</p>
+<b>UODP Changes/Fixes</b>
+<ul>
+<li>Updated the UODP installer to Inno Setup v5.4.2</li>
+<li>Updated BASH tags and removed unneccessary ones from all plugins</li>
+<li>Applied the UOP fix of enabling the No Low-Level Processing flags for several NPCs across the DLC plugins who did not require them, which will reduce the amount of AI processing that is required (if OBSE is present, a script will apply the Low-Level Processing changes to an existing save; otherwise it will take effect on a new game)</li>
+<li>Turned off unnecessary persistent item flags in several of the original plugins which will slightly reduce processing and save size</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.1.2):</b>
+<ul>
+<li>Cleaned Shivering Isles dialog references out of the UODP ESP (it had been edited under the Shivering Isles ESM) in case the player doesn't have Shivering Isles installed to avoid rare crashes to desktop</li>
+<li>Applied the UOP fix for all added horses so that the player will no longer be able to mount these horses while already sitting on something else, causing instant critical graphic unplayability requiring a reload, and possibly crashing Oblivion to desktop</li>
+<li>Applied the UOP fix for the AI package ordering of Silana Blandia and Kantav Cheynoslin at the Leyawiin chapel</li>
+<li>Umaril will now have no "soul value"; his soul should not be capturable, as it goes to the astral plane after Garlas Malatar and then is completely destroyed there</li>
+<li>Avita Vesnia will no longer stand facing the wall for three hours a day before the Priory of the Nine quest is completed as her chair hasn't been enabled yet</li>
+<li>Corrected audio and subtitle for Sir Amiel in the Boots of the Crusader topic where he incorrectly indicates that Sir Juncan was lost while searching for the Gauntlets</li>
+<li>The lines of dialog for Gukumir and Giemund mourning the others' loss will no longer appear, as their audio was completely missing</li>
+<li>Applied the UOP fixes for 11 AI packages also found in Knights of the Nine: AnvilDailyWorshipUlfgarOneEye8x4, LeyawiinDailyWorshipOnStayaSundew8x2, BravilDailyWorshipMorningUseAltarZenthar, BravilDailyWorshipMorningUseAltarMara, BravilDailyWorshipMorningUseAltarAkatosh, BravilDailyWorshipMarz16x4, BravilDailyWorshipMarz8x4, LeyawiinDailyWorshipSilanaBlandia8x2, BravilDailyWorshipMorningUseAltarArkay, BravilDailyWorshipMorningUseAltarDibella, and BravilDailyWorshipMorningUseAltarStendarr</li>
+<li>Applied the UOP fixes for the blood decal and hit effects for Spriggans</li>
+<li>Applied the UOP fixes for wayshrine scripts also found in Knights of the Nine</li>
+<li>NPC's will now only use the dialog line "You're the Divine Crusader!" to the player, rather than additionally to each other</li>
+<li>Sir Amiel's skeleton will no longer be a persistent item when The Shrine of the Crusader is completed</li>
+<li>Fixed a crash to desktop with the Open Cities compatibility fix if Open Cities and Oscuro's Oblivion Overhaul are installed</li>
+<li>The Holy Aura and Woodland Grace abilities will now work properly as the invalid script ID now points to the correct one</li>
+<li>The ambient wind sounds during the spiritual plane battle with Umaril will now work properly; also had invalid and unassigned IDs</li>
+<li>Dungeon music will no longer be heard in the Priory Basement</li>
+<li>Fixed the wayshrines possibly being unusable if the player's fame is above their infamy but the pilgrimage quest hasn't been done yet</li>
+</ul>
+
+<b>Frostcrag Spire bugs fixed (v1.0.5):</b>
+<ul>
+<li>The internal door at the Mystic Emporium is now owned by the correct faction and properly locked</li>
+<li>Applied the UOP fixes for the blood spray for the atronachs from the atronach altar</li>
+<li>Aurelinwae will no longer say that Calindil runs a nice place at the Mystic Emporium while she is there</li>
+<li>The atronach altar will now remove the correct amount of fire, frost or void salts from the player when an atronach is summoned; also fixed a script error (extra endif)</li>
+<li>Fixed a script error on the Frostcrag Spire Memoirs (also had an extra endif)</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.7):</b>
+<ul>
+<li>The Dark Minion will now attend the Shrine of Sithis daily</li>
+<li>Rowley Eardwulf's stool in Wawnet Inn is now owned by him, so other NPCs won't sit on it</li>
+<li>Turned off "no low level processing" for the Dark Minion as his AI schedule takes him into multiple cells, so it would break his AI</li>
+<li>Turned on "no low level processing" for the Deepscorn Prisoner as he does nothing but sleep</li>
+<li>Rowley Eardwulf will now sit outside the Wawnet Inn to sell his wares during daytime</li>
+<li>Applied the UOP fix against spell reflection and/or absorption to the he Sithis shrine blessing so that it won't fail</li>
+<li>The weakness to poison enchantment on the Crimson Eviscerator will now work properly; it had no duration</li>
+</ul>
+
+<b>Horse Armor bugs fixed (v1.0.7):</b>
+<ul>
+<li>Applied the UOP fix for all modified player horses so that the player will no longer be able to mount these horses while already sitting on something else, causing instant critical graphic unplayability requiring a reload, and possibly crashing Oblivion to desktop</li>
+<li>Set the proper disabled flags on the removed horse armor plans chest in Cursed Mine Lower Galleries</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.6):</b>
+<ul>
+<li>Cleaned Shivering Isles dialog references out of the UODP ESP (it had been edited under the Shivering Isles ESM) in case the player doesn't have Shivering Isles installed to avoid rare crashes to desktop</li>
+<li>Items sold to the Battlehorn merchant Nilphas Omellian (IC Market District, The Merchant's Inn) will no longer appear in the publican Velus Hosidius' inventory (Nilphas' merchant chests were missing ownership)</li>
+<li>Melisi Daren will now complete the bear trophy at 10:00am as with all the others, not 9:00am (otherwise it was possible for her to make two in one day)</li>
+<li>The corpses of Lord Kelvyn and one Battlehorn knight will no longer be persistent items</li>
+<li>Fixed the enable parenting on a stool in the unoccupied castle so that it will no longer be embedded in a chest of drawers when the upgrade is bought</li>
+<li>Replaced the static desk in the bedroom with a more appropriate activatable desk that can be used for safe storage</li>
+<li>Moved two cupboards and a table in the bedroom the were clipping into walls</li>
+<li>Hjalti (the Niels' wolf) will now perform his AI properly (was set to no-low-level processing, but his AI schedule requires normal processing; the will take effect on a new game)</li>
+<li>Niels and Hjalti should no longer stand stationary just inside the door to their house</li>
+</ul>
+
+<b>Thieves' Den bugs fixed (v1.0.10):</b>
+<ul>
+<li>Dalia Rackham (Anvil, Sea Tub Clarabella) will longer have an erroneous option to invest 500 gold in her shop (only merchants with a standard barter menu should have this)</li>
+<li>The Smuggler's Cave map marker is now much closer to the actual entrance</li>
+<li>Disabled an unnecessary rock added to the Anvil castle area for no apparent reason</li>
+<li>Added the missing check for the player being the in Shivering Isles to Arena quest (which was accidentally changed by the original Thieves Den plugin)</li>
+<li>Khafiz will now sleep in the correct bed</li>
+</ul>
+
+<b>The Orrery bugs fixed (v1.0.5):</b>
+<ul>
+<li>Removed the fix for the bandit bodies disappearing in the wilderness carrying the required Dwemer artifacts; it was erroneously thought that the engine would purge bodies carrying quest items, but this has been determined to be untrue</li>
+</ul>
+
+<p class="h">Fifteenth Release (2008-Aug.-26)</p>
+<b>UODP Changes/Fixes<br></b>
+<ul>
+<li>As was done with the UOP and the USIP, reoptimized 23 of the 32 NIF meshes already in the UODP to eliminate possible FPS hit on some of them that seems to have been introduced by the old PyFFI NIFOptimize spell; the new one shapifies strip blocks if the average strip length is less than 10 and eliminates the problem; many of the meshes (also due to much manual optimization) now provide better FPS than the stock ones. There were no changes to any other files including the ESP's.</li>
+</ul>
+
+<p class="h">Fourteenth Release (2008-Aug.-17)</p>
+<b>UODP Changes/Fixes<br></b>
+<ul>
+<li>Added Bash tags as appropriate to all the UODP ESPs so that Bashed Patches will preserve their changes to levelled lists, inventory, weather, etc.</li>
+<li>Fixed Knights rumor ND00_INFOGENERAL_000029FE_1 "They say that Kynareth granted the boots of the Crusader to someone..." appearing for non-Imperials with no voice or lipsynch as the condition had been accidentally removed</li>
+<li>Removed a harmless dirty change to the Testarena cell in the Knights UODP (the same dirty change is present in the Knights ESP)</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.8):</b>
+<ul>
+<li>Fixed Spriggans remaining aggressive when the player is wearing the Boots of the Crusader though they are "nature's guardians" and there are two non-aggressive ones at the Grotto of Kynareth</li>
+<li>Fixed chapel cell names for consistency as was done in the UOP so that the fixes are preserved</li>
+<li>Created the missing audio and lipsynch for the Argonian and Khajiit greeting NDGreetings_GREETING_00002982_1 for a female player "The Divine Crusader herself! To what do I owe this honor?"</li>
+<li>Fixed conditions on a Chorrol rumor about Kellen indicating he is cursed only coming up after the curse had been lifted (including after the entire questline was completed)</li>
+</ul>
+
+<b>Frostcrag Spire bugs fixed (v1.0.4):</b>
+<ul>
+<li>The weather at Frostcrag Spire will no longer follow the player to the destination if they use the teleport pads to the Mages Guild halls (ie snow in Leyawiin, Bravil or Anvil where it's not otherwise possible)</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.5):</b>
+<ul>
+<li>Fixed the player not being able to use the Ichor Basin of the Altar of Sithis if the last time they used it was one week ago (was using the day of the week as the timer variable)</li>
+</ul>
+
+<b>Horse Armor bugs fixed (v1.0.5):</b>
+<ul>
+<li>Fixed the ownership of the Chestnut Handy stables which was incorrectly owned by the Chorrol stables faction (matches the fix in the UOP so that it isn't overridden)</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.4):</b>
+<ul>
+<li>Added the nVidia Black Screen Fix cell change to the Mystic Emporium (had neglected the dirty change to that cell when fixed all the other Battlehorn cells)</li>
+</ul>
+
+<p class="h">Thirteenth Release (2008-July-09)</p>
+<b>UODP Changes/Fixes<br></b>
+<ul>
+<li>Fixed the Thieves' Den SSSB (now v1.0.4) so that on existing saves the Black Flag middle deck isn't dark at the back, Jak Silver doesn't temporarily disappear and armor and clothes aren't stretched across the room when the cell resets</li>
+<li>Fixed the Horse Armor (now v1.0.4) message when the player's Anvil horse arrives back at its stable as it was checking if it was in Leyawiin and fixed the variable indices to match Oblivion.esm for the fixed script</li>
+<li>Closed some introduced gaps in the roof of the Vile Lair Font of Renewal (updated UOMPFontOfRenewalCorner.NIF, UOMPFontOfRenewalEntry.NIF and UOMPFontOfRenewalHall.NIF; meshes weren't as symmetrical as expected, plus left a hole in the entryway that I'd fixed and then neglected to copy the fixed mesh into the image!)</li>
+<li>Removed a harmless dirty change to Abandoned Mine's cell header in the Battlehorn (now v1.0.3), Frostcrag (now v1.0.3) and Knights UODP ESP (bug in the Construction Set includes this cell header with no changes to the cell)</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.8):</b>
+<ul>
+<li>Improved the fix for Sir Thredret and the Knights becoming stuck outside the Priory if his speech is interrupted so that it also fixes if it's interrupted by combat (such as if an enemy wanders in during it)</li>
+<li>The player will no longer be able to cast spells on the downed Knights of the Nine after defeating them in the Priory of the Nine quest (if the player cast any sort of resurrection or used the Staff of Worms on them, they would die shortly afterwards or could not be talked to again and the Knights quests were broken)</li>
+<li>Fixed the leveling on the heavy Boots of the Crusader so that the player always receives the correct version for their level both from the quest and the armor stand at the Priory (instead of possibly a lower-level version)</li>
+<li>Corrected the weight of the level 1-6 heavy Helm of the Crusader from zero to 7</li>
+<li>Corrected the weight of the level 1-6 light Helm of the Crusader from 7 to 1.4 (inexplicably was over twice as heavy as the level 21+ version)</li>
+<li>Corrected the weight of the level 1-6 light Cuirass of the Crusader from 35 to 7 (also was over twice as heavy as the level 21+ version)</li>
+</ul>
+
+<b>Thieves' Den bugs fixed (v1.0.5):</b>
+<ul>
+<li>Fixed Jak Silver not selling any of the weapons, armor, arrows and other items his in inventory (unless the player's Mercantile skill was 50 or higher and all merchants buy and sell all types of items; this appears to be an error rather than by design as his and Khafiz's merchant chests are swapped, and Khafiz trains Mercantile whereas Jak trains Speechcraft)</li>
+<li>Removed a plank sticking through a window on the exterior Red Saber Captain's Quarters mesh ( RedSaberTop01.NIF ) that isn't present in the interior, fixed the seethrough-underside mast, fixed UV mapping in one of the holes in the hull, closed seethrough gaps around the underside of the stern trim, fixed bad texturing and UV mapping on the upper deck railings, and removed hundreds of invisible polygons optimizing from 767KB to 441KB</li>
+<li>Fixed the inner and outer doors of the Black Flag having the handle/hinges on the same side both inside and outside; made new mesh UOMPReversedBoatDoor01.NIF and replaced the inner door with it (as it's a load door it may not take effect on an existing game if you've been there; also there are numerous other doors like this in the game which will eventually be corrected); also fixed some bad UV mapping on it, closed seethrough gaps at the top and optimized from 74KB to 39KB</li>
+<li>Fixed both pairs of trapdoors in the Black Flag not facing the same way on the top and bottom of each pair (this fix is by necessity in the SSSB ESP due to the move of door destinations so won't take effect if it's not active)</li>
+<li>Added the nVidia Black Screen Fix to the cell changed by the SSSB ESP (DLDunbarrowHaven03)</li>
+</ul>
+
+<b>Mehrunes' Razor bugs fixed (v1.0.4):</b>
+<ul>
+<li>Followers of the player should no longer get stuck in the tent mesh when exiting the Forgemaster Tent</li>
+<li>Fixed the Morag Tong Assassin attacking before his jail cell was open, which caused him and any followers of the player to twitch madly in place as they couldn't reach each other</li>
+<li>Corrected minor oversight of there being three types of Drothmeri Tunic all of which are exactly the same; as can't determine whether anything was intended for the duplicates, replaced instances of the less common two with the commonest</li>
+<li>Grounded a seethrough underside wall, closed a seethrough gap at the top of the tunnel entrance to the underground ruined fort, moved a crate slightly embedded in rock and a barrel slightly embedded in a bed and wall, raised three rubble piles hidden outside the visible area and grounded a seethrough-underside candle in the statue's hand in Sundercliff Watch</li>
+<li>Closed thin seethrough gaps of nothingness in Sundercliff Village houses' walls and ceilings caused by reuse of BravilClosetDoor02.NIF; converted to and replaced with mesh UOMPSundercliffWall02.NIF, closed seams, and removed unneeded animation control blocks and hidden handles which optimized from 50KB to 25KB</li>
+<li>Moved a cart slightly embedded in a lamppost and bucket and grounded a weapon rack in Sundercliff Village</li>
+<li>Grounded two inkwells, a quill and a chair in the Sundercliff Recruit Barracks, grounded a bench and moved a crate embedded in the wall in the Private Attic, grounded three chairs, four barrels and moved one slightly embedded in a wall and a sack slightly embedded in a crate, and moved a tapestry noticeably off its wall in the Canteen, grounded three barrels, four chairs and a bench, moved a chest of drawers slightly embedded in a wall and a barrel slightly embedded in a bedpost in the Soldier Lodgings, and grounded a chair in the Jail</li>
+<li>Grounded three seethrough-underside rocks, three crates, two chests and a chair and rotated/moved a bedroll platform so one post wasn't seethrough in Sundercliff Commune</li>
+<li>Grounded three slightly floaty chairs in the Commander's Quarters, moved a cupboard embedded a rock wall, aligned a door in Frathen Drothan's Quarters that was noticeably off its wall (the reverse-side handle was visible), grounded a slightly flying and a seethrough-underside candle in the Yeoman Barracks, and grounded a table in the Yeoman's Lodge</li>
+<li>Grounded three barrels, three crates and a chest and moved a rock that was outside the visible area, and fixed several hanging buckets' ropes not being attached at the top in Sundercliff Mines</li>
+<li>Fixed several hanging buckets' ropes not being attached at the top, moved a bucket that was outside the visible area and grounded the seethrough-underside Forgemaster Tent and a table in Sundercliff Forge</li>
+<li>Grounded two candles and a noticeably flying overturned stool, and raised a fallen candelabra slightly embedded in the floor in the Excavated Ruin</li>
+<li>Expanded a standing rock to close seethrough gaps under two walls of an Ayeleid ring, grounded two flying and one seethrough-underside Ayleid pedestal, two seethrough-underside candles, moved four slightly seethrough-underside rocks and moved one to close a slightly-seethrough Ayleid wall, and moved two Ayleid blocks and skulls that were outside the visible area in Varsa Baalim</li>
+<li>Moved an Ayleid column that was outside the visible area in Cava Arpenia (disabled/left the base outside as there's no place to put it) and grounded a bench and candle</li>
+<li>Attached an Ayleid light fixture floating off its wall, grounded a broken Ayleid block and aligned a load door to close a seethrough gap on the left side in Cava Marspanga</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.4):</b>
+<ul>
+<li>Realigned several cloister pieces to close thin seethrough seems between them, raised the bucket at the entrance slightly so the ground isn't clipping into it, and grounded a broken crate in the storeroom (disappears when the Minion is hired) in Deepscorn Hollow</li>
+<li>Reoriented a rock in Deepscorn Cloister so that the bad UV mapping (wasn't designed to be seen) on the back isn't visible</li>
+<li>Fixed the Deepscorn Shrine having no valid pathgrids at all (were all outside the playable area and didn't match the cell at all); also fixed a node embedded in the Font of Renewal's obelisk</li>
+</ul>
+
+<p class="h">Twelfth Release (2008-June-20)</p>
+<b>UODP Changes/Fixes<br></b>
+<ul>
+<li>To prevent crashing-on-exit as it was still being reported though the changes were moved into a separate ESP to prevent them, changed the Sigil Stone sound fix ESP ( DLCThievesDen - Unofficial Patch - SSSB.esp ) so that instead of undeleting/disabling disabled Sigillium components in the reused test cell it moves the entire middle deck of the Black Flag far enough from the sound that it's inaudible (<b>Do not activate this ESP if you have items stored on the floor of the middle deck of the Black Flag (where Jak Silver's table is.)</b> Items stored in containers or on other decks will be unaffected. If the player is currently in the middle deck of the Black Flag on a save, on load you'll fall harmlessly into black water; just put <b>coc DLDunbarrowHaven03</b> in the console to get back to where you were. Also because this and DLCThievesDen - Unofficial Patch.esp are both dependent on Oblivion.esm and DLCThievesDen.esp these are two UODP ESP's that <b>are</b> safe to merge.)</li>
+<li>Fixed the fix for the Vile Lair's Raiment of the Crimson Scar's levelling so that it's no longer possible to get multiple copies of it (oops)</li>
+<li>Fixed Shadowmere running off right after being given Elven armor (which was preventing the Horse Armor patch from being further updated)</li>
+<li>Updated the KoTN fix for Sir Amiel's key remaining a quest item as it could still remain one depending on how the player finished the Shrine of the Crusader quest</li>
+<li>Fixed the selfinstaller not installing any of the fixed Knights voice/LIP files</li>
+<li>Fixed the selfinstaller putting the UODP ESP's last in the load order (requiring manual adjustment if there are other mods that must load last); they will now be placed just after the DLC's that they patch</li>
+<li>Moved the fixed Chokeberry.NIF into the Meshes\VileLair folder where it should have gone in the first place (as this matches the folder in the BSA; adding other meshes so may as well correct this)</li>
+<li>Updated the low texture size icons for Blood Salts, Chokeberry and the Nine Divines faction so that they look proper if Oblivion is not set to Large texture size</li>
+<li>Fixed the compression on the oversized fixed labels for two of the Battlehorn wines</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.7):</b>
+<ul>
+<li>Fixed that if the player recruited the named Knights during Sir Thedret's speech, or told them to follow right after recruiting them, they would remain essential, not have any Knights equipment, retain their original names and could not be told to wait nor stop following for the rest of the game (will also fix affected saves)</li>
+<li>If the player fast-travels or waits during Sir Thedret's speech at the conclusion of the questline, this will no longer leave him unresponsive, stuck with his arms upraised, and/or the rest of the Knights stuck outside the Priory waiting for the speech to end for the rest of the game</li>
+<li>Added missing stencilling to both meshes of the Gauntlets of the Crusader ( NDGauntlets.NIF & NDGauntlets_gnd.NIF ) so that their interior is no longer transparent, thus was able to remove unneeded partial interior double-facing optimizing from 271KB to 200KB and 150KB to 134KB respectively</li>
+<li>Fixed the female Greaves of the Crusader ( Data\Meshes\Armor\NDPelinal\F\NDGreaves.NIF ) clipping through the Boots of the Crusader and other boots at the back; this also reduced its size from 71KB to 53KB</li>
+<li>Closed two hollow beams by the lower stairway, fixed a seethrough gap at a roof apex, gaps between beams and walls, a one-sided protruding column polygon and several pieces of bad UV mapping on the trim of the Priory house ( NDPriory01.NIF ) and optimized from 1,138KB to 1,008KB</li>
+<li>Restored a missing line of dialog (no audio or lip movement) for Aron Verethi (Leyawiin priest) in the "Mace of Zenithar" topic</li>
+<li>Fixed Sir Berich's ghost disappearing early and the animation playing twice on him if the player had already spoken to him on return to the Priory at the end of the questline</li>
+<li>Fixed the inappropriate conditions on several Knights-added greetings, conversations and rumor dialogs (ie Lucien Lachance having Knights rumors whereas his only "rumor" was supposed to be that he doesn't spread rumors, he creates them)</li>
+<li>Removed all the Open Cities compatibility fixes as they are now present in continuing Open Cities releases by Arthmoor</li>
+<li>Undeleted a deleted useless underground pillar in the Priory grounds and flagged it disabled instead in case other later-loaded Knights mods refer to it (which is highly unlikely)</li>
+<li>Grounded three rugs in the Priory (two disappear once the Knights arrive) two beds and chairs, and three slightly flying tomb effigies in the undercroft (two were also offcenter)</li>
+<li>Closed a large seethrough gap at the end of a misaligned Ayleid screen wall section, thin gaps in a column and numerous small gaps around other columns and flipped five backwards doors hiding their handles and fixed several flickery floor intersections in Vanua</li>
+<li>Fixed a flickering square on the dais of the Julianos statue in Fort Bulwark</li>
+<li>Fixed the Priory Chapel ladder missing its trapdoor</li>
+<li>Grounded three slightly flying benches and a noticeably flying rock and fixed three shrubs being embedded in rocks at the Shrine of Kynareth</li>
+<li>Fixed two shrubs and a Dragon's Tongue embedded in rocks in Fort Bulwark's exterior</li>
+<li>Disabled/moved several sections of the unused Lord Vlindrel's tower (-21,18) left completely hidden underground and rescued a boulder hidden underground when the land was raised</li>
+<li>Added the missing Leyawiin Chapel Key to Primate Kantav Cheynoslin to match the fix in the UOP so that it isn't overridden</li>
+<li>Fixed minor discontinuity between audio and subtitle in a Prophet dialog "Blessing"  » "Blessings"</li>
+<li>Fixed audio for a minor discontinuity of a line of dialog for Nord males at quest conclusion which said "you have" where other races said "and have"</li>
+<li>Added the nVidia Black Screen Fix cell change to all interior cells added or changed by Knights of the Nine requiring it (all interiors including the Priory, chapels/halls/undercrofts, dirty changes to the Cheydinhal Abandoned House, etc. except dungeons required it)</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.2):</b>
+<ul>
+<li>Fixed that if Shagrol gro-Uzug's sparring weapon broke, he would repeatedly unequip and requip his normal weapon even if sparring was restarted so would never be able to spar again</li>
+<li>Fixed the level 25 version of the Dragonsword of Lainlyn being unattainable because the skeletal Lord Kain wouldn't level high enough to have it</li>
+<li>All the added shields (Lord Kelvyn's Bulwark at all levels, Lord Kain's Shield and the Shield of True Horn) will now use the previously unused icon that was created for them instead of a generic shield icon (also corrected the "of" in "Shield of True Horn" being capitalized)</li>
+<li>Created new normal maps for all the Battlehorn vintner's wine bottles as they were using an incorrect generic normal map; labels are nicely embossed now and bottles have proper specular reflection, so also removed the specular highlights painted into the bottles' textures</li>
+<li>Grounded two flying rugs in the Great Hall, two more in the Private Quarters and moved a bed embedded in the wall skirting (disappears when the upgrade is purchased)</li>
+<li>Grounded a slightly flying statue and a barrel clipping into a table in the East Wing</li>
+<li>Attached a ladder to the wall, closed a seethrough gap between the door and its frame and flipped one of the trapdoors that was facing the opposite way to its linked door in the North Tower and South Tower (cells are duplicates)</li>
+<li>Moved a misaligned tapestry clipping into the bed, moved/scaled a barrel that would prevent the cupboard from opening and grounded a fireplace grate, chair and unsupported plank in the Blacksmith House</li>
+<li>Fixed a barrel deeply embedded in a table in the Basement as it was missing its enable parent (had to disable/move the barrel as the table would not pick up its enable parent on exising saves), moved a chest of drawers out of a column and grounded a bed</li>
+<li>Fixed a vertically misaligned section of the forgotten tunnel to the Grotto causing seethrough roof beams, closed two large seethrough gaps in the Grotto caused by misaligned cave pieces, and for a third caused by a missing cave piece could not just introduce a new piece as it would clip through the floor so created smaller piece UOMPCSRmWall01B.NIF for it</li>
+<li>Fixed some more errors on the exterior Battlehorn Castle mesh ( FightersKeepCastle.NIF ): thin seams under the roofs and flickering due to some duplicate polygons on the facade, seethrough parts on the roof trim (only visible from the keep roof), strange UV mapping in the portcullis track (tiny copies of an arch) and added black vertex colors at the top of the portcullis housing so that it doesn't appear to be disappearing into solid stone</li>
+<li>Fixed misaligned room pieces in the Gatehouse causing large seethrough gaps on the sides of the upper hallway (note that this may somewhat embed the load door if this location has already been visited but it will still be activatable); when aligned there were protruding quarter-columns and one-sided polygons so created mesh UOMPCastleTower512MidDoor.NIF and replaced both rooms of the gatehouse with it, flipped two of the trapdoors that were facing the opposite way to their linked doors and grounded a sack</li>
+<li>Fixed rogue clipping polygons in the animated portcullis' housing caused by using a portcullis mesh with a frame that didn't fit the gate; replaced with mesh UOMPRFWPortcullis01.NIF with the frame removed; also fixed one of the portcullis bars not going all the way to the top</li>
+<li>Moved down the load door to the Grotto and the wall it's in to close a large seethrough gap under them</li>
+<li>Grounded several slightly flying objects (anvil, three weapon racks, two tables and buckets, a chair, and the awning frames that didn't reach the ground) and moved two hay bales intersecting tables on the forge surround in the Battlehorn courtyard, disabled a duplicated-in-place doorframe on the castle ramparts, and fixed a feeding stall beam intersecting a fence beam</li>
+<li>Rescued another 14 rocks hidden underground by raised land or in the castle exterior walls</li>
+<li>Added the nVidia Black Screen Fix cell change to all interior cells added or changed by Battlehorn Castle requiring it (they all required it)</li>
+</ul>
+
+<b>Frostcrag Spire bugs fixed (v1.0.2):</b>
+<ul>
+<li>Fixed the ownership of the Mystic Emporium even if Battlehorn Castle is loaded after it (without the Battlehorn UODP fix the ownership would clear and it would never open, but with it this could still happen if Calandil was dead as Frostcrag's change was overridden and the cell was still owned by Carandil)</li>
+<li>The player will no longer appear on the Frostcrag Spire tower at the teleport pads instead of just outside the guildhall if they are expelled from the Mages Guild while in the Anvil guildhall</li>
+<li>Fixed Frostcrag Spire not being visible when distant; made LOD mesh MagesTower01_far.NIF (384KB; original is 2,101KB) and will include TES4LODGen to update distant LOD for this and Battlehorn in the self-installing version</li>
+<li>Fixed a Clouded Funnel Cap and Garlic clove missing their enable parents so were hovering at waist height in the Living Quarters before the Alchemy upgrade was purchased</li>
+<li>Grounded the slightly flying chest in the Mystic Emporium (IC Market District) upstairs that was moved by Frostcrag so that Aurelinwae's bed could be placed</li>
+<li>Added the nVidia Black Screen Fix cell change to all interior cells added or changed by Frostcrag Spire requiring it (they all required it)</li>
+</ul>
+
+<b>Thieves' Den bugs fixed (v1.0.4):</b>
+<ul>
+<li>Fixed the Havok collision of the Red Saber Captain's Quarters around the interior doorframe to the bedroom ( RedSaberInterior.NIF ) so that objects will no longer fall through the floor; also fixed some UV mapping on beam undersides and optimized from 188KB to 123KB</li>
+<li>Residents of Dunbarrow Cove (Kovan Kren was already fixed) should no longer fight each other for no apparent reason</li>
+<li>Fixed Jak Silver never eating as he was intended to because his AI was pointing to an unused test cell</li>
+<li>Changed cell name "Castle Anvil Dining Hall" » "Dining Hall", the music type in the Smuggler's Cave to dungeon type to match the fixes in the UOP so that they aren't overridden</li>
+<li>Added the nVidia Black Screen Fix cell change to all interior cells added or changed by Thieves' Den requiring it (three Anvil cells and one Dunbarrow cell required it)</li>
+</ul>
+
+<b>Vile Lair bugs fixed (v1.0.3):</b>
+<ul>
+<li>Fixed the walkways of the collonade around the Font of Renewal not extending down far enough so the transparent (from underneath) floor could be seen while in the Font, and the entry piece not fitting properly which left seams in the columns; replaced stock cloister meshes with custom UOMPFontOfRenewalEntry.NIF, UOMPFontOfRenewalHall.NIF and UOMPFontOfRenewalCorner.NIF reducing in size from 892KB to 553KB in total by optimizing and removing invisible backfacing</li>
+<li>Corrected typo in the Manifesto Cyrodiil Vampyrum: "Transcendant" » "Transcendent"</li>
+<li>Replaced invalid characters in Opusculus Lamae Bal ta Mezzamortie: "o’er" » "o'er", "Arkay’s" » "Arkay's", "et’Ada" » "et'Ada" (the ’ is not present in the in-game fonts)</li>
+<li>Fixed a small dirty change in Vile Lair where it set the ownership of a (completely unrelated) gate in Pothole Caverns (no quests are set here)</li>
+<li>Added the nVidia Black Screen Fix cell change to Wawnet Inn (the only cell added or changed by Vile Lair that required it)</li>
+</ul>
+
+<b>Horse Armor bugs fixed (v1.0.3):</b>
+<ul>
+<li>Restored missing fix for the exploit of using Shadowmere as a four-legged Bag Of Holding by knocking her unconscious and storing items in her; may have been accidentally removed when the fix for getting arrested/expelled from Guilds for hitting owned horses was removed from the UODP after it was officially patched (if you happen to be exploiting this exploit your items will be transferred to the player when Shadowmere is mounted; this fix is also in the UOP but has to be here as well as will get overridden otherwise)</li>
+<li>Since the problem causing Shadowmere to run off if she was armored was solved (see above in UODP changes) restored the fix for armored horses stuttering when passing a corpse due to having corpse checking enabled</li>
+<li>Undeleted the useless Horse Armor Plans chest in Cursed Mines Lower Galleries and marked it as disabled instead in case a later-loaded Horse Armor mod refers to it</li>
+<li>Added the nVidia Black Screen Fix cell change to Chestnut Handy Stables (the only cell added or changed by Horse Armor that required it)</li>
+</ul>
+
+<b>Mehrunes' Razor bugs fixed (v1.0.3):</b>
+<ul>
+<li>Added the nVidia Black Screen Fix cell change to all interior cells added or changed by Mehrunes' Razor that required it (the three "Cava" cells and a dirty change to Ungolim's house in Bravil required it)</li>
+</ul>
+
+<b>The Orrery bugs fixed (v1.0.3):</b>
+<ul>
+<li>Added the nVidia Black Screen Fix cell change to all interior cells added or changed by The Orrery that required it (only the Arch-Mage's Lobby required it)</li>
+</ul>
+
+<p class="h">Eleventh Release (2007-Oct.-30)</p>
+<b>UODP Changes:</b>
+<ul>
+<li>Fixed UOMPIDWallAlcove01.nif missing from the self-installer version causing missing alcove tunnels in the Shrine of the Crusader</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.1):</b>
+<ul>
+<li>Fixed the player always getting the Level 1 versions of Lord Kelvyn's Bulwark shield and the Dragonsword of Lainlyn if a new game is started with Battlehorn already present, or the level of whenever Battlehorn was installed on a current save; the shield will now be levelled appropriately to when the last upgrade is purchased and this will fix existing saves if it has not yet been retrieved, and the sword will be levelled to when the player enters the Grotto area the first time</li>
+<li>Removed mipmaps from the Dragon Sword icons ( IconDragonSword.dds ) as they caused the icons to blur if Oblivion was not set to Large texture size and the Construction Set to complain</li>
+<li>Fixed the label on Numbskin Mead wine so that it says this and not "Ice Nerveshatter" (which appears to have been the originally intended name as it's the name of the file)</li>
+</ul>
+
+<b>Mehrunes' Razor bugs fixed (v1.0.2):</b>
+<ul>
+<li>Finally fixed the bug introduced by the downloaded version of Mehrunes' Razor where all Daedric War Axes "crumble to dust" when activated, as there have been no other different bugs found between the download and KoTN CD versions of the official plug-ins, and this change is compatible with both versions</li>
+</ul>
+
+<p class="h">Tenth Release (2007-Oct.-25)</p>
+<b>UODP Changes:</b>
+<ul>
+<li>Fixed UOPCastleCeilingLightMount.nif missing from the self-installer version causing yellow diamonds in Battlehorn Castle if the UOP wasn't present</li>
+<li>Really corrected the installer path for the fixed Vile Lair Chokeberry NIF file this time</li>
+<li>Fixed the version number on the Spell Tomes UODP ESP (was supposed to be 1.0.1 not 1.0.0)</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.6):</b>
+<ul>
+<li>Closed a gap between a room and tunnel, and another under a misaligned column in the Shrine of the Crusader</li>
+<li>Aligned a flying Ayleid light fixture and its associated wall support in Vanua</li>
+<li>Closed seethrough gaps on the sides of the platform of the Julianos status in Fort Bulwark and most of the gaps in the ceiling of the same room (the diagonals of the room pieces don't fit together perfectly)</li>
+<li>Fixed a flickering line on the Fort Bulwark puzzle room ceiling caused by overlapping pieces</li>
+<li>Fixed the last flickery overlapping triangle on the static Cuirass of the Crusader and optimized the mesh (109KB to 86KB)</li>
+</ul>
+
+<p class="h">Ninth Release (2007-Oct.-24)</p>
+<b>UODP Changes:</b>
+<ul>
+<li>Fixed the version number on the Mehrunes' Razor UODP ESP (was supposed to be 1.0.1 not 1.0.0)</li>
+<li>Corrected the installer path for the fixed Vile Lair Chokeberry NIF file</li>
+<li>Upgraded the self-installer to Inno Setup 5.2.2</li>
+<li>The manual-install UODP is now a 7-Zip (.7z) archive instead of a much larger Zip archive</li>
+</ul>
+
+<b>Battlehorn Castle bugs fixed (v1.0.0):</b>
+<ul>
+<li>Fixed leftover "dirty" change to the Mystic Emporium (IC Market District) that cleared its ownership, causing it to never open</li>
+<li>Undid change (offering services was enabled) to default AI packages aaaDefaultExploreEditorLoc768, aaaEat12x2, aaaEat20x2, aaaEat8x2 and aaaSleep0x6 used by many other NPC's and possibly in mods; created new AI packages with services enabled and replaced the modified defaults in Battlehorn NPC's that use them</li>
+<li>Fixed Shagrol gro-Uzug offering paid training in dialog due to the change only when eating lunch yet not being able to train above and his training level being set to zero; made him his own eat package without Offers Services enabled as this is clearly erroneous and he trains by sparring rather than being paid</li>
+<li>Fixed the misaligned Havok mesh on the ramparts and roofs so that the player and NPC's don't hover over the surface, corrected UV mapping errors on the tops of three courtyard buttresses, moved the keep roof so that it doesn't stick through the rear wall, closed gaps between the keep balcony and wall,  smoothed large wrinkles on the back wall of one of the keep roofs and optimized (deleted hundreds of hidden faces and welded vertices) the exterior Battlehorn Castle mesh ( FightersKeepCastle.nif )</li>
+<li>Battlehorn Castle will no longer disappear from the landscape when the player is distant or suddenly pop into view when being approached; set castle to viewable when distant, made optimized FightersKeepCastle_far.nif (492KB; original NIF is 2.19MB) and updated distant LOD for Tamriel cell (-22,24)</li>
+<li>Shagrol gro-Uzug will now hit the target when practicing his archery in the Battlehorn Castle Basement</li>
+<li>The middle section of the underwater stalagmites in the Grotto will no longer be invisible due to overlapping alpha channels; replaced with new item using mesh UOMPCPitFloor01A.nif without an alpha property</li>
+<li>Fixed the label on Sparkling Honeydew wine so that it says this and not "Sparkling Honeytongue" (which appears to have been the originally intended name as it's the name of the file)</li>
+<li>The exterior gatehouse trapdoor is now over the correct tower that the interior trapdoor is in (this will only take effect on a new game or if the location hasn't already been visited as load doors' locations are stored in the save)</li>
+<li>Moved all instances of CathedralCryptLight02FAKE ceiling lamps down and added UOPCastleCeilingLightMount.nif objects into the gaps to prevent them being twitchy in case the player has the UOP installed (which Havoks the chains; note that the lamps may stay in the same position if this location has already been visited)</li>
+<li>Enlarged the display cases in the Great Hall so that shields placed in them don't pop through the lid when the cell is re-entered (anything already in the cases may need to be put back in again)</li>
+<li>Fixed an overlapping ceiling lamp and chandelier in the Men-At-Arms quarters after the upgrade is purchased (ceiling lamp was not set to opposite state of enable parent and chandelier hanging rod was missing enable parent)</li>
+<li>Fixed two very twitchy hanging lamps in the North and South towers and one in the Gatehouse (this also will only take effect on a new game or if these locations haven't already been visited)</li>
+<li>The black screen bug should no longer occur in the Gatehouse if playing on an NVidia card</li>
+<li>Moved one of the upper-level chairs in the Great Hall so that sitting in it will work properly</li>
+<li>Cleared the erroneous ownership of two chairs in the basement that were owned by non-descript servants of Castle Anvil</li>
+<li>Attached a very noticeably flying and off-center wall-mounted torch to the wall in the vault</li>
+<li>Aligned a wall-mounted torch in the Great Hall clipping into a buttress, and another in the Grotto tunnel on a strange angle</li>
+<li>Replaced the plate and candle by Melisi Daren's bed with a static plate of candles, as the plate could be pulled out while the candle stayed hovering in place</li>
+<li>Grounded four candlesticks and a rug in the Private Quarters</li>
+<li>Grounded two floating trapdoors on the castle ramparts</li>
+<li>Moved/raised twelve rocks, three mushrooms, two shrubs and a tree buried or embedded when the land was raised and castle placed</li>
+<li>Moved seven trees so that they are no longer partially embedded in the castle walls</li>
+<li>Closed a see-through boulder and grounded a slightly flying shrub in the castle courtyard near the stables</li>
+<li>Aligned a misaligned stable fencepost</li>
+<li>Attached the lower section of ladder in the Gatehouse to the wall</li>
+<li>Removed the confusing fixed price of 3,000 gold for the Dwemer forge from the Note from Nilphas Omellian and journal entry as the price is not fixed (subject to markup, haggling, Mercantile skill and the base price is 1,500)</li>
+<li>Corrected spelling errors in the Taxidermy Needs List: "Deadroth"  » "Daedroth" (two instances)</li>
+<li>Corrected typo in Lord Jaren's Journal: "necromatic" » "necromantic"</li>
+<li>Corrected typo in Battlehorn Trophy Hall receipt: "deliverered" » "delivered"</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.5):</b>
+<ul>
+<li>Corrected all the Knights both named and generic wearing light armor (KoTN cuirass and chainmail) and using swords and bows, but being members of classes (Knight, Crusader and one Priest) with no Light Armor or Marksman skill at all, or Blade skill in the case of the Crusaders, so their Light Armor/Marksman/Blade did not advance; created a new Knight Of The Nine class as a hybrid of Knight and Crusader with no useless skills from the other classes (ie Speechcraft and spell schools for which none of them have any spells) and placed them into that</li>
+<li>Fixed the blacksmith Sergius Turrianus not appearing in the Priory basement due to being enabled by dialog with Sir Thedret that could be missed; he now will be when Lathon arrives if he isn't already, and this will also fix existing saves</li>
+<li>The Sanctified Dead in chapel undercrofts should no longer attack the player just for having a weapon out</li>
+<li>Corrected Selene Duronia (replacement for Trevaia at Anvil's Chapel of Dibella) having ability to sell potions but having nothing to sell as has no merchant container as Trevaia also did, so removed selling potion ability (as was done in the UOP with Trevaia)</li>
+<li>Vanua (location of the Shrine of the Crusader) will no longer be missing its map marker</li>
+<li>Closed a large seethrough gap in each of the alcove tunnels in the Shrine of the Crusader (caused by reusing the tutorial dungeon assassin's alcove tunnel but without the secret door; new mesh without the doorframe UOMPIDWallAlcove01.nif was made and the tunnel section replaced)</li>
+<li>UI mods that show the player's next faction rank will no longer show "DUMMY" when the player has reached the highest rank of the Knights of the Nine and Nine Divines factions (the highest rank of the latter is inaccessible without mods)</li>
+<li>Grounded several carrot and lettuce plants, a hay bale, and a see-through underside tree, and deleted a stone wall post embedded underground (no walls were missing one) in the Priory grounds</li>
+<li>Realigned the Priory front door to close gaps around it</li>
+<li>Fixed one of the responses to the Prophet's question regarding worthiness (Arena Grand Champion) never appearing due to out-of-bounds faction rank check and added a couple of "By Azura"s to the text to match the audio</li>
+<li>Fixed a missing line of dialog for Sir Areldur (no audio or LIP) regarding the Gauntlets of the Crusader after they have been retrieved</li>
+<li>Corrected audio in a line of dialog from Silana Blandia (and other Imperial and Breton females) regarding the Mace of the Crusader where "Leyawiin" was instead present as "Bravil"</li>
+</ul>
+
+<b>Frostcrag Spire bugs fixed (v1.0.1):</b>
+<ul>
+<li>Corrected Aurelinwae's (Mystic Emporium) inventory never resetting which eventually caused long delays bartering with her and bulked the savegame</li>
+<li>Moved the Frostcrag Spire map marker so the player is closer and not facing the wrong direction on fast-travelling there</li>
+</ul>
+
+<p class="h">Eighth Release (2007-July-05)</p>
+<b>Horse Armor bugs fixed (v1.0.2):</b>
+<ul>
+<li>Rolled the Horse Armor patch back to v1.0.2 as the new one was causing Shadowmere to not follow anymore if armored after installing the UODP</li>
+</ul>
+
+<p class="h">Seventh Release (2007-July-03)</p>
+<b>Knights of the Nine bugs fixed (v1.0.4):</b>
+<ul>
+<li>Fixed the "sitting bug"; after the completion of the Knights of the Nine questline, the player will no longer freeze in place when sitting down or sit in midair away from the chair/bench</li>
+<li>Resolved incompatibilities between Knights of the Nine and Open Cities in Anvil; the Prophet, his bedroll, guards and listener markers will move to the correct locations shortly after the UODP is installed if Open Cities is present (his listeners may sometimes face the wrong way due to engine weirdness, but this works as it makes them appear half-interested, and everything else should be perfect)</li>
+<li>Corrected oversight making it impossible to complete Master Restoration training after completing the Sword of the Crusader quest due to both Advanced trainers having died by this stage; once the player's skill is sufficient the training quest will start automatically (there are no suitable voice sets for the replacement Advanced trainers to have them or others offer the referral)</li>
+<li>The Prophet should no longer fail to deliver his sermon in the Priory Chapel and then talk to the player in The Blessing of Talos quest</li>
+<li>Rodgar's Helm will no longer hover in place and be impossible to pick up again if dropped (was using worn instead of ground mesh)</li>
+<li>Sir Amiel's key will no longer be a quest item stuck in the player's inventory after it is not required</li>
+<li>Fixed the relics' armor stand in the Priory Undercroft clipping through the static Gauntlets of the Crusader, and closed gaps (most noticeable on the right-hand one) between the static Gauntlets and the Cuirass</li>
+<li>Fixed unsightly flickering under the left arm of the static Cuirass of the Crusader caused by duplicate faces</li>
+<li>The Mace of the Crusader should no longer fall through the floor/ground when dropped</li>
+<li>In the Sword of the Crusader quest, if Sir Lathon is asked to wait he won't go into alert mode and pull his sword out unless he's in Underpall Cave (ie when he hasn't even left the Priory yet)</li>
+<li>Closed a huge hole in the exterior of Lord Vlindrel's Tower (-21,18) caused by a missing wall section</li>
+<li>Fixed two twitchy hanging lamps in the Priory Basement (this may only take effect on a new game if this location has already been visited)</li>
+<li>Followers should no longer get stuck in a column when the player travels between the Priory Undercroft and Basement areas</li>
+<li>Moved a slightly misplaced rubble pile hanging over steps and raised another at the base of one of the Guardian statues that was clipping through it in Fort Bulwark</li>
+<li>Closed gaps between the cave tunnel and underground structure in the Shrine of the Crusader</li>
+<li>Corrected the fix for Knights rumors appearing in the Shivering Isles by cleaning out SI-specific quest references in case the player doesn't have SI installed</li>
+<li>Corrected the following typos/errors in dialog text:
+<br>(Form ID Topic From » To)
+<br>2913	ND00	"Terrianus" » "Turrianus"
+<br>2AC5	ND04Mace	"beleive" » "believe"
+<br>2D05	NDTombSpeech "endures.Mara" » "endures. Mara"
+<br>2D08	NDTombSpeech "Kyraneth" » "Kynareth"
+<br>2D23	NDSirCaiusTopic	"tyrranical" » "tyrannical"
+<br>291B	ND04	"curiousity" » "curiosity"
+<br>2ABC	ND04CarodusGreetingAbout	"acolytle" » "acolyte"
+<br>2B21	ND06CurseTopic	"heard of it" » "heard it"
+<br>2CD3	ND09ProphetGreeting02C	"millenia" » "millennia"
+<br>2A5E	NDProphetSpeechUmaril	"Peninal" » "Pelinal"
+<br>2C5C	NDTalkRelicsGreaves "vegeance" » "vengeance"
+<br>2A80	NDCrusadersRelicsTopic	"sorceror" » "sorcerer"
+<br>2C80	NDProphetStartA1	"sorceror" » "sorcerer"
+<br>2C82	NDProphetStartA2	"sorceror" » "sorcerer"</li>
+<li>Corrected the following typos/errors in quest stage journal text:
+<br>(Quest ID	Stage	From » To)
+<br>NDPilgrim	9	"sorceror" » "sorcerer"
+<br>ND04	10	"the the" » "the"</li>
+</ul>
+
+<b>The Vile Lair bugs fixed (v1.0.2):</b>
+<ul>
+<li>The Dark Minion will no longer permanently disappear when sent on a mission; if missing in an existing save he should return</li>
+<li>If the player leaves Deepscorn Hollow immediately after sending the Dark Minion on a mission, he will no longer get stuck and be unable to do any further missions</li>
+<li>Optimized Dark Minion scripting (removed unneeded variables, corrected timer variable type)</li>
+<li>Fixed bug where Rowley Eardwulf would not have the Deepscorn Hollow upgrades available to buy if the player entered Deepscorn Hollow the first time without triggering a quest advancement (this will also fix existing saves)</li>
+<li>If Rowley Eardwulf is eating (and thus won't barter) he will no longer greet the player as if he will</li>
+<li>Greywyn's Journal will no longer become stuck in the player's inventory if picked up (will also fix existing saves)</li>
+<li>The Raiment of the Crimson Scar will now be levelled to the player's level when it becomes available when all the upgrades are purchased, rather than when the Vile Lair plugin is installed or level 1 if it is present on a new game (this will only take effect on a new game if all the upgrades have already been purchased)</li>
+<li>The Crimson Eviscerator will now be levelled to the player's level when the player first arrives at Deepscorn Hollow, rather than when the Vile Lair plugin is installed or level 1 if it is present on a new game</li>
+<li>If the "cattle" prisoner is used for target practice, he will no longer freeze in place standing up, preventing feeding</li>
+<li>Optimized the quest's scripting as it was running ten times as often as needed</li>
+<li>Corrected off-center pathgrid nodes causing the Dark Minion to walk into a wall when sent on a mission (which could prevent him from ever leaving)</li>
+</ul>
+
+<b>The Orrery bugs fixed (v1.0.2):</b>
+<ul>
+<li>The bodies of the bandits will no longer disappear before the player has collected all required artifacts from them</li>
+<li>The Dwarven artifacts collected for the quest will now have the proper icons, not that of a shield</li>
+<li>Fixed Bothiel saying that she is giving a reward for recovering the artifacts and then appearing not to</li>
+<li>Optimized the scripting for the artifacts so up to five useless GameMode scripts aren't running when the player has the items</li>
+<li>The phases of the moons Masser and Secunda shown on the Orrery control panel will now correctly match the observable phases of the moons; also optimized the scripting for this</li>
+<li>In the Mages Guild Necromancer's Moon quest, Bothiel will no longer say that the Orrery is in disrepair</li>
+</ul>
+
+<b>Thieves Den bugs fixed (v1.0.3):</b>
+<ul>
+<li>Fixed quest bug where the player could enter the Smugglers' Cave initially without advancing the quest, which caused it to stall after all the skeletal pirates were dead (this will fix existing saves)</li>
+<li>If the (essential/unkillable) boar Bacon is used for target practice, he will no longer permanently attack the player</li>
+<li>Kovas Kren should no longer randomly fight other residents of Dunbarrow Cove</li>
+<li>The broken crate in the Captain's Quarters will now only be there before the upgrade is bought, instead of appearing afterwards</li>
+<li>Added missing parent master to the Sigil Stone Sound fix ESP so it should work properly now (fixes the middle deck of the Black Flag having a noticeable Sigil Stone sound constantly as the developers reused an Oblivion cell for it)</li>
+</ul>
+
+<b>Mehrunes' Razor bugs fixed (v1.0.1):</b>
+<ul>
+<li>The player will no longer die instantly if the Daedric Banishing effect of Mehrunes' Razor is reflected (this was what was intended according to the scripting comments)</li>
+</ul>
+
+<b>Spell Tomes bugs fixed (v1.0.1):</b>
+<ul>
+<li>Corrected the tome description and the magnitude of Fenrik's Welcome to open average lock as it is a Journeyman-level spell, yet was advertised to open hard locks, but would not open most of them</li>
+</ul>
+
+<b>Horse Armor bugs fixed (v1.0.3):</b>
+<ul>
+<li>Armored horses will no longer stutter and turn when passing a corpse due to having corpse-checking enabled (the UOP will also fix the player's and all other horses as the player can steal any horse in the game)</li>
+</ul>
+
+<p class="h">Sixth Release (2007-Apr.-08)</p>
+<b>Knights of the Nine bugs fixed (v1.0.3):</b>
+<ul>
+<li>Added a condition check to all of the Knights of the Nine quests for Shivering Isles (like Bethesda did to all the other Tamriel quests) which will stop Knights of the Nine dialogue appearing in The Shivering Isles</li>
+<li>Grounded a set of floating rocks and a bush in the wilderness (-48,-6) near where the new road was added from Knights of the Nine</li>
+</ul>
+
+<p class="h">Fifth Release (2007-Mar.-27)</p>
+<b>Horse Armor bugs fixed (v1.0.2):</b>
+<ul>
+<li>Fixed horses becoming unturnable once armored (accidentally broke them when removing the fix for hitting your horse)</li>
+</ul>
+
+<p class="h">Fourth Release (2007-Mar.-26)</p>
+<b>Thieves Den bugs fixed (v1.0.2):</b>
+<ul>
+<li>Removed the Sigil Stone Sound Bug fix from the DLCThievesDen - Unofficial Patch.esp and put it into its own esp (DLCThievesDen - Unofficial Patch - SSSB.esp) where it no longer causes the game to crash upon quitting Oblivion from the main menu</li>
+</ul>
+
+<p class="h">Third Release (2007-Mar.-25)</p>
+<b>Horse Armor bugs fixed (v1.0.1):</b>
+<ul>
+<li>Removed fixes for the hitting your horse bug (was fixed properly in the official patch v1.2.0214)</li>
+</ul>
+
+<b>Thieves Den bugs fixed (v1.0.1):</b>
+<ul>
+<li>You should no longer get quest updates from the Arena quest with strange phrases in them</li>
+<li>You will no longer hear a Sigil Stone sound in the "The Black Flag", the sound was caused because Bethesda re-used an existing interior cell (TestTimOblivionLords) for the "The Black Flag" and just deleted all the oblivion tower parts in it but unfortunately this caused the bug (all the Oblivion tower parts that were deleted were undeleted and marked as disabled instead which fixed the problem)</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.2):</b>
+<ul>
+<li>The blessing you receive from Sir Caius is now agility as his dialogue says and not personality (Sir Gregory already gives a personality blessing)</li>
+</ul>
+
+<b>The Vile Lair bugs fixed (v1.0.1):</b>
+<ul>
+<li>Chokeberry will no longer have weight so you can actually reverse pickpocket it onto people like you can currently do with the Poisoned Apples</li>
+<li>Chokeberry now has a warning so you can't accidentally eat it and die</li>
+<li>Enabled "Disallowed Spell Absorb/Reflect" for the Sithis shine blessings</li>
+</ul>
+
+<p class="h">Second Release (2007-Feb.-08)</p>
+<b>The Orrery bugs fixed (v1.0.1):</b>
+<ul>
+<li>Fixed The Orrery quest so it starts like all the other official mod quests (at CharacterGen 88 not MQ01 88)</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.1):</b>
+<ul>
+<li>ESP wasn't setup right so it caused Oblivion to shut down (sorry)</li>
+</ul>
+
+<p class="h">First Release (2007-Feb.-06)</p>
+<b>Frostcrag Spire bugs fixed (v1.0.0):</b>
+<ul>
+<li>Atronachs will no longer follow you automatically when you create a new one if you had your previous Atronach set to follow</li>
+<li>Fixed an out of place book in Frostcrag Spire (had no enable parent thus you could see it when you haven't bought the add-on yet)</li>
+<li>Added Ability to summon a new Atronach if it got lost/miss-placed, current one will be killed before creating a new one</li>
+<li>Atronachs' bodies will now fade away when they die just like when you dismiss them, this was done because it looks a lot better then the Atronach just "popping" away when you summon a new one</li>
+<li>Fixed the weather outside Frostcrag Spire so it is no longer 100% thunderstorm</li>
+<li>Atronachs will now appear on the center of their summoning circles</li>
+<li>Aurelinwae will no longer get stuck behind the upstairs door in the Mystic Emporium unable to get out</li>
+<li>Atronachs are no longer considered quest items, thus they can now vanish if you tell them to wait and don't come back for 3 days; this was done because the game would become cluttered old disabled Atronach references</li>
+<li>Flame Atronach Familiar now has an aware sound</li>
+<li>Storm Atronach Familiar no longer produce a blood spray or blood decals when struck</li>
+</ul>
+
+<b>The Vile Lair bugs fixed (v1.0.0):</b>
+<ul>
+<li>Removed mipmaps from all icons because it caused them to blur badly if you're not running your game on max textures setting</li>
+<li>Chokeberry now uses the correct icon also added the missing alpha to it</li>
+<li>Purgeblood salts now uses the correct icon also added the missing alpha to it</li>
+<li>Fixed items on the dinner table in the Vile Lair Bastion so they don't fall through it anymore</li>
+<li>Added the missing level 5 version of the Crimson Eviscerator to the level list</li>
+<li>Created a new mesh for the Chokeberry, no longer uses the blackberry mesh</li>
+<li>Created a static torch mesh for the torches in the Deepscorn Cloister so they no longer fall off the walls</li>
+</ul>
+
+<b>Knights of the Nine bugs fixed (v1.0.0):</b>
+<ul>
+<li>Fixed the enchantment on the level 16-20 light version of Greaves of the Crusader so it now uses the correct enchantment and not the cuirass enchantment</li>
+<li>Fixed dialogue so you don't need to load Knights.esp last for it to work</li>
+<li>Removed mipmaps from all icons because it caused them to blur badly if you're not running your game on max textures setting</li>
+<li>Enabled stencilling on male, female and static Greaves of the Crusaders so the mesh was no longer invisible around the knee caps</li>
+<li>Boots, Greaves and Helmet of the Crusader now have the correct Havok hit effect</li>
+<li>The clouds in the sky above the Imperial City will now vanish/reappear appropriately related to the quests so Cyrodiil will no longer be menaced by the cloud "UFO"</li>
+</ul>
+
+<b>Thieves Den bugs fixed (v1.0.0):</b>
+<ul>
+<li>Fixed Potion of Magnification level list so you don't end up with weaker versions of the potion as your level gets higher</li>
+</ul>
+
+<b>Mehrunes' Razor bugs fixed (v1.0.0):</b>
+<ul>
+<li>Fixed the level lists of Morag Tong Cowl, Morag Tong Boots, Morag Tong Cuirass, Morag Tong Cuirass, Morag Tong Gloves, Morag Tong Greaves, Bladeturn Hood, Spellturn Cloak, and Forgemaster's Amulet so you can no longer receive say a level 1 version of the item at level 20 which is in-line with how all the other levelled items work in the game</li>
+<li>Msirae Faythung should no longer be unarmed when fought at a low level</li>
+</ul>
+
+<b>The Orrery bugs fixed (v1.0.0):</b>
+<ul>
+<li>Created a quest script to move Bothiel out of The Orrery to hopefully fix her being trapped in it. Her AI looks fine and no scripts move her around, my only guess about this bug is it is caused by using The Orrery on an existing game since Bothiel's starting position is different when The Orrery plugin is enabled</li>
+</ul>
+
+<b>Horse Armor bugs fixed (v1.0.0):</b>
+<ul>
+<li>Removed a chest which was added to the Cursed Mine Lower Galleries, an old useless item for the horse armor quest but never was implemented (added a little script to remove all Horse Armor Plans if you managed to get it since it's a quest item)</li>
+<li>All armored horses will now return their home when you get a new horse (just like the unarmored horses)</li>
+<li>Anvil White horse will now return its home when you get a new horse (original script got broken in Horse Armor)</li>
+</ul>
+
+<b>Spell Tomes bugs fixed (v1.0.0):</b>
+<ul>
+<li>A random Tome spell will no longer be added when loading a savegame or fast-travelling.</li>
+</ul>
+</body>
+</html>

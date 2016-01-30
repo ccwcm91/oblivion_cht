@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+background-color: #e2d8b6;
+color: #654B25;
+}
+.h {
+text-decoration: underline;
+font-weight: bold;
+font-size: 100%;
+background-color: #dacda3;
+}
+.m {
+background-color: #dacda3;
+}
+a:link {
+color: #654B25;
+font-weight: bold;
+}
+a:visited {
+color: #654B25;
+}
+</style>
+<title>Unofficial Shivering Isles Patch: Version History</title>
+</head>
+
+<body>
+
+<p style="text-align:center" class="m"><b style="font-size:32px">Unofficial Shivering Isles Patch: Version History</b>
+<br>By <b>Quarn</b>, <b>Kivan</b>, <b>Arthmoor</b>, and <b>PrinceShroob</b></p>
+
+<p class="h">v1.5.7 (2015-Aug-02) - Minor Update</p>
+<ul>
+<li>SEAmberMagicGreaves4 was incorrectly using an enchantment for the amber cuirass.</li>
+<li>Corrected several houses across the Isles and the Mania and Dementia gardens using the “default” music type rather than the correct “public” music type.</li>
+<li>Corrected two beer bottles in Dreamwalk Camp that could be nudged into the adjoining cell by the Heretics there and cause the land under the camp to disappear (refs 0004FDD2 and 0004FDAC).</li>
+<li>Corrected an audio flub in one of Herdir’s lines (Sound\Voice\Oblivion.esm\Imperial\M\SE05_SE05HerdirInvestigateCurrentTask_00083F4F_1.mp3 and Sound\Voice\Oblivion.esm\Imperial\M\SE05_SE05HerdirInvestigateCurrentTask_00083F4F_1.lip).</li>
+</ul>
+
+<p class="h">v1.5.6 (2015-Jan-31) - Minor Update</p>
+<ul>
+<li>Thadon and Syl can no longer use the Order Priest’s combat taunts in SE12 – not only was it blocking their unique taunts for that moment, but Syl had no audio recorded.</li>
+<li>Many elf male creature responses did not match the subtitles – they appeared to be speaking the line above it (High Elf/M/SEConversations_SECreatureResponses_00077C5A_1.mp3, SEConversations_SECreatureResponses_00077C5A_1.lip, SEConversations_SECreatureResponses_00077C54_1.mp3, SEConversations_SECreatureResponses_00077C54_1.lip, SEConversations_SECreatureResponses_00077C55_1.mp3, SEConversations_SECreatureResponses_00077C55_1.lip, SEConversations_SECreatureResponses_00077C56_1.mp3, SEConversations_SECreatureResponses_00077C56_1.lip, SEConversations_SECreatureResponses_00077C57_1.mp3, SEConversations_SECreatureResponses_00077C57_1.lip, SEConversations_SECreatureResponses_00077C58_1.mp3, SEConversations_SECreatureResponses_00077C58_1.lip, SEConversations_SECreatureResponses_00077C59_1.mp3, and SEConversations_SECreatureResponses_00077C59_1.lip).</li>
+<li>Restored Halion’s rumor about Sickly Bernice’s Taphouse; although the vanilla audio was only half the written line, completely correct audio was uncovered while completing the above fix, and so the Unofficial Patch will no longer prevent it from being said (High Elf/M/SEConversations_INFOGENERAL_0008E146_1.mp3 and SEConversations_INFOGENERAL_0008E146_1.lip).</li>
+<li>AI pack SENanetteDonXaselmWander needed to be corrected since it was targeting "in cell" instead of a proper marker.</li>
+<li>After being made a skill book in UOP 3.0.0, Children of the Sky was never added to SE39LLAllSkillBooks with the other skill books.</li>
+<li>SE03GrommoksJournal: "3 Rain's Hand 3E431" / "12 Rain's Hand 3E431" / "13 Rain's Hand 3E431" / "14-16 Rain's Hand 3E431" / "17-19 Rain's Hand 3E431" ["3E431" -> "3E 431"]</li>
+<li>SE09RelmynaLog3: "Subject 1 lasted less that a minute." ["less that" -> "less than"]</li>
+<li>SEBookFallofVitharn: "He was seen in pubic only when organizing his vassal Fanatics for yet another raid on the countryside." ["in pubic" -> "in public"] / "The increasingly ill Count chose a vibrant peasant women as his betrothed, from a Heretic Commune in the wilds of Mania." ["peasant women" -> "peasant woman]</li>
+<li>SEBookFromFrogToMan: "Kraften Highbrow maintains that they are cunning craftsman that make jewelry and weapons, even mining ore." ["craftsman" -> "craftsmen"]</li>
+<li>SEBookGuidetoNewSheoth: "Cutter's Weapons, Bliss." ["Bliss" -> "Crucible"] / "The Missing Pauldron, Crucible." ["Crucible" -> "Bliss"] / "Owner Abhuki has scoured the realm in search of the most intriguing and varied assortment of magical items to be found almost anywhere." ["Abhuki" -> "Ahjazda"]</li>
+<li>SEBookTheMadnessOfPelagius: "As king of Solitude, Pelagius' eccentricities of behavior began to be noticeable." ["king" -> "King"] / "so the attention of Tamriel focused on Sentinel." ["Sentinel" -> "Solitude"] / "There are many legends about his acts as King of Sentinel," ["Sentinel" -> "Solitude"]</li>
+<li>SEBookSixteenAccordsofMadnessV9: "He challenged the Gods themselves, as well as the infantile public and corrupt state for worshiping them." ["worshiping" -> "worshipping"]</li>
+<li>SEBookSixteenAccordsofMadnessV12: "Malacath began to stand, but kneeled again," ["kneeled" -> "knelt"]</li>
+<li>Corrected Raven-Biter's name being rendered as anything other than "Raven-Biter" (with hyphen, two words).</li>
+<li>Corrected Sheer-Meedish's NPC name to include the hyphen.</li>
+<li>Removed the hyphen from all instances of "Big-Head" (while normally Cyrodiilic names for Argonians are hyphenated, Big Head appeared in Morrowind, where his name was consistently rendered without the hyphen).</li>
+<li>Corrected the bed and door ownerships in Sickly Bernice's Taphouse and the Choosy Beggar so that no beds are free to sleep in and picking all the locked doors is a crime.</li>
+<li>Corrected several of Relmyna Verenim's SE09 hellos, where erroneous "OR" conditioned could cause certain lines to appear prematurely if she was speaking to the player.</li>
+<li>Corrected one of Ra'quanar's responses to the "Ciirta" topic to no longer be valid once she died, as it was blocking the line below it.</li>
+<li>Corrected the subtitle of one of Haskill's lines when he stands in for his mater during DASheogorath ("Sire" was not included though it was spoken).</li>
+<li>Though Kithlan promises to handle the matter and the journal reports that Brithaur has been thrown in jail for his crimes, Brithaur continued his usual routine if this path was chosen. He will no be relocated to the cells in the House of Dementia.</li>
+</ul>
+
+<p class="h">v1.5.5 (2014-Aug-31) - Minor Update</p>
+<ul>
+<li>NPCs fighting Knights of Order will no longer use the combat taunts for fighting Imperials or Elves – technically, Knights of Order are Imperials and High Elves in unplayable armor with different attack and hit lines, but lore-wise they certainly aren’t.</li>
+<li>Corrected Golden Saints and Dark Seducers still using their default goodbyes when the played had completed SE13.</li>
+<li>Corrected a variety of quest-related hellos and goodbyes being flagged as random or being said to NPCs other than the player.</li>
+<li>At the start of SE08, when Sheogorath teleports out of the Sanctum, he will no longer use his default goodbye, which was always cut off. He will instead use a relevant SE07 goodbye that’s much shorter.</li>
+<li>Corrected a number of Golden Saint and Dark Seducer hellos lacking the “random end” flag, which allowed them to bleed into their default hellos if the player was male.</li>
+<li>Wide-Eye had a response to asking about Thadon in SE04 that was being blocked by her other response.</li>
+<li>Sheogorath can understand Bolwing, so during “Falling Awake,” Bolwing will speak coherently about “Sleep outside” if either the player has Big-Head’s charm, or is Sheogorath.</li>
+<li>Fixed Sheogorath trying to idle with his non-existent cane at the start of SE11.</li>
+<li>Transformed Heretic bosses were SEHereticMelee by class rather than SEHereticMage like every single other Heretic.</li>
+<li>Applied UOP publican fix to Sickly Bernice and Raven-Biter.</li>
+<li>Wide-Eye had a greeting for female players in which she called them “my lord”; this has been corrected to “my lady.”</li>
+<li>Corrected the audio for one of Halion’s rumors to speak about a man in Bliss rather than Crucible, as this rumor refers to Amiable Fanriene, who lives in the Manic section of the city.</li>
+<li>The corrected audio for Dyus was missing a .lip file.</li>
+</ul>
+
+<p class="h">v1.5.4 (2014-Jun-30) - Minor Update</p>
+<ul>
+<li>Distribution Note: The EXE installer is no longer supported and will not be distributed to hosting sites from this point forward.</li>
+<li>The USIP will now have the UOP linked as an explicit master file so that it will sort better when used with <a href="http://loot.github.io/">LOOT</a>.</li>
+<li>The COBL GenericLoreScript has been synchronized with the official COBL 1.73 update.</li>
+<li>When approaching Pinnacle Rock, Adeo is supposed to have a topic to tell you about Dylora but it is never added to the available topics list.</li>
+<li>During The Helpless Army (SE10) Dylora is supposed to have a scripted death event that does not work because her script failed to remove QuestObject status first.</li>
+<li>Even though a magic Amber Sword should only take 3 pieces of amber, the dialogue conditions were requiring 4 due to checking the wrong global variable.</li>
+<li>During The Coming Storm (SE44) if the player was wearing the Calming Pants before speaking to Ahjazda, the spell would not be removed from the player.</li>
+<li>Moved a pair of monster spawners that were dangerously close to Split and could end up killing off the residents before the player knew there was a quest there.</li>
+<li>Runs-in-Circles would continue to shout "Nininininini" even after being dead due to her script not shutting down the timers properly.</li>
+<li>In Symbols of Office (SE11) Dyus mentions the "Howling Halls of Mania" - they're in Dementia. The line has been cut to remove mention of Mania.</li>
+<li>Tove the Unrestful was not a member of the Choosy Beggar faction and so could not run two of his eat packages.</li>
+<li>If Ushnar gro-Shadborgob is killed before collecting the reward in Ushnar's Terror (SE43) the quest will be terminated as a failure as with other quests whose quest givers can be killed.</li>
+<li>During The Liturgy of Vision (SE11a) if you declare that you are going to kill Ra'kheran he does not start combat with the player.</li>
+<li>AI packs ArenaFan1GreetPlayer and ArenaFan1FollowPlayer have been fixed so the Adoring Fan will not pursue the player into the Shivering Isles.</li>
+<li>Stealing oddity items from the museum does not result in crime detection due to the script attached to the items.</li>
+<li>Muurine would not be killed by the spell during The Lady of Paranoia (SE05) because the game never removes her essential status before trying to kill her.</li>
+<li>Relan did not have a list of spells to use despite being a mage.</li>
+<li>Atrabhi (both Mania and Dementia versions) did not have a list of spells despite being a mage.</li>
+<li>NPCs could use combat taunts intended for Imperials when fighting with Knights of Order.</li>
+<li>SE08PriestOfOrder01 had an enable parent but shouldn't have since this prevents the scripts in the game from correctly toggling the enable status.</li>
+<li>Corrected one of Una Armina's greetings in the incorrect order, which would cause SE38 to not advance to stage 10 if the first time you spoke to her was in the Museum of Oddities.
+<li>Corrected Sheer-Meedish's SENQDGeneric greeting for the player as Sheogorath having the "random end" flag checked, effectively limiting her to two greetings once Shivering Isles' main quest was completed.</li>
+<li>Corrected Nanette Don's introductory greeting having the "random" flag set.</li>
+<li>Relmyna Verenim was coming across as more insane than she should have due to conflict between her greetings, hellos, and goodbyes in SEConversations and her hellos and goodbyes in SE09Misc -- she was almost uniformly nasty in most of her dialogue, but her SE09Misc dialogue could be almost flirty if her disposition was high enough. To solve this, her SE09Misc dialogue will now only occur once "Rebuilding the Gatekeeper" is completed, and a new greeting has been made for her by repurposing a disposition-specific greeting from SE09: if she likes you enough at the end of the quest, she will be welcoming and will be her usual crabby self otherwise. In addition, corrected her player-as-Sheogorath hellos were being blocked by her SE09Misc dialogue, and she will no longer use her SE09Misc dialogue in conversation with other NPCs.</li>
+<li>Thaedil's "Did you see my last performance?..." hello was meant to link in NPC conversations to a response where the NPC either compliments or insults her abilities, but the hello was also trying to link to generic conversation topics that are disabled when in the Shivering Isles. In addition, the juggling response itself will link to goodbyes rather than also trying to link to generic responses.</li>
+<li>Generic hellos and goodbyes were meant to not be spoken by anyone other than NPCs in the Mania, Dementia, or Wilderness factions, but due to a misplaced "OR" in the conditions, any NPC of a playable race could use them. This will curtail very short discussions between NPCs like Zealots.</li>
+<li>Due to a quirk in the random flag settings, certain NPCs' hello dialogues meant for the player once they were Sheogorath could almost never be heard; they will now be random like other such hellos.</li>
+<li>Corrected a few NPCs' Sheogorath hellos being below the generic dialogue, resulting in them never being said.</li>
+<li>Bolwing will no longer use New Sheoth residents' hellos for when the player is burning with the Flame of Agnon or when the player has lit the Torch, and he will also not talk about Greenmote while "Ritual of Mania" is running.</li>
+<li>Fixed various Shivering Isles NPCs' hellos or goodbyes not linking to or from the proper responses.</li>
+<li>Pyke's hello after his quest could be spoken to any NPC, not just the player, blocking his unique conversations with his girlfriend.</li>
+<li>Uungor had a sleep package that was set to the incorrect package type.</li>
+<li>Sheer-Meedish had two AI packages that were set as "find" rather than "wander."</li>
+<li>Cindanwe's packages to supervise her workers were not set up properly.</li>
+</ul>
+
+<p class="h">v1.5.3 (2013-Dec-31) - Minor Update</p>
+<ul>
+<li>0005965a: Bed should be owned by SEHaleFaction so that both NPCs in the house can use it.</li>
+<li>SEDisElytaHatchling, SEDisScalon1, SEDisScalon2, and SEDisScalon3 were not set to manual zero cost "spells" and could therefore be resisted as magic unlike all other diseases in the game.</li>
+</ul>
+
+<p class="h">v1.5.2 (2012-Dec-31) - Minor Update</p>
+<ul>
+<li>The enchantment progression on the Order swords was still not correct after having fixed the leveled list.</li>
+<li>SE07SacellumAltarBlessing, SE14GreatTorchDementiaSpell, and SE14GreatTorchManiaSpell needed to be set as powers to avoid having their effects stripped by mundane dispels.</li>
+<li>Script SE14ProtectionScript made a call to the MoveTo function prematurely which caused the script to abort before it was entirely complete.</li>
+<li>Facegen texture data had been generated for the vanilla game, but Bethesda never generated the files for Shivering Isles. This data is now included with the new DLCShiveringIsles - Faces.bsa file. Theoretically, these files help with game performance.</li>
+</ul>
+
+<p class="h">v1.5.1 (2012-Jul-25) - Minor Update</p>
+<ul>
+<li>Fixed the RufioDie_Script having a stray endif that prevented the script from compiling. As well as the invalid underscore.</li>
+<li>Cutter's upstairs bedroom door was not owned by her, and had no key assigned, so her fixed AI was trapping her upstairs instead.</li>
+<li>Several minor edits to path grids to correct floating nodes, isolated nodes, and nodes buried under objects.</li>
+</ul>
+
+<p class="h">v1.5.0 (2011-Nov-12)</p>
+<b>USIP Changes/Fixes</b>
+<ul>
+<li>As was done with the UOP, integrated the COBL common menuing system (on first load you'll have a weightless "Unofficial Shivering Isles Patch" misc. item with a key icon added, which isn't a quest item so you can drop if you don't want it, so there are now three ways to open the USIP menu: <b>startquest usip</b> in the console, equip the item, or if you have COBL active it will go into the common menu)</li>
+<li>Moved the following USIPS changes into a separate ESP ( USIPS Additional Changes.esp ) so that they are still available at player discretion:
+ <ul>
+  <li>Addition of Battle Axe of Diminishing and Dagger of Diminishing to leveled list SELL0LootWeapon0Magic2Steel100</li>
+  <li>Addition of War Axe of Sapping and Warhammer of Sapping to leveled list SELL0LootWeapon0Magic3Silver100</li>
+  <li>Addition of Battle Axe of Enfeeblement to leveled list SELL0LootWeapon0Magic4Dwarven100</li>
+  <li>Addition of Dagger of Weakness, Battle Axe of Weakness, and Immolator (fire damage elven claymore) to leveled list SELL0LootWeapon0Magic5Elven100</li>
+  <li>Addition of War Axe of Beguilement to leveled list SELL0LootWeapon0Magic6Glass100</li>
+  <li>Addition of Tempest (shock-damage ebony claymore) to leveled list SELL0LootWeapon0Magic7Ebony100</li>
+ </ul>
+</ul>
+
+<b>Game Mechanics Fixes</b>
+<ul>
+<li>The player's bounty can now be properly cleared after the Main Quest as was intended if it is 5,000 septims or higher</li>
+<li>The player will no longer be able to keep any room rented at inns in Bliss and Crucible indefinitely due to scripting errors</li>
+<li>Recompiled several scripts to fix errors such as mismatched if/endif blocks</li>
+<li>New Sheoth Palace will now be visible at a distance properly</li>
+<li>Updated the fix for the secret walls in Ebrocca, Sepechra not resetting so that they will reset if the player leaves and returns after the cell resets again</li>
+<li>The Voice of Sheogorath spell will now use the correct method to freeze actors</li>
+</ul>
+
+<b>NPC/Quest/Scripting Fixes</b>
+<ul>
+<li>In the quest The Lady of Paranoia, Herdir will no longer follow the player outside of Crucible, as he could follow even into Cyrodiil where he would disappear (also restored missing dialog when he stops following)</li>
+<li>Dredhwen (The Wastrel's Purse, Passwall) will no longer be missing from there for no reason after the main quest is completed</li>
+<li>Fixed a self-referencing leveled list that generated the post-main-quest Defense of the Realm Golden Saint guards</li>
+<li>Post-main-quest Defense of the Realm enemies will now only be generated from leveled lists to avoid save bloating</li>
+<li>Overrode the UOP's changes to the Sheogorath shrine quest in Tamriel so the changes introduced by Shivering Isles aren't reverted</li>
+<li>In the quest The Great Divide, killing Jastira Nanus on the Dementia side of Split will now properly advance the quest (was checking an incorrect NPC's death)</li>
+<li>Fixed conditions on one of the responses to Mirili Ulven in the Taxonomy of Obsession quest when she asks if the player has found a creature</li>
+<li>Updated the Baiting the Mousetrap quest's reward fix so that it is more accurate</li>
+<li>Updated the fix for Sheogorath's disappearing cane so that it is more effective</li>
+<li>Wearing an Apostle Robe in Howling Halls in the Symbols of Office quest will now properly work as a disguise allowing the player to talk to Apostles</li>
+<li>The Staff of Sheogorath presented by Dyus in the Symbols of Office will no longer continue to hover in place even after the player has activated it and transferred it to their inventory</li>
+<li>In the quest The Roots of Madness, speaking to Haskill before trying the Font of Madness will now properly advance the quest</li>
+<li>The Obelisks of Order will now reset themselves properly through the Greymarch</li>
+<li>The Obelisk of Order and other leftovers from The End of Order will now be properly removed</li>
+<li>Some missed items will now revert properly to player ownership in the Ritual of Mania quest after Thadon is dead</li>
+<li>In the Ghosts of Vitharn quest, "The curse is not lifted." will no longer be added as a dialog topic (it's only a response branch)</li>
+<li>Also in Ghosts of Vitharn, Count Cirion's goodbye at quest conclusion will now end dialog properly if the player has completed the Main Quest</li>
+<li>The New Sheoth smiths Cutter and Dumag gro-Bonk will no longer erroneously offer recharging; instead Earil (Crucible) will as he should have</li>
+<li>Relan (Fellmoor) will no longer never leave his house due to an AI error in his outdoor scheduling</li>
+<li>Gundlar will now eat properly when at the House of Mania table daily, rather than just sitting there</li>
+<li>Addition of the staff Syndelius' Boltcaster to the Baiting the Trap quest reward chest, and addition of it to the player's inventory if the quest is already completed on first load</li>
+<li>Kishashi and Ranarr-Jo (Fellmoor) will now do their farming as intended (were missing hoes)</li>
+<li>Ranarr-Jo will now properly follow Cindanwe around on Loredas and Sundas as he was intended to</li>
+<li>Ahjazda (Crucible) will now eat in the correct location rather than going to another shop (Common Treasures; it appears that she was moved but some of her AI wasn't)</li>
+<li>The Dark Seducer Dylora (Pinnacle Rock) will now have Dark Seducer dialog (was missing from the faction)</li>
+<li>Missing dialog from Haskill during the Ritual of Dementia quest will now appear (it was under the wrong branch of the dialog tree)</li>
+<li>Eight greetings from various male Nord and Orc NPCs, seven from various female Argonian and Khajiit NPCs, six from various female and two from male Imperial NPCs, five from various female elven NPCs, two from male Redguard NPCs, one from Amiable Fanriene, Bolwing, the Dark Seducers at Pinnacle Rock and the Golden Saints at Brellach, when the player has completed the Main Quest will now appear; were unlinked or being blocked by other greetings</li>
+<li>Four other pieces of dialog from Bolwing when the player has completed the Main Quest will now appear (they are special as Sheogorath can understand him)</li>
+<li>Cutter and Ushnar gro-Shadborgob (Crucible) and Big Head (Bliss) will now sleep properly; couldn't due to incorrect AI</li>
+<li>Felas Sarandas (Passwall) will now sleep properly; couldn't as Nanette Don had ownership of both beds at his location</li>
+<li>Cutter will no longer end up with thousands of sparring weapons due to scripting oversight (as was done with other affected NPCs)</li>
+<li>Knights of Order will properly carry the less powerful Simple Order Swords at levels 6-8 and the more powerful Primal Order Swords at levels 9-11, instead of the reverse due to a leveled list error</li>
+<li>Fixed the change to Heretics preventing the "no greeting" bug so that they can be pickpocketed, as was done with Zealots</li>
+<li>The Dark Seducer faction rank of Autkendo Jansa, Dark Seducer Grakedrig, Dark Seducer Kiskedrig and Grakendo Udico was corrected to match their names (note that there are similar Golden Saints, but their names do not match existing faction ranks)</li>
+</ul>
+
+<b>Creature Fixes</b>
+<ul>
+<li>Verdant Gnarls will no longer appear at player level 9 rather than 19 due to a leveled list error</li>
+</ul>
+
+<b>Item Fixes</b>
+<ul>
+<li>The Fork of Horripilation now has its proper inventory icon and reach value, and will not remain a quest item indefinitely</li>
+<li>Dark Seducer arrows will now have the correct icon, rather than that of Golden Saints' arrows</li>
+<li>The Sterile, Primal, Pure, Immaculate and Perfect Order Swords are no longer missing their enchantments</li>
+<li>The level 5-9 battleaxe version of Shadowrend, the Dagger of Depletion and Dark Mace now will bypass normal weapon resistance as all other daedric weapons do (including their Golden Saint counterparts)</li>
+<li>The Dagger of Depletion now will bypass normal weapon resistance, as all other silver weapons do</li>
+<li>Durable Iron Bows and Durable Silver Warhammers are now present in the gameworld (had not been added to any NPCs or leveled lists)</li>
+<li>Normal and enchanted Amber and enchanted Madness Arrows will now have a correct base cost of 6 rather than 65 (the enchantment automatically adds some value as well)</li>
+</ul>
+
+<b>NIF Mesh and Texture Fixes</b>
+<ul>
+<li>Fixed (some introduced) dark vertex colors on Bliss house interior LCManiaHouseInt02.NIF already in the USIP</li>
+<li>Fixed (some introduced) dark vertex colors on the Sacellum ( SESacellum ArdenSulTowerInterior.NIF ) already in the USIP</li>
+<li>Fixed dark vertex colors on 25 Dementia house interiors ( DementiaHouse*.Interior.NIFs and HouseDementia*.Interior.NIFs ) and 12 Mania house interiors ( LCManiaHouseInt*.NIFs and Mani*.NIFs ) some of which were already in the USIP</li>
+<li>Fixed dark vertex colors on the windows of 24 palace interiors and exteriors ( Palace*.NIFs ) some of which were already in the USIP</li>
+<li>Added missing alpha properties on the interior display doors of Dementia house interior DementiaHouse05Interior.NIF</li>
+</ul>
+
+<b>Placement, Layout and Ownership Fixes</b>
+<ul>
+<li>Disabled two duplicated-in-place sewer pieces in Crucible and a rock in the Ordered Fringe</li>
+<li>The front door of J'zidzo's (Mania) house in split is now locked as the Dementia one is and tied to his key, which was unused (carried by Atrabhi)</li>
+<li>The front door of Ushnar gro-Shadborgob's house (Crucible) is now properly tied to his key</li>
+<li>Tied Kiliban's Key (carried by Kiliban Nyrandil) to all non-quest locked loot containers in Xedilian as it also wasn't being used for anything</li>
+</ul>
+
+<b>Text Fixes</b>
+<ul>
+<li>Corrected the name of Caldana Monrius' key: "Monirus" » "Monrius"</li>
+<li>Corrected staff name: "Syndel's Boltcaster" » "Syndelius' Boltcaster"</li>
+<li>Corrected weapon names: "Worn Dark Waraxe", "Worn Golden Waraxe": "Waraxe" » "War Axe" which matches the Oblivion naming convention</li>
+<li>Corrected weapon names of 36 Amber and Madness swords and war axes changing "Sword" » "Longsword" and "Axe" » "War Axe" which matches the Oblivion naming convention</li>
+<li>Corrected weapon name "Grand Mad~ness Longsword" removing the "~" which is an unneeded line break</li>
+<li>Changed the item names "Amber Sword Matrix" and "Madness Sword Matrix": "Sword" » "Longsword" to match the weapon names</li>
+<li>Corrected typo in Amiable Fanrien dialog SE40_SE40GreetingChoice2_000790C0_2: "I'm seen" » "I've seen"</li>
+<li>Corrected typo in Shelden rumor dialog SENQDWilderness_INFOGENERAL_0005F234_1: "The rebuilt" » "They rebuilt"</li>
+</ul>
+
+<b>Audio Fixes</b>
+<ul>
+<li>Added missing audio for a female Dark Seducer greeting when the player is the Duke of Mania and male Dark Seducer greeting when the player is the Duchess of Mania</li>
+<li>Corrected audio in Grakendo Udico reply dialog SE08_SE08PlaceGuardsYes_00017D86_1 where she calls the player "my Lord" rather than "Your Grace" (as the player is still the Duke/Duchess; the subtitle reflects this)</li>
+</ul>
+
+<p class="h">v1.4.0 (2008-Aug-26)</p>
+<b>USIP Changes/Fixes</b>
+<ul>
+<li>As was done with the UOP, reoptimized 206 of the 231 NIF meshes already in the USIP to eliminate possible FPS hit on some of them that seems to have been introduced by the old PyFFI NIFOptimize spell; the new one shapifies strip blocks if the average strip length is less than 10 and eliminates the problem; many of the meshes (also due to much manual optimization) now provide better FPS than the stock ones</li>
+<li>Added Wrye Bash tags to the USIP ESP so fixes to stats., inventory, etc. can be preserved by building a Bashed Patch</li>
+<li>Fixed the USIP mesh for Muurine's house (Crucible) upstairs DementiaHouse04InteriorTop.NIF not appearing as the file was in the wrong path</li>
+<li>Fixed the change to Zealots preventing the "no greeting" bug so that they can be pickpocketed</li>
+</ul>
+
+<b>NPC/Quest/Scripting Fixes</b>
+<ul>
+<li>Fixed Dredhwen (Wastrel's Purse, Passwall) having no barter dialog whatsoever</li>
+<li>Corrected oversight where the Sheogorath-Shaped Amber required for the Museum of Oddities quest could only randomly appear in non-respawning amber limbs/stumps so it was possible to never be able to find one; it will now be possible to find on Elder Gnarls (which respawn)</li>
+<li>Dylora should no longer follow the player (even into Cyrodiil) after the Helpless Army quest is completed (will also fix affected saves)</li>
+</ul>
+
+<b>Game Mechanics Fixes</b>
+<ul>
+<li>Fixed the map marker for the door to Cyrodiil in the Ordered Fringe having an Ayleid Ruin icon, whereas in the unordered Fringe it was a landmark icon</li>
+</ul>
+
+<p class="h">v1.3.0 (2008-July-3)</p>
+<b>USIP Changes/Fixes</b>
+<ul>
+<li>Removed all 1,191 deletions of objects (ie underground rocks) to eliminate any chance that the USIP causes crash-on-exit as this has been confirmed to be a cause (if a mod loaded later changes an object an earlier loaded one deleted) and replaced them with object disables/moves where appropriate</li>
+<li>Restored the missing Passwall map marker</li>
+<li>Fixed the self-installer not adding the fixed texture (there's only one required for Sheogorath's beard) to ArchiveInvalidation.txt and added an option for ArchiveInvalidation so that it can be unchecked and skipped if the player is using an ArchiveInvalidation replacer mod/method</li>
+</ul>
+
+<b>NPC/Quest/Scripting Fixes</b>
+<ul>
+<li>Fixed severe bug with Sheogorath sometimes being completely missing when the player returns to the palace after the Retaking the Fringe quest (will also fix existing saves)</li>
+<li>Fixed severe but uncommon bug with the Ritual of Mania quest (and possibly the Ritual of Dementia with Thadon as well) where Syl would not appear in the Sacellum when the Ritual was completed, leaving the player stuck in cutscene mode</li>
+<li>Fixed severe timer bug with the Lady of Paranoia quest where if the player was discovered when listening to Ma'zaddha and Nelrene, they would never talk again in future meetings, preventing the main quest from advancing</li>
+<li>Fixed bug with the staging of the Museum of Oddities quest where if the player stole one of the original three Oddities (Ring of Desiccation, the most noticed as it's a quest item that needs to be stolen for The Coming Storm; also the Gatekeeper Arm and Pygmy Skull) and then asked for a tour, they could no longer return the item to Una Armina, and if she had just been returned the item, she would never place it (will also fix existing saves)</li>
+<li>The Crucible "Fight Club" NPC's (Muurine confirmed, and possibly also Caldana Monrius, Ma'zaddha and Ushnar gro-Shadborgob) should no longer occasionally have thousands of sparring weapons in their inventories</li>
+<li>Corrected oversight of the player not being able to invest in any merchants' shops in the Shivering Isles if their Mercantile skill is 75 (Expert) or higher, as they can do in Cyrodiil (investing in Raven Biter of the Choosy Beggar, Bliss, will make him into a usable fence in the Isles as his available gold will go from 3 to 503)</li>
+<li>Fixed Sheogorath being immobile, unable to send the player to Execution Point if the player knocked him down (Paralyze spell, power attack, etc.) leaving the game stuck with the player's controls disabled</li>
+<li>Fixed Priests of Order at obelisks having too many Hearts Of Order (sometimes over ten; supposed to have two) as they would get more every time they were resurrected by the obelisk</li>
+<li>Fixed Felas Sarandas (the Passwall traitor) sometimes not attacking the Gatekeeper at the end of the Rebuilding the Gatekeeper quest, so could be found standing around in Passwall in a Priest of Order's robe, ignored by the Saints/Seducers there</li>
+<li>Fixed the Gates of Madness so that they only autosave on first use at the end of Through The Fringe of Madness, instead of every time the player goes through them (as well as being unnecessary the autosave would occasionally cause a crash to desktop)</li>
+<li>Corrected the reward paid at the end of the Great Divide quest as it could be as little as half of what it should have been</li>
+<li>Fixed the Aquanostrum shrine in Knotty Bramble, Hatchery giving the player a full Aquanostrum flask even if the player didn't have an empty one, thus would have a quest item stuck in inventory (will also fix existing saves)</li>
+<li>Corrected minor oversight in the Ghosts of Vitharn quest with the brazier where it would still give a message that it was "seeking something" after Desideratus' doll was burned</li>
+<li>Fixed Traelius giving the "I HAVE NO GREETING" response if spoken to (usually he attacks the player but there are ways of preventing this)</li>
+<li>Jayred Ice-Veins will no longer remain essential for the rest of the game after Through The Fringe of Madness if the Bone Arrows aren't collected from him</li>
+<li>Added the cell check fixes present in the UOP so that Lucien Lachance won't appear in Henantier's Dreamworld and break the quest (same script is present in the USIP so overrides the UOP one)</li>
+<li>Made a line of dialog from Halion (Hale) about Sickly Bernice so that it will no longer appear (was missing half of its audio; no good replacement audio available)</li>
+<li>Corrected conditions on an Ordered Fringe Saint/Seducer greeting that said Sheogorath had vanished before he had</li>
+</ul>
+
+<b>Game Mechanics Fixes</b>
+<ul>
+<li>Fixed a Crucible load screen missing conditions, so would appear outside the Shivering Isles</li>
+<li>Corrected inconsistent durations of the Summon Golden Saint and Summon Dark Seducer powers obtained after the Rituals to be become Duke/Duchess and after The Helpless Army (the version of the side that the player chose and was the Duke/Duchess of had a duration of 60 seconds, but the other was inexplicably 120 seconds; made them all 120 seconds)</li>
+<li>Cleared the ownership of Hirrus Clutumnus' (non-respawning) cupboard in/after the Final Resting quest so that items the player stores in it don't occasionally get flagged as stolen</li>
+<li>Integrated the cell change in Quarn's nVidia Black Screen Fix into the USIP so the separate plugin is no longer required (note that if mods change Shivering Isles interior cells they may override the change. All that is required for modders to prevent this is that on an interior with Fog values Near, Far and Clip Dist. all zero, to set Near to 0.0001; Wrye Bash's "Fog Fix" function will set the appropriate values in any ESP automatically)</li>
+</ul>
+
+<b>Item Fixes</b>
+<ul>
+<li>Fixed crashing to desktop or freezing requiring terminating Oblivion.exe if the player equipped the Ring of Disrobing while wearing Count Cirion's Helmet in the Ghosts of Vitharn quest</li>
+<li>Also corrected that if the player cast Bound Helmet that Count Cirion's Helmet would be removed and could be dropped though it was supposed to be "cursed" and undroppable</li>
+<li>Fixed both versions of female Scruffy Shoes looking like ankle bracelets (both worn and ground)</li>
+<li>Fixed the Weakness to Shock effect of all versions of Nerveshatter (Syl's hammer) not working because the duration was zero</li>
+<li>Undid dirty change to stock enchantment EnWeapShockDamage15Lightning which changed several non-SI weapons adding a Soul Trap effect (appears that it was used as a test for the new SI "Soul" weapons but none of them use it; new enchantments had been made for them)</li>
+</ul>
+
+<b>NIF Mesh and Texture Fixes - Statics and Clutter (note: there should be no loss of visual quality for all mesh optimizations)</b>
+<ul>
+<li>Closed several gaps in the walls and in the roof where it joins another mesh, fixed bad UV mapping under the eaves and on columns on the exterior of Caldana Monrius' house in Crucible ( DementiaHouse02.NIF ) and optimized from 675KB to 436KB</li>
+<li>Closed a hollow awning beam and a seethrough gap by the front door, fixed a piece of bad UV mapping in the awning on the exterior of Things Found in Crucible ( DementiaHouse03.NIF ) and optimized from 744KB to 531KB</li>
+<li>Fixed bad UV mapping in the upper windowframes of the exterior of Ushnar gro-Shadborgob's house in Crucible ( DementiaHouse01.NIF ) and optimized from 729KB to 473KB</li>
+<li>Fixed flickery overlapping polygons in the windowframes of the exterior of Tove the Unrestful's house in Bliss ( ManiHouse05.NIF ) and optimized from 447KB to 360KB</li>
+<li>Removed flickery overlapping polygons by both doorframes and fixed smeared UV mapping in two window alcoves in the upstairs of Muurine's house ( DementiaHouse04InteriorTop.NIF ) and optimized from 418KB to 328KB</li>
+<li>Fixed two pieces of bad UV mapping in the ceiling beams of the upstairs of Cutter's Weapons ( DementiaHouse05InteriorTop.NIF ) and optimized from 268KB to 181KB</li>
+<li>Closed the seethrough bottoms of the banister screens, fixed a flickery overlap by the stairway door, and closed several gaps in the walls in the upstairs of Things Found in Crucible ( DementiaHouse03InteriorTop.NIF ) and optimized from 396KB to 308KB</li>
+<li>Closed a seethrough underside column, fixed flickering on the doorframe to the downstairs and closed several gaps in the walls of the upstairs of Earil's Mysteries in Crucible ( DementiaHouse06InteriorTop.NIF ) and optimized from 598KB to 405KB</li>
+<li>Fixed a one-sided half column clipping into the adjacent room (also had a seethrough gap beside it) and several other seethrough gaps in the walls of Thaedil's house in Bliss ( LCManiaHouseInt01.NIF ) and optimized from 925KB to 633KB</li>
+<li>Fixed the same errors as above and also bad UV mapping under the upper load doorframe in Orinthal's house in Bliss ( LCManiaHouseInt02.NIF ) and optimized from 985KB to 708KB</li>
+<li>Fixed bad UV mapping by the lower load door, fixed bad texture/UV mapping by the platform above the load door on the interior of Common Treasures in Bliss ( LCManiaHouseInt03.NIF ) and optimized from 640KB to 449KB</li>
+<li>Closed a seethrough gap under the upstairs load door, moved the awning so that it's properly centered over the door and fixed a large seethrough protrusion of the floor skirting through the stairs by the load door in Books of Bliss ( LCManiaHouseInt06.NIF ) and optimized from 600KB to 478KB</li>
+<li>Fixed bad UV mapping on the load doorframe and on the tops of the diagonal wainscotting in the upstairs of Books of Bliss ( LCManiaHouseInt06Top.NIF ) and optimized from 306KB to 222KB</li>
+<li>Fixed a flickering overlapping polygon by the lower door in the upstairs of Big Head's and Amiable Fanriene's houses in Bliss ( ManiHouseInt01Up.NIF ) and optimized from 707KB to 542KB</li>
+<li>Fixed the same overlapping polygon and bad UV mapping on the upper load doorframe in the upstairs of Tove the Unrestful's house in Bliss ( LCManiaHouseInt07Top.NIF ) and optimized from 802KB to 599KB</li>
+<li>Fixed bad UV mapping and a seethrough seam on the upper doorframe, hollow column tops on the lower doorframe and a seethrough gap between a half column and the wall of the exterior of Rendil Drarara's house in Bliss ( ManiHouse07.NIF ) and optimized from 663KB to 550KB</li>
+<li>Fixed a flickering overlap on the apex of both sides of the top of the doorframe of Bliss interior door ManiaAnimatedDoor01.NIF and optimized from 163KB to 103KB</li>
+<li>Fixed the same flickering overlap as above on static Mania load door ManiaLoadDoor01.NIF, fixed the door clipping through the frame and optimized from 89KB to 55KB</li>
+<li>Fixed flickering overlapping polygons on the supports and a bad polygon on one side of the panel frame that had no border on the four Mania signs ( ManiaSignBooks.NIF, ManiaSignInn.NIF, ManiaSignPauldron.NIF and ManiaSignTreasures.NIF; meshes are exactly the same except for the texture of the sign panel) and optimized from 518KB to 263KB in total (thousands of unwelded vertices)</li>
+<li>Fixed bad UV mapping on the underside of the mantel of Fireplace01.NIF used in many settlement houses, extruded the flue (there was nowhere for the smoke to go up) and optimized from 92KB to 77KB</li>
+<li>Fixed several pieces of bad UV mapping on the vines of Dementia root DRoot03HVine.NIF and optimized from 144KB to 115KB</li>
+<li>Closed the seethrough finial tops of the Sacellum pews ( SEWorshipPew.NIF ) and optimized from 149KB to 81KB</li>
+<li>Added polygons so that there aren't gaps at the top where it meets other wall sections and fixed two small pieces of incorrect brick texturing on the top of CityWallStraight.NIF and slightly optimized from 55KB to 52KB</li>
+<li>Fixed smeared UV mapping under the overhangs of CityWallCorner.NIF and CityWallCorner01.NIF and slightly optimized from 52KB to 47KB in total</li>
+<li>Sealed the hollow bottoms of the bars of dungeon barred fence RuinsGateBarsA01.NIF as they are exposed in several places and optimized from 96KB to 45KB (large number of unwelded vertices)</li>
+<li>Closed a seethrough gap between the post and cap of the common stone wall post SEWallPost01.NIF</li>
+<li>Closed seethrough gaps on the seat underside of the common armless chair ( SEChair01.NIF ) and optimized a further 12KB off of it (mesh was already in the USIP)</li>
+<li>Also closed the same finial tops in the Sacellum Arden-Sul interior ( SESacellum ArdenSulTowerInterior.NIF ), fixed black stained glass windows on the Dementia side, closed seethrough gaps in the stairways and removed some more invisible polygons reducing a further 30KB in size (mesh was already in the USIP)</li>
+<li>Fixed another rogue clipping polygon in the roof of HouseDementia03.NIF (mesh was already in the USIP)</li>
+<li>Fixed three flickering polygons in walls, closed a gap between a ceiling support and beam and fixed vertex colors in Sickly Bernice's Taphouse Guest Rooms ( DementiaHouseInn01InteriorTop.NIF ); unfortunately had to undo some of the optimization so it grew by 149KB</li>
+<li>Undid Havok change to ExRuinEntrance01.NIF; original problem seems unrecreatable now and the Havok in some instances of this object had gotten worse instead of better</li>
+<li>Removed two more duplicated-in-place polygons causing flickering and closed a thin seethrough seam in a wall on ExPassWallTower01.NIF, and reduced a further 10KB in size (mesh was already in the USIP)</li>
+<li>Fixed bad UV mapping and thin seethrough seams on the floor of root dungeon piece RootPitTallCorner01.NIF and optimized from 220KB to 183KB</li>
+<li>Fixed a clipping wall polygon at the base of the load door, fixed a piece of UV mapping in the wall skirting, closed the hollow end of the stair handrailing and removed a useless post nearby in HouseDementia03Interior.NIF, and optimized a further 128KB to 622KB (original mesh is 1,351KB; mesh was already in the USIP and had neglected to originally remove hundreds of useless polygons outside the visible area)</li>
+<li>Closed a gap in the roof and the front door overhang, a one-sided beam, fixed a one-sided eave polygon clipping through a roof corner and a piece of bad UV mapping on HouseDementia01.NIF and removed some more invisible polygons reducing a further 17KB in size (mesh was already in the USIP)</li>
+<li>Fixed bad UV mapping on a stair support and closed two gaps and ragged polygons on the bad of the stairs on the exterior of Ma'zaddha's house in Crucible ( DementiaHouseLower01.NIF ) and reduced a further 8KB in size (mesh was already in the USIP)</li>
+<li>Raised the stairs of the exterior of Brithaur's house in Crucible ( DementiaHouseLower02.NIF ) slightly to close a seethrough gap between the top landing and the ground mesh, and reduced its size a further 2KB</li>
+<li>Fixed a small flicker near the door, a seethrough gap in the front door overhang, bad UV mapping in two roof beams, moved the fake door to close gaps around as they can be seen on this house in the Ordered Fringe where there's no real door, and removed some more invisible polygons from HouseDementia02.NIF reducing a further 43KB in size (mesh was already in the USIP)</li>
+<li>Closed two seethrough gaps in the awning support beams of the exterior of Muurine's house in Crucible ( DementiaHouse04.NIF ) and reduced a further 18KB in size (mesh was already in the USIP)</li>
+<li>Fixed the roof of Earil's Mysteries in Crucible ( DementiaHouse06.NIF ) to close two large seethrough gaps between it and the adjacent roof and closed a seethrough gap under the roof structure; this also reduced it a further 16KB in size (mesh was already in the USIP)</li>
+<li>Fixed bad vertex colors causing black half-column capitals and a flickery overlap near the door of DementiaHouseLower01InteriorTop.NIF and optimized a further 2KB (mesh was already in the USIP)</li>
+<li>Fixed small flickering overlaps on the doorframes of the Museum of Oddities ( DementiaHouse07Interior.NIF and reduced its size a further 13KB (mesh was already in the USIP)</li>
+<li>Fixed bad UV mapping on the bottom of the doorframe of the upper load door in Tove the Unrestful's house in Bliss ( LCManiaHouseInt07.NIF ; mesh was already in the USIP)</li>
+<li>Fixed some bad UV mapping on a corner near the top of CityWallGate01.NIF (mesh was already in the USIP)</li>
+<li>Removed another flickery overlapping polygon from PalaceEBack01.NIF and optimized a further 22KB smaller (mesh was already in the USIP)</li>
+<li>Fixed another piece of bad UV mapping on the edge of common table SETable01.NIF (mesh was already in the USIP)</li>
+</ul>
+
+<b>Placement and Layout Fixes</b>
+<ul>
+<li>Grounded pathgrid nodes up trees in -11,3, 8,-6 and 12,-1, raised several beneath a platform in -10,4 and removed duplicate connections, removed several in -4,0, -2,-9 and 3,-14 embedded in boulders and reconnected the remainder, removed several nodes in 1,5 hidden in the waterfall boulders, removed two in 12,5 hidden in a boulder and Sheogorath's palace walls, moved several in 13,2 out of boulders and redid connections, removed connections for two nodes in 7,0 going through boulders, removed unneeded nodes in 13,4 and 14,4 embedded in boulders, two in 11,1 going through a giant root and two more in -4,1 that were also underground, fixed several flying and underground nodes in -7,-16, moved a node embedded in a broken column and removed duplicate nodes/connections in -3,12, moved one misaligned from its stairway in -5,14, one floating over a bridge in 2,-9 and one floating over water in 12,-4, two buried underground in -1.-8, three undergound in -1,-9 (Rotten Den entrance), two underground in 1,-9, three in 1,5, one in 1,0, one in -4,2, three in -3,2, four in 14,2, two in 4,2, four in 3,-10 (and one connection running through a tree), two in -13,-13 (and one connection running through a mushroom tree root), two in -2,-13, one in 1,-16, and two in -2,-17 (also removed several redundant connections)</li>
+<li>Fixed several flying pathnodes in Blackroot Lair, Outer Encampment that appear to have been placed for a ramp that isn't there</li>
+<li>Moved a tree embedded in a rock in -10,4 and another embedded in a house in 11,-1 (Deepwallow) missed in the audit, and another in 10,-6 that had several pathgrid paths running through it</li>
+<li>Fixed flickering overlaps of the barred fences in front of the Hunger statue traps in Aichan Prison</li>
+<li>Grounded five columns that weren't touching the floor and a wall corner post, and closed a large seethrough gap between an arched hallway piece and the wall and opposite end's ceiling in Milchar, Xetrem</li>
+<li>Fixed a misaligned hall ceiling brace exposing its seethrough end and disabled/moved a useless misaligned semicircular hall ceiling insert that was covering the correct one in Milchar, Tieras</li>
+<li>Grounded two noticeably flying urns in Xedelian, Halls of Judgement</li>
+<li>Closed seethrough gaps between the wall and flickering overlapping components of the wall tower in the Fringe nearest the player's arrival to the Isles</li>
+<li>Grounded two seethrough-underside piles of dirt in Crucible</li>
+<li>Fixed flickering overlaps between the Gates of Madness in the Fringe and their adjacent wall towers and several other wall towers in the Fringe, and fixed an angled wall section not fitting properly leaving ragged one-sided edges</li>
+<li>Fixed one-sided roof polygons of an angled wall section just inside the Gates of Madness on the Mania side clipping through the wall of another section</li>
+<li>Moved a tapestry in Sickly Bernice's Taphouse Guest Rooms and another in Amiable Fanriene's house in Bliss sticking through the opposite wall</li>
+<li>Moved a chair intersecting the wall in Things Found (Crucible)</li>
+<li>Raised a candle sunken into a table so that its seethrough base protruded in Earil's Mysteries upstairs (Crucible)</li>
+<li>Fixed the ownership of Una Armina's bed in the Museum of Oddities which could be slept in by the player</li>
+<li>Moved three coins on a rooftop in Bliss so that they don't fall right through the roof</li>
+<li>Moved a rug embedded in the wall in Books of Bliss upstairs</li>
+<li>Moved a pedestal (and statue) in Orinthal's house in Bliss as it had a stairway beam running right through it</li>
+<li>Closed the gap under the load door in Thaedil's house in Bliss</li>
+<li>Lowered the exterior of Rendil Drarara's house in Bliss slightly to fix a small flickering overlap with The Choosy Beggar under the bridge</li>
+</ul>
+
+<b>Text Fixes</b>
+<ul>
+<li>Corrected spelling in four NPC names: "Zealot Prosleytizer" » "Zealot Proselytizer"</li>
+<li>Corrected creature name "Venemous Baliwog" » "Venomous Baliwog"</li>
+<li>Corrected Bat gro-Orkul's Vitharn tombstone name and its popup inscription: "Urkul" » "Orkul"</li>
+<li>Corrected the following typos/errors in dialog text:
+ <ul>
+  <li>3389D	SE01Door "I won't go back. I won't go back!" » "I won't go back!" (audio didn't match subtitle)</li>
+  <li>19CD1	SE11a_SE11RakheranGreeting1b	"Please to relax" » "Please do relax"</li>
+  <li>19FC9	SE11a_SE11RakheranGreeting2b	"better then she" » "better than she"</li>
+  <li>8DC0F	SEConversations	"Bliss" » "Crucible" (audio didn't match subtitle)</li>
+  <li>5EFA7	SENQDWilderness "piece and quiet" » "peace and quiet"</li>
+ </ul>
+</li>
+<li>Corrected the following typos/errors in quest stage journal text:
+ <ul>
+  <li>(Quest ID Stage From » To)</li>
+  <li>SE12	150	"to  imbue" » "to imbue" (doubled space)</li>
+  <li>SE13	8	"Jyggylag" » "Jyggalag"</li>
+  <li>SE13	50 "Jyggylag" » "Jyggalag" (two instances)</li>
+ </ul>
+</li>
+</ul>
+
+<b>Audio Fixes</b>
+<ul>
+<li>Recreated a missing line of rumor dialog for Elven males about Knights of Order (there was audio dialog but it didn't match the subtitle at all as it did for all other races/genders; had been replaced with a copy of another line's audio)</li>
+</ul>
+
+<p class="h">v1.2.0 (2007-December-25)</p>
+<b>USIP Changes</b>
+<ul>
+<li>Fixed accidental USIP removal of the load door into Relan's house (Fellmoor)</li>
+<li>Fixed the fixed SE06ExRuinWalkWall01.NIF (Cylarne brazier structure) as I'd accidentally deleted a polygon which left a nice triangular hole in the left column base</li>
+</ul>
+
+<b>NPC/Quest/Scripting Fixes</b>
+<ul>
+<li>Fixed Una Armina not paying a reward for the Ring of Disrobing in the Museum of Oddities quest as she does for all the others (set the reward to the halfway point between the lowest and highest that she pays for the other oddities)</li>
+<li>Improved the fix for Mirili Ulven killing the creatures brought to her rather than paralyzing them</li>
+<li>The paralyzed Elytra should no longer flail around when it's supposed to be paralyzed</li>
+<li>Fixed Mirili Ulven's front door being locked when the player is supposed to go in her house for the reward</li>
+<li>Fixed the holding pen gates (Taxonomy of Obsession quest) not being tied to Mirili Ulven's key, and she'll now close and lock them when the player brings her a creature</li>
+<li>Killing Atrabhi in The Great Divide quest should no longer result in the player getting a murder bounty if undetected</li>
+<li>Fixed the Replete Shambles having twenty times as much fatigue as normal, which probably doesn't cause any problems as undead don't suffer fatigue loss</li>
+</ul>
+
+<b>Item Fixes</b>
+<ul>
+<li>Corrected the Tarnished Order Sword of the Knights of Order (the lowest-quality one) bypassing normal weapon resistance though the better ones (except for the best one) don't</li>
+</ul>
+
+<b>NIF Mesh and Texture Fixes - Statics and Clutter (note: there should be no loss of visual quality for all mesh optimizations)</b>
+<ul>
+<li>Corrected oversights of the "Deformed Swamp Tentacle", "Hound's Tooth Key", "Sheogorath-Shaped Amber" and "Two-Headed Septim" items for the Museum of Oddities quest using the same meshes as the normal ones though by their names they should appear different; created new sufficiently deformed USIPSEDDeformedSwampTentacleIngred.nif, key-like USIPHoundsToothKey.nif, vaguely Sheogorath-shaped USIPSheogorathShapedAmberHunk.nif and two-headed USIPTwoHeadedSeptim.nif for them respectively; also changed the static museum meshes to match</li>
+<li>Fixed the texture apply mode for the normal Amber hunk ( AmberHunk01.NIF ) causing washing out of the colours on the specular highlighting and optimized the mesh from 17KB to 8KB (every face was double-sided though it is not hollow)</li>
+<li>Closed some small gaps between the walls and base of SE06ExWallTower.NIF that I'd missed originally; the flame could be seen through them if the player went around to the back of Cylarne</li>
+<li>Closed another seethrough gap in the roof of DementiaHouseLower02.NIF and two in the end of the stair dividers of DemStreet02.NIF that I'd missed originally</li>
+<li>Closed a large hole in the ceiling by the door, another caused by missing column pieces, and a couple of smaller gaps in Ma'zaddha's house upstairs (Crucible), fixed a flickery corner caused by overlapping faces and optimized the mesh ( DementiaHouseLower01InteriorTop.NIF ) from 248KB to 211KB</li>
+<li>Fixed about twenty gaps in the floor, walls and ceiling of Things Found in Crucible ( DementiaHouse03Interior.nif ), closed two open columns and raised a column that didn't reach the ceiling, and optimized the mesh from 620KB to 515KB</li>
+<li>Removed duplicated faces causing flickering on another step of Sheogorath's Palace exterior ( PalaceWallUStairs02.NIF; had already done the 01 mesh ) and optimized the mesh from 847KB to 580KB</li>
+<li>Fixed bad UV mapping on the corner of PalaceEWallCorner01.NIF and optimized the mesh from 1.22MB to 622KB (over seven thousand unwelded vertices)</li>
+<li>Closed some small gaps between the roof and walls on Sheogorath's palace entrance ( PalaceEntrance01.NIF	) and optimized the mesh from 1.19MB to 608KB (several thousand unwelded vertices again)</li>
+<li>Closed small seethrough seams in the roof supports of PalaceWallCorner01.NIF and PalaceWallCorner02.NIF and optimized the meshes from 1.13MB to 580KB and 1.15MB to 622KB respectively (as most palace exterior meshes have been optimized to about half their sizes you may notice shorter load times and/or better FPS in this area)</li>
+<li>Fixed UV mapping and missing end caps on several beams, aligned a tilted window beam, closed several small holes in the roof and walls and moved a couple of walls clipping through other walls and beams in the interior of Nanette Don's house (Passwall) used in five other places in the Isles ( HouseDementia02Interior.NIF ) and optimized the mesh from 1.10MB to 658KB</li>
+<li>Removed duplicated faces causing flickering on the steps of Brithaur's house ( DementiaHouseLower03Interior.NIF ) closed numerous gaps in columns and walls and optimized the mesh from 379KB to 317KB</li>
+<li>Fixed bad UV mapping and closed several gaps in the ceiling of Earil's Mysteries ( DementiaHouse06Interior.NIF ) and optimized the mesh from 275KB to 223KB</li>
+<li>Fixed bad UV mapping on a step end and two beams, a corner of wall with texture missing, several seethrough holes in the walls for the Museum of Oddities ( DementiaHouse07Interior.NIF ) and optimized the mesh from 990KB to 687KB</li>
+<li>Fixed warped wainscotting texturing, two pieces of bad UV mapping in the beams, a flickery patch in the baseboard near the steps caused by overlapping faces and closed several holes in the walls and beams including missing polygons in Caldana Monirus' house upstairs (Crucible) and optimized the mesh ( DementiaHouse02InteriorTop.NIF ) from 764KB to 528KB</li>
+<li>Fixed several bad UV mappings on the exterior of Earil's Mysteries (Crucible) and optimized the mesh ( DementiaHouse06.NIF ) from 679KB to 511KB
+<li>Fixed bad UV mapping on the base of SETable01.NIF (circular) and optimized the mesh from 355KB to 207KB</li>
+<li>Fixed a really bad polygon of UV mapping on SETable02.NIF (rectangular) and SETable03.NIF (square) and optimized the meshes from 254KB to 166KB and 126KB to 96KB respectively</li>
+<li>Fixed a similar bad polygon of UV mapping on SEDisplayPedastal01.NIF {sic} and optimized the mesh from 45KB to 31KB</li>
+<li>Removed overlapping faces causing flickering on the interior of the glass table-top display cases ( SEDisplayPedastal01GlassDome.NIF ) {sic} and optimized the mesh from 82KB to 57KB</li>
+<li>Fixed bad UV mapping on the legs of both types of beds found in the Isles ( SEBed01.NIF  & SEBed02.NIF ), closed a seethrough hole between the headboard and pillows, fixed the blankets clipping through the back of the (solid stone) legs and optimized the meshes from 220KB to 133KB</li>
+<li>Fixed similar bad UV mappings on the loveseat ( SELoveseat01.NIF ) and optimized the mesh from 179KB to 126KB</li>
+<li>Fixed several small pieces of bad UV mapping, missing texture on the underside, and the left back support clipping through the seat base on the standard chair found throughout the Isles ( SEChair01.NIF ) and optimized the mesh from 168KB to 116KB</li>
+<li>Fixed small UV mapping errors around the base of the small Sheogorath bust found throughout the Isles ( SESmallSheogorathBust.NIF ) and optimized the mesh from 90KB to 68KB</li>
+<li>Optimized oversized bone pile ( SEBonePile01.NIF ) found in the Fringe; had several thousand unwelded vertices and optimized from 819KB to 310KB</li>
+</ul>
+
+<b>Placement and Layout</b>
+<ul>
+<li>Fixed another small gap in the Crucible town walls</li>
+<li>Moved a rock at the back of Sickly Bernice's (Crucible) to hide a one-sided polygon and flickery intersection protruding through the steps</li>
+<li>Aligned three slightly misaligned exterior house doors in Crucible, Hale and Deepwallow (will only take effect if these locations have not been visited already)</li>
+<li>Closed a seethrough gap under a doorframe in Xiditte, Catacombs</li>
+<li>Fixed a flickery intersection between two rubble piles in Knotbone Ruins</li>
+<li>Moved a crate in Caldana Monirus house (Crucible) clipping into the baseboard</li>
+<li>Moved a tapestry in Cutter's Weapons upstairs clipping into the wall</li>
+<li>Moved a tree in (-10,6) clipping into a giant root and covered a sharp land texture in (-4,1) missed in the audit</li>
+</ul>
+
+<b>Audio Fixes</b>
+<ul>
+<li>Added "excessive ambient fix" enable parents to the Aichan Prison, Blackroot Lair and Fain as they had an excess of ambient sound objects</li>
+</ul>
+
+<b>Text Fixes</b>
+<ul>
+<li>Changed the name of the harvestable flora that produces the Blind Watcher's Eye ingredient: "Watcher's Eye" » "Blind Watcher's Eye" so it can be identified (as is already the case with the Mute Screaming Maw)</li>
+<li>Changed the name of the Two-Headed Septim: "Coin" » "Septim" (which matches the static one)</li>
+<li>Fixed typo in Grommok's Journal (SE03GrommoksJournal) "3E341" » "3E431" (two instances)</li>
+</ul>
+
+<p class="h">v1.1.0 (2007-December-19)</p>
+<b>USIP Changes</b>
+<ul>
+<li>Updated the USIP installer to Inno Setup v5.2.2</li>
+<li>The USIP now has a menu. To access it, open the console with ` or ~ or whatever key is used in your locale, type <b>startquest usip</b> (not case sensitive) and press Enter, then close the console (may take five seconds to appear the first time, but instantaneous after this.) It will allow you to see that the USIP is active and the version number and toggle two of the fixes below on or off</li>
+<li>Corrected v1.0 fix for the Howling Halls Apostles' "no greeting" bug as it was preventing them from being looted for the quest's optional path's Apostle Dagger items</li>
+<li>Corrected v1.0 fix for Mirili Ulven's Taxonomy of Obsession quest dialog as it was causing the Mirili's Bestiary topic to never appear if the player gave her all of the items on her list at once, which broke the quest</li>
+</ul>
+
+<b>NPC/Quest/Scripting Fixes</b>
+<ul>
+<li>Fixed the script check for the Vitharn's Mausoleum brazier in the Ghosts of Vitharn quest which was allowing the player to burn Desideratus' doll without having it or even knowing what it was, which caused the final Fanatic to never appear at quest end and thus broke the quest</li>
+<li>Ahjazda should no longer fall off the walkway to Things Found (Crucible) and die, breaking The Coming Storm quest</li>
+<li>Fixed the Through the Fringe of Madness quest stalling with the Gatekeeper and adventurers standing around doing nothing if the player left the Isles before this stage and leveled up</li>
+<li>In the Coming Storm quest, fixed the confusing torches around the Diligence Crux urn holding the Amulet of Disintegration; they were missing their enable parents so were always lit which made it appear that something was wrong or confused the player about lighting the braziers </li>
+<li>Fixed all Grummites with bows carrying iron bows instead of their own Grummite bows (which were completely unused)</li>
+<li>The player will no longer receive an assault bounty for fighting Syl in the Roots of Madness quest, nor an assault bounty and/or murder stat. increase in the Ritual of Dementia quest</li>
+<li>Having a bounty and talking to any guards during The End of Order quest will no longer get the player ejected from the Palace and unable to get back in to finish the battle or force them to fight their allies; cleared any bounty at quest beginning as it is already being cleared at the end anyway</li>
+<li>Fixed the Dark Seducer Escort reward from the main quest missing the dismiss option in her dialog as the Golden Saint has</li>
+<li>Fixed dialog bug where dismissing one of the two Escorts, or even just talking to an idle one and declining an escort, would dismiss both of them</li>
+<li>Fixed both Escorts not fast-traveling to follow the player; it appears that all companion fast-travel was disabled in the Shivering Isles as normal companions will not fast-travel if PlayerInSEWorld is set to 1. As this fix uses game-mode scripting to keep the Escorts close to the player (thus they may pop into view in third-person mode if they get too far behind) it is off by default and can be toggled on or off with the menu (see above)</li>
+<li>Corrected oversight of areas of the Palace being trespass zones after completion of the Main Quest; fixed NPC behavior and cell/item ownership so that the player will not get attacked or arrested anywhere in the Palace (note that owned beds will remain so, also did not open the Greenmote Silo if the player replaced Syl nor the Xirethard entrance if the player replaced Thadon as these are secret areas which the player would not know existed without having done the quests)</li>
+<li>Fixed Jyggalag's sword not appearing on its pedestal behind Sheogorath's Throne after The End of Order quest unless the player left and re-entered the cell, or at all for some players; replaced with an activator and static mesh USIPSE13JygglalagClaymoreStatic.nif which will give the player the correctly leveled sword when activated</li>
+<li>Pinnacle Rock (if the player replaced Thadon) and Brellach (if the player replaced Syl) will no longer respawn Knights and Priests of Order and be strewn with dead Seducer or Saint bodies after the main quest is completed</li>
+<li>Corrected oversight of conflict between the Prince of Madness (post-Main Quest) and Great Divide quests where if any resident of Split died in random attacks the player would get a quest advancement that they did it and could not finish the quest; Split will no longer come up as a random attack area if the Great Divide quest is not completed</li>
+<li>Fixed being able to choose the "Defend the Realm" topic right away after being told by Haskill all was peaceful and find there was an attack; will now take thirty seconds (real time) for another 50% chance of a random attack to appear after most recent selection of the topic</li>
+<li>Corrected oversight at the start of the Symbols of Office quest of the player being able to talk to Sheogorath during his transformation, including after his disappearance (he would repeat his previous monologue)</li>
+<li>Fixed the player not obtaining Shadowrend from their clone in the Symbols of Office quest if the player had bound weapon spells; they were not being removed from the clone so it could cast them and thus unequip Shadowrend into its inaccessible inventory</li>
+<li>Also fixed the clone not having enough torches removed from its inventory so it would sometimes equip a torch while fighting the player</li>
+<li>In The Lady of Paranoia quest, fixed Ma'zaddha's evidence cupboard being already unlocked even though Ma'zaddha carries a quest-required key for it, and added a note to the journal that this cupboard is safe storage, as there is no documented safe storage container in the Shivering Isles (ie no buyable or awarded homes) until several stages later in the main quest</li>
+<li>In the Taxonomy of Obsession quest, Mirili Ulven should no longer kill the creatures that the player brings for her instead of paralyzing them and rewarding the player</li>
+<li>Other Highcross residents (Bruscus Dannus and Runs-in-Circles) should no longer attack commanded Scalons that the player is bringing for Mirili Ulven</li>
+<li>The player will no longer get a quest termination update from the Taxonomy of Obsession quest if Mirili Ulven dies after the quest is completed</li>
+<li>Ma'zaddha's corpse will no longer persist indefinitely in his house after the Lady of Paranoia quest is complete</li>
+<li>Corrected Anya Herrick's response to the Conspiracy topic of the Lady of Paranoia quest reverting to knowing nothing about a conspiracy after she has already admitted to it</li>
+<li>The Final Resting quest will no longer permanently stall if Hirrus Clutumnus' request is initially refused</li>
+<li>Fixed Hirrus Clutumnus' terrified cowering starting immediately after the player agrees to help him</li>
+<li>Added a safe storage note to the Final Resting journal entry on quest completion (see above) as both containers in Hirrus' house are safe</li>
+<li>Hirrus Clutumnus' corpse will no longer persist indefinitely</li>
+<li>Corrected oversight of the Ghosts of Suicide Hill dying if pushed off of the cliff by the player (was clearly erroneous as if activated when dead the message that they could not be talked to still appeared)</li>
+<li>The corpse of the fake Syl will no longer persist in the Duchess' Quarters after the Ritual of Dementia quest (it would disappear normally on cell reset, but this was unlikely to occur if the player was using the cell as a home)</li>
+<li>Kithlan and Anya Herrick should no longer be attacked by Dark Seducer Royal Guards after the Ritual of Dementia quest due to helping the player fight them when they were hostile</li>
+<li>In the Ritual of Dementia quest, corrected Arctus' (priest of Dementia) responding hostilely to being asked about Kithlan and Anya Herrick as if the player is an "agent of Dementia" when he is fully aware of what's happening</li>
+<li>Thadon's meal and wine will no longer give a message that the player has no Greenmote if they are found before the quest has even started, and corrected the message for Thadon's wine already being drugged saying "food" instead of "wine"</li>
+<li>Gundlar will no longer continue to deliver Thadon's food and wine (with functioning quest activators) after Thadon has defected in the Ritual of Dementia quest</li>
+<li>Corrected oversights of the cell names "Duke's Quarters" remaining unchanged after the Ritual of Mania quest for a female player, and "Duchess' Quarters" after the Ritual of Dementia quest for a male player</li>
+<li>Fixed the ownership of both Syl's and Thadon's thrones so that Syl's can't be sat on by the player before the Ritual of Dementia quest is completed, and Thadon's can be after the Ritual of Mania</li>
+<li>Fixed the ownership of the Greenmote Silo so that the player is no longer trespassing in it once they have completed the Ritual of Mania quest and become the Duke/Duchess of Mania</li>
+<li>The male Golden Saint and Dark Seducer reinforcements in the Helpless Army quest (only appear if the females die) should no longer follow the player after the quest is completed, even into Cyrodiil</li>
+<li>After the Helpless Army quest, Dylora will no longer immediately leave the Wellspring area and wander back to her prison chamber for no apparent reason</li>
+<li>Staada (Helpless Army quest Golden Saint commander) will no longer tell the player to inform Sheogorath of victory if spoken to after the main quest is completed</li>
+<li>Changed the trophy chime activator in Sheogorath's Palace for the Helpless Army quest so that it rings like the chimes in Brellach and Pinnacle Rock</li>
+<li>Fixed Sheogorath missing his cane, but still using the unique animations as if he had it, occasionally in the Sacellum and always at the start of the Symbols of Office quest</li>
+<li>Corrected four NPC's (Dulphumph gro-Urgash, Dumag gro-Bonk, Erver Devani and Una Armina) using the wrong skeleton mesh (SkeletonBeast.NIF instead of Skeleton.NIF); did not cause any known problems but may as well fix it so that future clothing/armor replacer mods don't cause them to grow a tail</li>
+<li>Changed Fimmion to have no Rumors topic as it was in the default elven voice which is quite different from his</li>
+<li>Golden Saints will no longer call other Golden Saints or Dark Seducers "mortals" when dismissing their conversation</li>
+<li>Dead Vitharn Ghost Fanatics will no longer give a message that they do not respond if the player tries to loot them (they disappear in less than a second anyways)</li>
+<li>Fixed the secret walls in Ebrocca, Sepechra failing to open if the player revisited the cell after it reset</li>
+<li>Ebrocca, Masse will no longer autosave every time the player passes through it if they've gone through two other cells in the interim, unless it has respawned and thus there is a reason for it</li>
+</ul>
+
+<b>Item Fixes</b>
+<ul>
+<li>The player will now receive the correctly leveled version of the Talisman of Abetment at the conclusion of the Baiting the Mousetrap quest, and the correctly leveled version of the Ring of Happiness at the conclusion of the Final Resting quest</li>
+<li>The Keys to Dementia & Mania and Relmyna's Tears will no longer remain quest items stuck in the player's inventory when the Through the Fringe of Madness quest is completed</li>
+<li>Desideratus' Doll will no longer remain a quest item stuck in the player's inventory when the Ghosts of Vitharn quest is completed</li>
+<li>Removed an erroneous alpha line from the top of Grummite Shield icons ( GrummiteShield.dds )</li>
+<li>Fixed all twelve types of Amber and Madness Gauntlets not hiding the wearer's rings</li>
+<li>Fixed all twelve types of Amber and Madness Cuirasses not hiding the wearer's amulet</li>
+<li>Fixed the Order Priest's Robe and the Apostle Robes not hiding the wearer's rings</li>
+<li>Fixed the Patchwork Shirt not hiding the wearer's amulet</li>
+</ul>
+
+<b>NIF Mesh and Texture Fixes - Armor, Clothing and Weapons</b>
+<ul>
+<li>Closed a seethrough hole in both armpits of the female Golden Saint armor (in the wearer's skin) seen when using a bow or spellcasting and fixed distortion on the right brassiere strap ( Meshes\Armor\GoldenSaint\F\armor.nif )</li>
+</ul>
+
+<b>NIF Mesh and Texture Fixes - Statics and Clutter (note: there should be no loss of visual quality for all mesh optimizations)</b>
+<ul>
+<li>Corrected the cathedral lamps in the Sacellum Arden-Sul (New Sheoth) chains sticking through the stonework they are hung from up to the ceiling; replaced with new mesh USIPCathedralLight01.nif properly Havoked with fewer links, attached a script to prevent Z-grabbing bounty (as was done in the UOP) and also added a mounting bracket</li>
+<li>Corrected oversight of the "Deformed Swamp Tentacle" harvestable flora for the Museum of Oddities quest using the same mesh as the normal Swamp Tentacle; added new sufficiently deformed mesh USIPSEDDeformedSwampTentacle.NIF</li>
+<li>Fixed large FPS hit in Sheogorath's throne room caused by the Tree of Madness ( PalaceMadnessTree01.NIF ); mesh had almost twenty thousand unwelded vertices and optimized from 1.96MB to 662KB (one-third the size)</li>
+<li>Fixed moderate FPS hit in the Sacellum Arden-Sul caused by SESacellum ArdenSulTowerInterior.NIF; mesh had almost eleven thousand unwelded vertices and optimized from 1.68MB to 1.19MB</li>
+<li>Fixed missing Havok collision on one of the House of Dementia Private Garden meshes ( PalaceGardenCorner04.NIF ) so that the player can no longer go through the wall and "fall out of the world"; also optimized the mesh from 816KB to 365KB (very high number of unwelded vertices)</li>
+<li>Closed a hole in the roof of Sheogorath's palace ( PalaceEBack01.nif ) caused by a missing buttress half-arch, removed about a hundred duplicate faces near ground level causing flickering and optimized the mesh from 1.38MB to 681KB (very high number of unwelded vertices again)</li>
+<li>Removed duplicated faces causing flickering on a step of Sheogorath's Palace exterior ( PalaceWallUStairs01.NIF ) and optimized the mesh from 990KB to 567KB (over seven thousand unwelded vertices)</li>
+<li>Removed duplicated faces causing flickering on another piece's step of Sheogorath's Palace exterior ( PalaceSWallStairs02.NIF ) and optimized the mesh from 151KB to 121KB</li>
+<li>Fixed root cave piece RootGateHallSection01.NIF not fitting together properly with other pieces which left seethrough triangular gaps in the ceiling wherever it was present, and optimized the mesh from 518KB to 387KB</li>
+<li>Closed a seethrough triangular gap in another root cave piece ( RootHallRamp02.NIF ) and optimized the mesh from 160KB to 138KB</li>
+<li>Removed duplicate faces causing flickering on the top of the Crystal Chests found throughout the Isles ( OrderedChest.NIF ) and optimized the mesh from 194KB to 78KB</li>
+<li>Fixed a few polygons of bad UV mapping and some sharp vertex color breaks on the Shivering Isles gate island in Niben Bay ( SEIsland.nif ) and optimized the mesh from 1.15MB to 0.99MB (mesh was already present in the USIP)</li>
+<li>Fixed the bedrooms' floor in the Choosy Beggar (Bliss) being too high, which caused player/NPC's/objects to sink into it and hid the carpets, closed two gaps on a vertical beam by the downstairs door and optimized the mesh from 1.59MB to 1.21MB ( LCManiaHouseInt09.NIF )</li>
+<li>Closed a seethrough gap between the lower roof and wall, and fixed UV mapping on the broken stone underside and on several beams' beveled edges on the exterior mesh of Shelden's house (Passwall) and several other places throughout the Isles, and optimized the mesh from 865KB to 494KB ( HouseDementia01.NIF )</li>
+<li>Closed three hollow stairway beams on the exterior of Ma'zaddha's house (Crucible) and optimized the mesh ( DementiaHouseLower01.NIF ) from 942KB to 751KB</li>
+<li>Deleted duplicated faces causing flickering on a stairway column, closed a seethrough hole in the column's base and a gap between it and the wall in Ma'zaddha's house ( DementiaHouseLower01Interior.NIF ) and optimized the mesh from 352KB to 277KB</li>
+<li>Closed seethrough gaps in the upper eaves and beams on the exterior of Hirrus Clutumnus' house (Crucible) and optimized the mesh ( DementiaHouseLower02.NIF ) from 365KB to 284KB</li>
+<li>Minimized a visible seam on the exterior of Nanette Don's house (Passwall) and four other locations throughout the Isles, deleted many interior invisible polygons, fixed a UV mapping error on a bottom corner and on the edges of a window ledge, fixed a window frame not attached properly with the window cel poking through the edges and optimized the mesh from 1.23MB to 753KB ( HouseDementia02.NIF )</li>
+<li>Fixed two of the windowframes and awnings not being attached to the wall, closed seethrough gaps between the roof layers, a one-sided wall polygon, a hollow beam sticking through the roof and a hollow vertical beam that wasn't long enough, fixed six of the small diagonal support beams not being long enough, fixed bad UV mapping and incorrect texture under one of the roof eaves, and removed hundreds of invisible interior polygons and optimized the mesh from 1.17MB to 702KB for the exterior of Shelden's house (Passwall) also used in nine other houses in the Isles ( HouseDementia03.NIF )</li>
+<li>Fixed really bad UV mapping on a ceiling panel and bad UV mapping on several skirting beams, and closed a gap between a shutter and its frame and a window and its frame, aligned another window that was clipping through its frame and optimized the mesh from 970KB to 503KB of the interior of Shelden's house (Passwall) also used in nine other houses in the Isles ( HouseDementia01Interior.NIF )</li>
+<li>Removed an isolated floating triangle and polygons outside the visible area, closed a gap in an upstairs beam, moved one-sided wall polygons clipping through a doorframe and the rear wall clipping through the stairway post, fixed bad UV mapping on several skirting boards and ceiling beams, raised several sunken skirting boards in the far room, smoothed three wrinkles in walls, enabled stenciling on the diagonal ceiling panels so that they are no longer transparent from the upper hallway, fixed the Havok collision on the top of the stairs so that the player can no longer jump into the rafters going through one-sided walls and seeing open beams, and optimized the mesh from 1.31MB to 750KB for The Wastrel's Purse (Passwall), Horkvir Bear-Arms' house (Split) and Bruscus Dannus' house (Highcross) ( HouseDementia03Interior.NIF )</li>
+<li>Fixed really bad UV mapping on a ceiling panel and bad UV mapping on several skirting beams, removed some polygons outside the visible area, and optimized the mesh from 929KB to 419KB for the interior Jayred's house (Passwall) also used in five other houses in the Isles ( HouseDementia04Interior.NIF )</li>
+<li>Fixed bad UV mapping on four beams caused by missing end caps, closed a seethrough gap in the underside and another in a window overhang caused by a missing polygon on the exterior of Jayred's house (Passwall) also used in six other houses throughout the isles ( HouseDementia04.NIF ) and optimized the mesh from 750KB to 425KB</li>
+<li>Closed a seethrough gap of nothingness in the ceiling of Rendil Drarara's house ( LCManiaHouseInt08.NIF ) and moved a beam clipping through a wall on the first floor, removed a strange piece of stone wall border sticking out of the floor in front of the doorway, and optimized the mesh from 580KB to 352KB</li>
+<li>Corrected really bad UV mapping on a ceiling beam of Sickly Bernice's Taphouse Guest Rooms (Crucible), closed gaps between several wall half-pillars and the floor, and optimized the mesh ( DementiaHouseInn01InteriorTop.NIF ) from 1.08MB to 647KB</li>
+<li>Closed a very noticeable hollow beam at the foot of the stairs in Tove the Unrestful's house (Bliss) and optimized the mesh from 772KB to 558KB ( LCManiaHouseInt07.NIF )</li>
+<li>Corrected bad UV mapping on the doorframe of the exterior of Common Treasures (Bliss) and optimized the mesh ( ManiHouseGenStore.NIF ) from 387KB to 272KB</li>
+<li>Enabled stenciling on the Sheogorath statue found in ruins among other places so that the loincloth isn't transparent where it borders the back, fixed the crotch area clipping through the loincloth, and optimized the mesh ( SheoStatue.nif ) from 220KB to 142KB</li>
+<li>Fixed bad UV mapping on the frames of the doorway arches of the Gates of Madness ( GatesOfMadness.nif ) and optimized the mesh from 384KB to 329KB</li>
+<li>Fixed smeared texturing caused by UV mapping errors on the tops of CityWall45Turn.NIF and CityWallGate01.NIF (also optimized the latter from 330KB to 253KB)</li>
+<li>Closed seethrough open gaps at the top of CityWallTower01.NIF and optimized the mesh from 70KB to 56KB</li>
+<li>Enabled stenciling on one of the Aster Blooms ( SEMAsterBloom04.NIF ) so that the upraised petals aren't transparent on the underside; also optimized from 23KB to 18KB by removing 112 duplicate vertices (this mesh was already in the USIP)</li>
+<li>Fixed a gray line around the fringes of SEManiaRugSquare01.NIF</li>
+<li>Fixed UV mapping causing smeared and warped rock texturing at the base of some Crucible houses' exteriors ( DementiaHouse04.NIF ) and optimized the mesh from 621KB to 423KB</li>
+<li>Fixed a UV mapping error on the enclosed roof of Sickly Bernice's Taphouse exterior (Crucible), closed a seethrough gap between the columned structure at the roof pinnacle and the roof, fixed smeared UV mapping on the bottom of it, flipped normals on several of the wrought-iron fence grilles as their brightness was not consistent, closed a seethrough gap between a support column and the roof, and optimized the mesh ( DementiaHouseInn01.NIF ) from 1.52MB to 1.14MB</li>
+<li>Optimized DementiaHouse07.NIF already in the USIP from 783KB to 630KB</li>
+<li>Corrected strange texture perspective effect on RockDementiaOverHang01-03.NIFs caused by incorrect apply mode and slightly optimized them (two of these NIFs were already in the USIP)</li>
+<li>Corrected strange texture perspective effect on ManiaRV2820.NIF caused by incorrect apply mode, fixed two triangles of bad UV mapping and optimized the mesh from 82KB to 79KB</li>
+<li>Corrected UV mapping causing sharp texture breaks on RockDementiaSm04.NIF and RockDementiaCluster01.NIF, and optimized the meshes from 25KB to 13KB and 21KB to 18KB respectively</li>
+<li>Fixed a triangle of bad UV mapping on RockDementiaMed05.NIF and slightly optimized the mesh</li>
+<li>Fixed strange transparent texturing in the frieze of small temples found in ruins ( ExRuinArchway01.NIF ); was then able to remove pointless alpha property, closed a gap between the frieze and interior ceiling and optimized the mesh from 464KB to 358KB</li>
+<li>Closed two holes in ruin walkway pieces ( EXRuinWalkWall01.NIF ) caused by missing polygons and optimized the mesh from 498KB to 397KB, also fixed the same errors in similar meshes ExRuinWalkWallStairs01.NIF and optimized from 556KB to 406KB, and SE06ExRuinWalkWall01.NIF used as the flame of Cylarne brazier, plus fixed a one-sided polygon, several UV mapping errors and another gap in it and deleted some hidden polygons, optimizing from 694KB to 464KB</li>
+<li>Closed a seethrough gap at the corner of the frieze, removed an unnecessary triangle of bad UV mapping on ruin entrances ( ExRuinEntrance01.NIF ), fixed the Havok mesh at the sides being too small so they were seethrough if the player got close, and optimized the mesh from 355KB to 273KB</li>
+<li>Closed a seethrough gap on the underside of a cornice and several thin gaps between the walls, fixed bad UV mapping on all eight corner undersides, and optimized the mesh from 516KB to 428KB for the ruin towers ( EXWallTower01.NIF ); this mesh was already present in the USIP</li>
+<li>Fixed the same errors as above on ExPassWallTower01.NIF (based on same mesh) and optimized from 996KB to 825KB, and SE06ExWallTower.NIF (Cylarne flame brazier) and optimized from 728KB to 659KB</li>
+<li>Closed seethrough gaps in the base stonework of eight ruin wall pieces ( ExRuinTallWall01.NIF, ExRuinTallWallCorner01.NIF, ExRuinTallWallEndCapLeft01.NIF, ExRuinTallWallEndCapRight01.NIF, ExRuinTallWallT01.NIF, ExRuinTallWallTransLeft01.NIF, ExRuinTallWallTransRight01.NIF and ExRuinTallWallTWall01.NIF) and optimized all meshes (from 889KB to 775KB in total)</li>
+<li>Fixed a triangle of bad UV mapping under Sickly Bernice's sign on a Crucible street mesh ( DemStreet02.NIF ) closed several small seethrough gaps in the wide stairways between the divider and steps, and optimized the mesh from 249KB to 208KB</li>
+</ul>
+
+<b>Placement and Layout (also see audits at the bottom)</b>
+<ul>
+<li>Replaced a respawning food cupboard in the Duke's Quarters with a non-respawning one so that the player's items don't disappear (all other containers there and all containers in the Duchess' Quarters are non-respawning)</li>
+<li>Raised the braziers in the Palace grounds ( SENSPalace02) beside the peristyle walkway so that NPC's (ie Golden Saint and Dark Seducer guards) don't walk over them, fall in and get stuck</li>
+<li>Closed a see-through rock, moved a tree partially embedded in the head gateway and moved a cluster of Blister Pod mushrooms and two Alocasias completely embedded in rocks on the Shivering Isles gateway island in Niben Bay (21,-9)</li>
+<li>Grounded a see-through underside root spike and moved a seethrough brick wall foundation in Vitharn Sump</li>
+<li>Replaced the wall-mounted bedrolls with static meshes (non-activatable) so that the player doesn't get a confusing message that the beds are owned, moved two pedestals so that they appear to be part of the wall instead of embedded in it and added pathgrid nodes so NPC's don't walk into a hallway wall in Vitharn Keep</li>
+<li>Grounded the slightly flying brazier and moved a scale weight intersecting the scale pan in Vitharn's Mausoleum</li>
+<li>Grounded two flying statues in Vitharn Bailey</li>
+<li>Aligned a misaligned statue clipping through its pedestal in Cylarne</li>
+<li>Removed a duplicated-in-place ceiling panel in Cylarne, Altar of Despair causing flickering</li>
+<li>Grounded several Grummite Egg Mounds and a stump in Knotty Bramble, Hatchery</li>
+<li>Moved an intersecting rubble pile causing flickering in Xaselm</li>
+<li>Removed a duplicated-in-place column cap causing flickering, slightly moved two pedestals to eliminate flickering at the intersection, moved an urn partially embedded in a wall, and fixed one of the bridge braziers not being at the same level as the others in Xaselm, Experiment Chambers</li>
+<li>Moved a spiked root trap so that the spikes aren't sticking into the adjoining room and fixed a flickery polygon of overlap in the same area in Xaselm, Sanctum of Vivisection</li>
+<li>Fixed a chest in Jayred's house (Passwall) facing the wrong way and clipping into a Shambles skull, and another Shambles skull upstairs clipping through the floorboards below</li>
+<li>Grounded a barrel and slightly ungrounded easel, and scaled down three barrels clipping into their stands in Shelden's house (Passwall)</li>
+<li>Lowered an overly thick rug in The Wastrel's Purse guest room (Passwall) clipping into a chest</li>
+<li>Grounded a noticeably flying table (and everything on it) and it benches and moved a crate clipping into a tapestry in Beelei's house (Deepwallow)</li>
+<li>Moved a raised platform and another's end cap to close a hollow beam and two one-sided polygons in Blackroot Lair, Inner Encampment</li>
+<li>Grounded two candles a chest and sack, moved the front door to close a gap of nothingness beyond, and a carpet that was intersecting with another carpet in Jastira Nanus' house (Bliss)</li>
+<li>Grounded a statue hovering noticeably above its pedestal and moved a tapestry whose hangar protruded through the adjoining wall in Sickly Bernice's Taphouse Guest Rooms (Crucible)</li>
+<li>Moved a statue and pedestal slightly clipping into a wall and a painting clipping into another painting in Common Treasures (Bliss)</li>
+<li>Aligned the badly misaligned walkway door to All Things Found (Crucible)</li>
+<li>Removed a second duplicated-in-place sewage slope in Crucible that was causing weird coloring</li>
+<li>The player will no longer be able to jump to the top of the interior Crucible walls from the steps to the palace or the roof structure of Cutter's weapons and "fall out of the world"</li>
+<li>Grounded two slightly flying piles of dirt in Crucible and moved a rock clipping into a vertical wooden beam</li>
+<li>Grounded a slightly flying urn in the Duchess' Quarters (House of Dementia)</li>
+<li>Moved a misplaced corner piece showing one-sidedness and gaps into place in Brellach, Hall of Reverence</li>
+<li>Grounded eight flying rugs in Pinnacle Rock, Font of Rebirth</li>
+<li>Grounded all brazier white flame nodes in all five Pinnacle Rock cells (78 in total) which were noticeably above the braziers such that the square polygonal "ember" base of the flame node could be seen from underneath </li>
+<li>Grounded a similar number of flame nodes in the three cells of Cylarne</li>
+<li>Grounded a statue to its pedestal in Pinnacle Rock, Hall of Reverence</li>
+<li>Grounded three flame nodes to their braziers in Knifepoint Hollow</li>
+<li>Grounded a statue to its pedestal and a flame node to its brazier in Knifepoint Hollow, Chantry</li>
+<li>Grounded four noticeably flying benches, closed a seethrough gap between a paneled ceiling and wall, moved a door panel poking through its archway and added a border to close a gap above it in Howling Halls, Narthex</li>
+<li>Grounded a pedestal and flying bowl, and slightly moved two columns and two railing components to eliminate flickering intersection in Howling Halls, Congregation Chambers</li>
+<li>Aligned a misaligned staircase to close a gap, lowered the flame nodes on the braziers on it so the flat part of the flame isn't hovering, moved a bookshelf and its items partially embedded in a wall, removed a nearby pathgrid node embedded in a wall, slightly raised the rear wall of the bedroom to eliminate flickering at the intersection in Howling Halls, Antechamber</li>
+<li>Closed a small hole in the floor in a corner in Ebrocca, Masse</li>
+<li>Fixed two transparent doorframe tops in Xiditte, Catacombs caused by missing pieces</li>
+<li>Slightly raised Horkvir Bear-Arm's house (Split) to eliminate flickering where the doorframe clipped into the ground</li>
+<li>Closed a seethrough gap in the Crucible town walls</li>
+<li>Moved one of the giant Mushroom tree roots breaking through the interior Crucible walls so that its seethrough end isn't exposed</li>
+<li>Slightly moved/scaled the Worm's Head mushrooms in the Sacellum Arden-Sul so that they aren't clipping into other objects</li>
+<li>Moved a painting in the Choosy Beggar (Crucible) so that the wall isn't clipping through it</li>
+<li>Corrected the missing ownership on the three silver goblets in the Halcyon Conservatory (left the wine bottles alone), moved two mushroom trees, a shrub and a Flame Stalk slightly embedded in rocks, and grounded a seethrough rock, a slightly flying Flame Stalk and three flying mushrooms</li>
+<li>Corrected the ownership of the Madness Armor list in Cutter's Weapons and the Amber Armor list in The Missing Pauldron so that they don't show a "red hand" (they can't be picked up anyway)</li>
+</ul>
+
+<b>Audio Fixes</b>
+<ul>
+<li>Fixed excessive ambient sound objects in Bliss, Crucible and many of the larger dungeons causing dropped voice and effect audio, distortion or other audio problems, or even crashes or lockups on load of interior cells, for players with older soundcards; this fix is off by default and can be toggled on or off with the menu (see above)</li>
+<li>Corrected the sounds for loot-bearing Hollowed Stumps in Grummite lairs as were set to the stone door sound, and the open and closing sounds were the same</li>
+<li>Fixed the Golden Saint and Dark Seducer Warriors' greetings not playing if spoken to during the Helpless Army quest</li>
+<li>Fixed Shelden's (Passwall) greeting dialog not playing if spoken to before going to where the Gatekeeper is</li>
+<li>Corrected audio and subtitle for one of Thaedil's (the Bliss juggler) lines; audio said "three plates" but subtitle was "twelve balls" neither of which were correct</li>
+<li>Corrected audio and subtitle for Arctus promising the player the "Ring of Intrigue" if they light the torch for Dementia, whereas it's the "Raiment of Intrigue" (also reworded somewhat to get around 150 char. limit)</li>
+</ul>
+
+<b>Text Fixes</b>
+<ul>
+<li>Corrected seven of the nine subtitles for Relmyna Verenim's dialog with the Gatekeeper in the Through the Fringe of Madness quest being completely wrong (one of the lines of audio had been split which pushed the rest down, and the subtitles were never updated to match)</li>
+<li>UI mods that show the player's next faction rank will no longer show "DUMMY" when the player has reached the highest rank of the Court of Madness faction</li>
+<li>Fixed spelling in messageboxes regarding Felldew withdrawal: "withdrawl" » "withdrawal" (four instances)</li>
+<li>Corrected typo in Ma'zaddha tombstone activator: "Mazaddha" » "Ma'zaddha"</li>
+<li>Fixed NPC name "Vitharn Reveler" » "Vitharn Ghost Reveler" to match the others</li>
+<li>Fixed the name of Sheogorath's Throne: "Chair" » "Throne" to match the others</li>
+<li>Corrected the following typos/errors in weapon/ammo/clothing names:
+ <ul>
+  <li>(ID	From » To)</li>
+  <li>SE08DarkSeducerWaraxe, SE08GoldenSaintWaraxe, SEDarkSeducer3Waraxe & SEGoldenSaint1Waraxe:	"Waraxe" » "War Axe"</li>
+  <li>SE11CiirtaRobe01: "Robe" » "Robes" (all others of this type are pluralized)</li>
+  <li>SE30MadnessArrow2: "Arrows" » "Arrow" (no other arrows are pluralized)</li>
+  <li>SEEnchElvenLongSwordLightning & SEWeapElvenLongSwordDurable: "Long Sword" » "Longsword"</li>
+  <li>SEWeapElvenWarAxeDurable:	"DurableElven" » "Durable Elven"</li>
+  <li>SEWeapSilverBattleAxeDurable:	"BattleAxe" » "Battle Axe"</li>
+ </ul>
+</li>
+<li>Corrected the following typos/errors in dialog text:
+ <ul>
+  <li>(Form ID Topic From » To)</li>
+  <li>19847		SE03AChamber "its" » "it's", "adventurer" » "adventurer's"</li>
+  <li>6A7F2		SE03FinXedilian	"endevour" » "endeavor"</li>
+  <li>1330B		SE04 "accomodation" » "accommodation"</li>
+  <li>80D79		SE05PostTortureGreet "wouldn't" » "couldn't" (audio didn't match subtitle)</li>
+  <li>18F96		SE06 "strategem" » "stratagem"</li>
+  <li>18DBA		SE06GSWardenGreet2 "forebearance" » "forbearance"</li>
+  <li>206AD		SE07A "Dutchess" » "Duchess"</li>
+  <li>206B6		SE07A "decieve" » "deceive"</li>
+  <li>6A896		SE07BThadon "Oh, this" » "Ha ha... this" (audio didn't match subtitle)</li>
+  <li>13651		SE07RitualNoD "become ruler" » "become the ruler" (audio didn't match subtitle)</li>
+  <li>82468		SE07SheoIntro2 "Doesn't" » "It doesn't" (audio didn't match subtitle)</li>
+  <li>1AE3B		SE09 "learned to" » "learned how to" (audio didn't match subtitle)</li>
+  <li>81D7D		SE09 "learned to" » "learned how to" (audio didn't match subtitle)</li>
+  <li>17CA3		SE10 "You have saved" » "You saved" (audio didn't match subtitle)</li>
+  <li>16B38		SE10 "here" » "there" (audio didn't match subtitle)</li>
+  <li>14B64		S1E11HaskillChoice3 "for you to be the new Madgod." » "to raise you to sit upon the Throne of Madness." (audio didn't match subtitle)</li>
+  <li>13341		SE32	"welkynd" » "Welkynd"</li>
+  <li>8EFD2		SE32Arrows "Athel" » "Althel"</li>
+  <li>12D20		SE32HlovalsMagicka "supose" » "suppose"</li>
+  <li>78FD8		SE32SiegeVitharn "his" » "His" (referring to Sheogorath)</li>
+  <li>7AC6E		SE35 ". Whither "» ", wither"</li>
+  <li>78662		SE35Brithaur "speciality" » "specialty"</li>
+  <li>61C44		SE36Choice2HelpYes "perform" » "perform."</li>
+  <li>81E86		SE38Oddity5 "unsual" » "unusual"</li>
+  <li>8242A		SE38TalkItem10 "addtion" » "addition"</li>
+  <li>81EB6		SE38TalkItemA "pygmys" » "pygmies"</li>
+  <li>73230		SE42Calipers "to not fall" » "not to fall" (audio didn't match subtitle)</li>
+  <li>8FA7B		SE46 "exhausing" » "exhausting"</li>
+  <li>8DC11		SEConversations "she" » "he", "her" » "his" (referring to the male Tove the Unrestful; audio had been corrected by editing but subtitle was missed)</li>
+  <li>8E829		SECreatureResponses	"ipanate" » "ipanate."</li>
+  <li>19AD0		SEFlameofAgnonTopic "his" » "His" (referring to Sheogorath)</li>
+  <li>43011		SENQDMania "visitng" » "visiting"	(also removed a comma to get around 150-char. limit)</li>
+  <li>41097		SENQDMania "Encylopedia" » "Encyclopedia"</li>
+  <li>441F7		SENQDMania "prefecting" » "perfecting"</li>
+  <li>5EEDE		SENQDMania "Souless" » "Soulless"</li>
+  <li>78C69		SESheogorathTopic "his" » "His" (referring to Sheogorath)</li>
+ </ul>
+</li>
+<li>Corrected the following typos/errors in quest stage journal text:
+ <ul>
+  <li>(Quest ID Stage From » To)</li>
+  <li>SE05	65	"Mazaddha's" » "Ma'zaddha's"</li>
+  <li>SE06	10, 40 & 60	"Depair" » "Despair"</li>
+  <li>SE07	8		"Sheogorath become" » "Sheogorath to become"</li>
+  <li>SE07A	22	"Duke" » "Duchess" (referring to Syl)</li>
+  <li>SE07B	25	"prepare" » "prepares"</li>
+  <li>SE08	25	"Grekendo" » "Grakendo"</li>
+  <li>SE08	40	"Aureg" » "Aurig"</li>
+  <li>SE13	9 & 50 "Jyggylag" » "Jyggalag"</li>
+  <li>SE32	40	"obessing" » "obsessing"</li>
+  <li>SE32	120	"welkynd" » "Welkynd"</li>
+  <li>SE37	200	"beastiary" » "bestiary"</li>
+  <li>SE39	10	"Ranaar-Jo" » "Ranarr-Jo"</li>
+  <li>SE40	30	"to to" » "to" (two instances)</li>
+ </ul>
+</li>
+<li>Corrected the following typos/errors in books/scrolls/handbills/notes:
+ <ul>
+  <li>(EditorID | Display Name | From » To)</li>
+  <li>SE37MiriliList | Mirili's List | "Pod Pit" » "Water Root Pod Pit", "Digestive Slime" » "Letifer Orca Digestive Slime", "Shambles Marrow" » "Bone Marrow (from Shambles)" (did not match actual ingredient names)</li>
+  <li>SEBookGuidetoNewSheoth | Guide to New Sheoth | "Alocacia" » "Alocasia", "Arelith" » "Areleth"</li>
+  <li>SEBookSixteenAccordsofMadnessV12 | 16 Accords of Madness, v. XII | "Orismer" » "Orsimer" (two instances)</li>
+  <li>XPEbroccaBook07 | Letter Draft | "this  one" » "this one" (doubled space)</li>
+ </ul>
+</li>
+<li><b>Audits</b> (complete checks of all objects in worldspaces for placement errors)
+ <ul>
+ <li>Audited all 46 occupied cells of The Fringe. Found:
+  <ul>
+   <li>Flickery object intersections: 2</li>
+   <li>Flying/floating rocks: 3</li>
+   <li>Flying/floating shrubs: 1</li>
+   <li>Flying barrels/crates: 2</li>
+   <li>Flying bones: 1</li>
+   <li>Harvestable flora partly/completely embedded in rocks/trees/logs/walls/other flora: 1</li>
+   <li>Objects outside the playable area: 14 (rocks; deleted: three were also seethrough and five underground)</li>
+   <li>Misaligned doors: 1 (Jayred's house)</li>
+   <li>Misc. objects embedded underground: 4 (bones and a duplicate Gatekeeper skeleton; deleted as useless)</li>
+   <li>Rocks partially/completely embedded in walls/trees/logs/fences/stairs or completely embedded in other rocks: 8</li>
+   <li>Rocks/blocks completely embedded (hidden) underground: 15</li>
+   <li>See-through underside Grummite Egg Mounds/Sacs: 1</li>
+   <li>See-through rocks: 28</li>
+   <li>See-through walls: 1</li>
+   <li>See-through underside trees/shrubs: 3</li>
+   <li>Shrubs partially/completely embedded in rocks/walls/trees/logs/fences: 11</li>
+   <li>Trees (including Mushroom Trees) partially/completely embedded in rocks/walls/fences/other trees: 13</li>
+   <li>Unnaturally straight/sharp ground texture boundaries: 2</li>
+   <li>Walls completely embedded (hidden) underground: 1
+  </ul>
+ </li>
+ <li>Audited all 36 occupied cells of The Ordered Fringe. Found:
+  <ul>
+   <li>Flying braziers: 5</li>
+   <li>Flying plates: 1 (at roof height; deleted as out-of-place forgotten clutter)</li>
+   <li>Flying statues: 4</li>
+   <li>Flying urns: 2</li>
+   <li>Misaligned doors: 2</li>
+   <li>Misc. objects embedded underground: 4 (three bones and a rubble pile)</li>
+   <li>Objects outside the playable area: 3 (rocks; deleted, one was also underground)</li>
+   <li>Rocks/blocks completely embedded (hidden) underground: 10</li>
+   <li>See-through ground: 1</li>
+   <li>See-through rocks: 8</li>
+   <li>See-through walls: 7</li>
+   <li>See-through underside Obelisk crystals: 9</li>
+   <li>See-through underside root spikes: 1</li>
+  </ul>
+ </li>
+ <li>Completed comprehensive cell-by-cell check for misplaced objects in 1,890 exterior (SEWorld worldspace) areas. Found:
+  <ul>
+   <li>Broken columns impossibly balanced: 4</li>
+   <li>Candles/chests/coffins/barrels/bedrolls embedded in objects/ground: 12</li>
+   <li>Duplicated-in-place objects: 15</li>
+   <li>Firefly/moth bounding boxes partially/completely embedded underground: 20</li>
+   <li>Floating Water Root Pods: 1</li>
+   <li>Flying Alocasia plants: 1</li>
+   <li>Flying Aster Blooms (not attached to wall): 7</li>
+   <li>Flying/improperly grounded barrels/chests: 3</li>
+   <li>Flying bedrolls: 6</li>
+   <li>Flying benches/chairs/stools/tables: 8</li>
+   <li>Flying Cheese Wheels: 1</li>
+   <li>Flying/floating Grummite Egg Mounds: 2</li>
+   <li>Flying/floating rocks: 529 (including a boulder stuck in a tree in 11,-5 and a rock over head height in 7,-6)</li>
+   <li>Flying/improperly grounded boards/log piles: 6</li>
+   <li>Flying Fungus Stalks: 24</li>
+   <li>Flying Kelp: 6</li>
+   <li>Flying mugs: 1</li>
+   <li>Flying Obelisk Crystals: 1</li>
+   <li>Flying root spikes: 3</li>
+   <li>Flying rugs: 5</li>
+   <li>Flying/floating shrubs: 137</li>
+   <li>Flying trees (including Mushroom Trees): 72</li>
+   <li>Flying crates/chests/barrels/buckets/sacks: 5</li>
+   <li>Flying light anchors: 1 (was practically in orbit)</li>
+   <li>Flying lamps (not attached to wall): 1</li>
+   <li>Flying/embedded pathgrid nodes: 7 (two in 0,-6 and five in 3,-9; also removed connections going through rocks)</li>
+   <li>Flying/improperly grounded mushrooms: 45</li>
+   <li>Flying skulls: 1</li>
+   <li>Flying vines (not attached to wall): 3</li>
+   <li>Giant roots partly/completely embedded in rocks/trees/logs/walls: 1</li>
+   <li>Harvestable flora partly/completely embedded in rocks/trees/logs/walls/other flora: 286</li>
+   <li>Harvestable flora partly/completely embedded underground: 26</li>
+   <li>Improperly attached Hanging Tar: 4</li>
+   <li>Improperly attached Swamp Tentacle: 1</li>
+   <li>Improperly placed collision boxes: 3 (were not preventing player from getting to and seeing in palace LOD mesh)</li>
+   <li>Misaligned/seethrough doors/gates: 3</li>
+   <li>Misaligned lamps/flames: 1</li>
+   <li>Obelisk crystals completely embedded underground or embedded in other objects: 4</li>
+   <li>Rocks completely embedded (hidden) underground: 1,421</li>
+   <li>Rocks partially/completely embedded in walls/trees/logs/fences/stairs or completely embedded in other rocks: 1,503</li>
+   <li>Roots/root spikes partially/completely embedded in rocks/walls/trees/logs/fences/stairs: 3</li>
+   <li>See-through giant roots/root spikes: 5</li>
+   <li>See-through rocks: 2,410</li>
+   <li>See-through/embedded vines: 6</li>
+   <li>See-through underside Fungus Stalks: 30</li>
+   <li>See-through underside Glow Pods: 2</li>
+   <li>See-through underside Grummite Egg Mounds/Sacs: 22</li>
+   <li>See-through underside Kelp: 3</li>
+   <li>See-through underside Letifer Orca Planta: 8</li>
+   <li>See-through underside Putrid Gigantea: 13</li>
+   <li>See-through underside Rot Scale: 1</li>
+   <li>See-through underside trees/shrubs (including Mushroom Trees): 1,244</li>
+   <li>See-through walls/arches/blocks/columns/Obelisk crystals/stairs/tombstones: 56</li>
+   <li>Shrubs partially/completely embedded in rocks/walls/trees/logs/fences: 1,244</li>
+   <li>Shrubs partially/completely embedded underground: 12</li>
+   <li>Stone posts completely embedded in other objects: 2 (one deleted)</li>
+   <li>Totem Poles embedded in objects: 1</li>
+   <li>Trees (including Mushroom Trees) partially/completely embedded in rocks/walls/fences/other trees: 626</li>
+   <li>Trees (including Mushroom Trees) partially/completely embedded underground: 39</li>
+   <li>Unharvestable Aster Blooms (inside Havok mesh): 7</li>
+   <li>Unnaturally sharp land peaks/valleys: 39</li>
+   <li>Unnaturally straight/sharp ground texture boundaries: 99</li>
+   <li>Water flora (Root Pods) unanchored/on land: 9</li>
+   <li>Wildlife/NPC spawn points on/embedded in large rocks or other objects or underground: 23</li>
+  </ul>
+ </li>
+ </ul>
+</li>
+</ul>
+
+<p class="h">v1.0.0 (2007-May-04)</p>
+<ul>
+<li>Fixed incorrect havok settings on various Mania rocks.</li>
+<li>Fixed a bug in Mirili Ulven's script, it was causing an AI overload resulting in her not finding and talking the player when the player enters her house after getting a creature for her.</li>
+<li>Fixed a bug in one of Mirili Ulven's AI packages causing her to become stuck in her house.</li>
+<li>Fixed Mirili Ulven not actually rewarding the player with anything when they gave her all the plants even through she said she would, you'll now receive a random amount of gold (like for getting a creature).</li>
+<li>Grounded a slightly floating cluster of Worm's Head mushrooms and a sharp edge on a ground texture at Highcross (SEHighcrossExterior01).</li>
+<li>Fixed an un-harvestable Aster Bloom in the wilderness (9,6).</li>
+<li>Fixed the Duchess's dress, Thadon's robes and Haskill's clothes to the arms are now visiable in first person view when you wear them.</li>
+<li>Fixed being able to give Mirili Ulven more then one of each sample, Mirili's Research option will no longer appear after you've given her all the plants.</li>
+<li>The quest "The Antipodean Hammer" will no longer remain active and uncompleted in the quest log.</li>
+<li>Fixed Amulet of Disintegration, Calming Pants and Ring of Desiccation so they will no longer be quest items after the "The Coming Storm" quest is completed.</li>
+<li>Fixed the special effect disappearing on the Elytra for the "Addiction" quest.</li>
+<li>Fixed the special Elytra in the "Addiction" quest possibly disappearing and breaking the quest.</li>
+<li>Fixed bad vertex colors causing sharp break in the colors on Mania building interior (LCManiaHouseInt07Top.NIF).</li>
+<li>Fixed missing texture on 2 Dementia building interiors causing them to appear all black (DementiaHouseInn01Interior.NIF, DementiaHouseInn01InteriorTop.NIF).</li>
+<li>The "Mace of Storms" is now known as the "Mace of Soul Storms" to fall in line with all the other soul weapons.</li>
+<li>Sheogorath's Protection will no longer resurrect the player as doing so results in the loss of all abilities (racial abilities, vampire abilities ect.).</li>
+<li>Fixed the ordered Fringe so you can to fast travel to it also you'll be able to fast travel out of the ordered Fringe to New Sheoth, Bliss, Crucible and Gates of Madness (once out map markers become available again).</li>
+<li>Fixed the oversized collision on top of a tower (EXWallTower01.NIF).</li>
+<li>Fixed floating bed in Earil's house (SENSEarilsMysteriesUpstairs).</li>
+<li>Fixed the scripts causing the reference ID bug (FBomb).</li>
+<li>Fixed new bows in Shivering Isles causing crashes/reboots (as all the better Oblivion bows did) when equipped due to Reach value of zero
+<li>The chest (SE34DungGrummiteChestRuin01) you get Pyke's Medallion from will no longer respawn so you can't get multiple copies of it anymore.</li>
+<li>Smoothed out sharp edges on Grummite Egg Mound (SEDGrummiteEggMound.NIF) and Grummite Egg Sac (SEDGrummiteEggSac01.NIF and SEDGrummiteEggSac02.NIF).</li>
+<li>Removed stencilling from Letifer Orca Digestive Slime (DDigestiveSlime.NIF) to fix ugly texture distortion.</li>
+<li>Fixed Havok type and hit effects on Swamp Tentacle (SEDSwampTentacleIngred.NIF).</li>
+<li>Fixed alpha property causing ugly jaggy edges around Madness Ore Deposit (MadnessRockV3.NIF) and some blocks and rubble (RRubblePile2SecretWall.NIF, RRubblePileA01.NIF, RRubblePileB01.NIF, RRubblePileRamp01.NIF).</li>
+<li>Removed the pointless alpha property from the Shivering Isle island (SEIsland.NIF) that could lead to texture replacers making it become transparent; also updated the tangent space on the head which fixed all the sharp edges making it look a lot better up close.</li>
+<li>Fixed alpha blending on Alocasia (MAlocasia01.NIF, MAlocasia02.NIF and MAlocasia03.NIF) and Red Kelp (MKelp01.NIF and MKelp02.NIF).</li>
+<li>Updated tangent space on the Dementia head gate (CityBorderDoorDementia.NIF), RootEndDementDoor01.NIF , RootHallDementDoor01.NIF, and the Mania head gate (ManiWallsSouth.NIF) to remove all the sharp edges.</li>
+<li>Fixed the alpha property on the vines of 2 Mania wall parts (ManiWallEast01.NIF and ManiPillars.NIF).</li>
+<li>Removed pointless alpha property from some rocks and 2 tree root doorways that could cause them to become transparent when texture replacers are used (RockDementiaOverHang02.NIF, RockDementiaOverHang03.NIF, ManiaLg3990.NIF, ManiaLg3675.NIF, ManiaLg3190.NIF, REntranceDementia01.NIF, and REntranceMania01.NIF).</li>
+<li>Fixed clipping on the female versions (all 3) of the finery and also added stencilling on the fringes.</li>
+<li>Fixed the inverted normal on the back of the male versions (all 3) of the finery causing a hole also added stencilling to the collar.</li>
+<li>Fixed the Madness cuirass so you no longer have a gap in the back of the neck.</li>
+<li>Fixed Havok hit effect on the Grummite Totem Pole (TotemPole.NIF).</li>
+<li>Enabled stencilling on Grummite clothing (GrummiteClothingSet02.NIF).</li>
+<li>Fixed incorrect texture used on a root stair (RootPitStairs01.NIF).</li>
+<li>Fixed the missing texture on the juggling balls (SEJugglersBalls.NIF) which caused them to appear purple.</li>
+<li>Fixed missing texture on the quill (SEQuillUser.NIF) you see people write with.</li>
+<li>Fixed Havok hit effect on the smithy posters (SmithyPoster01.NIF, SmithyPoster02.NIF).</li>
+<li>Fixed Havok hit effect on roots (RuinsRoots01.NIF, RuinsRoots02.NIF, RuinsRoots03.NIF, RuinsRoots04.NIF, RuinsRoots05.NIF, RuinsRoots06.NIF, RuinsRootGroupA01.NIF, RuinsHallNxStraitB01roots.NIF ).</li>
+<li>Lucien Lachance will no longer enter the Shivering Isles and seek the player for the Dark Brotherhood quests, which can't be started while in the Shivering Isles.</li>
+<li>Dawnfang/Duskfang will no longer duplicate and will actually equip itself once you dismount your horse if the change time happens then, also reduced message spam caused by it.</li>
+<li>No longer possible to get multiple sets of Calming Pants from Fimmion which broke the quest, if you have already received more then 1 set of Calming Pants then they will all be removed bar 1.</li>
+<li>Remove a duplicate sewage slope in Crucible (SENSCrucibleLower) that was causing weird coloring.
+<li>Fixed typo in the plant "Watcher's eye" (SEPodwet02), now known as "Watcher's Eye".</li>
+<li>Fixed typo in "Shegorath's Regalia" (SEShegorathsRegalia), now known as "Sheogorath's Regalia".</li>
+<li>Correct the music in Bliss, Crucible, the Palace District, Mania Garden and Dementia Garden, now set to public (town) and not default (wilderness).</li>
+<li>Fixed the map so you can now see the map markers while in the Mania and Dementia Gardens (still can't fast travel from here through).
+<li>Fixed the Dark Seducer dialogue so that they now refer to male characters who become the Duke of Dementia as male and not female (the gender checks were set to check the Dark Seducers themselves and not the player as it should have been).
+<li>Fixed the broken quest Symbols of Office (the script for the Standing Stone wasn't compiled (SE11bStandingStoneScript).
+<li>Fixed Mels Maryon so he actually starts the Azura shrine quest as he should have (the original Oblivion result script was accidentally removed by Bethesda in the Shivering Isles ESM).</li>
+<li>Fixed Zealots, Heretics and Apostles so you can no longer talk to them and receive "NO GREETING".</li>
+<li>Grounded 2 partially floating rocks at Hardscrabble Camp (SEHardscrabbleCamp) also removed 12 completely concealed rocks under the ground and in other rocks.</li>
+<li>Amber Materials List (SE30AmberList) and Madness Ore Materials List (SE30MadnessListStatic) are no longer quest items, also corrected their Havok so they can be dropped.</li>
+<li>Fixed the Gray Cowl of Nocturnal (TGGrayFoxCowl) so it is no longer possible to permanently gain the stats of the cowl.</li>
+<li>Fixed Syl's double body, if the Staff of Worms was used on it then the quest would advance forward when the double died (Bethesda just duplicated the NPC and forgot to remove the script from the fake one).</li>
+<li>Fixed the victims in the Xaselm so you can no longer talk to them and receive "NO GREETING".</li>
+<li>Corrected the name of the secret ladder (SE07EscapeLadder) in the Dementia Gardens, now known as "Ladder" not "Wooden Door".</li>
+<li>Fixed getting trapped in the Dementia Garden if you happen to enter it from the secret entrance (secret passage way will open up now if you come from underneath).</li>
+<li>Added an instant open animation to the Bust of Sheogorath (PalaceAlcoveBlock01.NIF) so if you come back later after you've opened it you don't see it re-opening itself again.</li>
+<li>Set Big Head's responsibility to 50 so he doesn't go around stealing forks anymore (he will still take forks but only if they are un-owned) which would get him slaughtered by the guards/NPC's before the player could even get his quest or finish it.</li>
+<li>Corrected typo in the names of 4 doors (SENSTheMissingPauldronSEManiaLCdoor01, SEDementiaSettlementDoor01, SEDementiaDoorInteriorAnim01, SEManiaLCdoor01), now known as "Wooden Door" not "Wooden door".</li>
+<li>Fix a bug in a script (SE07ADarkSeducerEliteQuartersGuard01Script) that caused the 2 Dark Seducer Royal Guards in the Dementia Garden not to patrol properly (one wouldn't move at all and the other would walk back and forth not completing the full patrol loop).</li>
+<li>All oddity items in the museum are now static and cannot be moved around and lost.</li>
+<li>Fixed the missing alpha property on Sheogorath's beard (beard.nif); as a result had to fix the already existing alpha (his tongue would disappear) in the beard's texture (beard.dds); Sheogorath's beard now blends well and looks a lot nicer.</li>
+<li>No longer possible to loot Jyggalag (he doesn't have anything anyway).</li>
+<li>No longer possible to pick up a second copy of Cindanwe's book if you happened to finish the quest and kill her (any duplicate books you have will be removed if you've finished the quest).</li>
+<li>Fixed 3 Dark Seducer Royal Guards who were wearing normal helmets, (SE07ADarkSeducerEliteChambersGuard01, SE07ADarkSeducerEliteChambersGuard02, SE07ADarkSeducerEliteQuartersGuard01) they already had the elite helmet in their inventory except their was a levelled list of the standard helmet in their as well so they worn it instead.</li>
+<li>Fixed the holding position on the Amber longsword.</li>
+<li>Fixed the Dark Mace icon; the full size version of the icon was missing and depending on your screen resolution you'd see no icon for it.
+<li>Removed superfluous alpha properties from the male and female Dark Seducer armor and the dropped versions.</li>
+<li>Fixed Una Armina not recognizing the 3 initial items in the museum upon first time.</li>
+<li>Fixed bad UV mapping on the Dementia house (DementaiHouse07.NIF).</li>
+<li>Fixed incorrect texture being used on the under part of the Screaming Maw plant (PodDim02.NIF).</li>
+<li>Grounded 2 partially floating tree and 7 rock in the wilderness (-2,-11), also removed 2 completely concealed rocks, partially embedded flora.
+<li>Removed 7 completely concealed rocks, grounded a floating coffin (and the bones in it) and repositioned a coffin to conform to gravity better outside Ebrocca (11,15).</li>
+<li>Removed 2 completely concealed rocks, grounded 2 partially floating trees, and corrected 5 rocks with no bottoms laying on their side allowing you to see into them in the wilderness (15,5).</li>
+<li>Grounded floating bush, removed 3 completely concealed rock in the wilderness (9,-3).</li>
+<li>Removed 2 completely concealed rock in the wilderness (12,13).</li>
+<li>Grounded a floating bush, 2 floating rocks and removed a completely concealed rock in the wilderness (12,-3).</li>
+<li>Fixed missing texture on Thadon's dinner tray (SE07ThadonsDinnerTray.NIF).</li>
+</ul>
+
+</body>
+</html>

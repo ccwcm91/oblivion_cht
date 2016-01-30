@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body {
+background-color: #e2d8b6;
+color: #654B25;
+}
+.h {
+text-decoration: underline;
+font-weight: bold;
+font-size: 150%;
+background-color: #dacda3;
+}
+.m {
+background-color: #dacda3;
+}
+a:link {
+color: #654B25;
+font-weight: bold;
+}
+a:visited {
+color: #654B25;
+}
+</style>
+<title>Unofficial Oblivion Patch: Readme</title>
+</head>
+<body>
+
+<p style="text-align:center" class="m"><b style="font-size:32px">Unofficial Oblivion Patch: Readme</b>
+<br>
+Version: 3.5.3
+<br>
+By <b>Quarn</b>, <b>Kivan</b>, <b>Arthmoor</b>, and <b>PrinceShroob</b></p>
+
+1. <a href="#des">Description</a>
+<br>2. <a href="#notes">Known Issues, Incompatibilities and Notes</a>
+<br>3. <a href="#install">Installation (BAIN)</a>
+<br>4. <a href="#installM">Installation (Manual)</a>
+<br>5. <a href="#uninstall">Uninstalling (BAIN)</a>
+<br>6. <a href="#uninstallM">Uninstalling (Manual)</a>
+<br>7. <a href="#faq">FAQ (Frequently Asked Questions)</a>
+<br>8. <a href="#bugs">Known Oblivion Bugs</a>
+<br>9. <a href="#dis">Disclaimer</a>
+<br>10. <a href="#thanks">Thanks</a>
+
+<p class="h"><a name="des">1. Description</a></p>
+This mod is a joint effort to fix the vast amount of bugs currently existing in Oblivion v1.2.0416, fixing over 2,300 bugs so far! If you're experiencing a bug with Oblivion and it's not fixed by our mod please by all means report the bug to us in as much detail as possible so we can try fix it! Also if you find any: levitating trees or rocks, see-through or fall-through walls/objects or other stuff out of place, please let either of us know. To get the exact location, use the console commands <b>sdt 0</b> and then <b>tdt</b>, click the item, note the Cell (not PC Cell) and form ID value (the eight hexadecimal digits at the top, ie 00123ABC) and indicate what's out of place. You can use <b>tdt</b> again to toggle the debug display off. Thank you and we hope you have a better Oblivion experience!
+
+<br><br><b>Warning: Only use the Unofficial Oblivion Patch with the version of Oblivion is was created for! Using it on an older or newer version then v1.2.0416 of Oblivion may cause bugs or things not to be fixed that were advertised as such!</b>
+
+<br><br><u>Oblivion Citadel Door Fix.esp</u>
+<br>The Oblivion Citadel Doors' opening/closing sounds were played quite a distance away from the actual doors and fixing this problem meant that all instances of this door had to be repositioned in the game; it was made a separate ESP because a misaligned door in another mod is worse then a little door sound.
+
+<br><br><u>UOP Vampire Aging & Face Fix.esp</u>
+<br>This plugin disables the ugly vampire aging effect which causes the bug where when the player is cured of vampirism, their face resets to the default male (even for a female player) face for their race. If you're already using another vampire fix such as EggDropSoap's or Scanti's OBSE fixes, or an alternate vampirism mod, then don't enable this one. It's a very small and simple change to a single game setting. To save a mod slot if you have many mods active this separate plugin can be merged with the UOP or with any other mod that is dependent only on Oblivion.esm.
+
+<br><br><u>UOPS Additional Changes.esp</u>
+<br>This plugin contains some extra fixes that were part of the UOP Supplementals by Arthmoor. They have been left separate in order to lessen compatibility issues with other mods. Some leveled lists have a few extra items added, a retroactive infamy fix for the Dark Brotherhood quest is added, and two weapons with the wrong enchantments were fixed.
+
+<p class="h"><a name="notes">2. Known Issues, Incompatibilities and Notes</a></p>
+<ul>
+<li>UOP v3.0.0 and higher fixes numerous weighting errors with stock clothing and armor. If you're using customized wear for non-stock bodies (ie Robert's, Exnem's, etc.) that replaces the original meshes, use the manual install version UOP to avoid overwriting custom clothes, or back up the meshes in the Clothes and Armor folder, or reinstall your custom clothing meshes afterwards.</li>
+<li>UOP v3.0.0 and higher fixes the Arch-Mage, Black Hand, Mage's and Necromancer's Robes and the lowerclass Green and Tan robes not sharing normal maps which changes the texture path for these robes; if you're using a retexture of any of these robes you may have to avoid installing or delete the UOP NIFs for them (check the ReadMe for the names.)</li>
+<li>If you use Qarl's Texture Pack III with the UOP, after installing the UOP, install dev_akm's <a href="http://www.nexusmods.com/oblivion/mods/5296">QTP3 UOP Compatibility Patch</a> which integrates the fixes to the NIF meshes in the UOP with the changes introduced by Qarl's.</li>
+<li>The player statue fix will only work on new or existing un-bugged games. If your statue (at Bruma's north gate after the Great Gate quest) has already died, disappeared, or just doesn't look the way you want it to, Quarn's <a href="http://www.nexusmods.com/oblivion/mods/3428">Update My Statue</a> mod will restore your statue and/or allow you to customize its appearance.</li>
+<li>The Unofficial Oblivion Patches fixes a few textures and to get these fixed textures to appear in-game you'll need to use ArchiveInvalidation; we recommend using <a href="http://www.nexusmods.com/oblivion/mods/10724">ArchiveInvalidation Invalidated!</a></li>
+<li>Unofficial Oblivion Patch includes fixes for custom races starting a new game and also for the Boethia shrine quest so you should not use other custom race fixes in conjunction with the Unofficial Oblivion Patch or no custom race fix will work.</li>
+<li>To get the benefits of the reduced file sizes of many optimized meshes making load times better, it's suggested to defragment your hard disk after installing the UOP.</li>
+<li>Using other fix mods with Unofficial Oblivion Patch may cause some fixes not to work at all or break it even more, search the version history to see if we have already fixed it or ask us before using other fix mods.</li>
+<li>Any bound items on yourself when you activate this plugin will be removed, if you manage to get permanent bound items somehow just open up the console and type <b>startquest uop</b> and choose the option to remove any bound items in your inventory.</li>
+<li>If you are already afflicted with the permanent infamy, fame and bounty change from the <b>Gray Cowl of Nocturnal</b> it can't be undone unfortunately. The best thing you can do is load a game without the changes write down the right bounty, infamy and fame then load your bugged game save and use console commands to change them back to normal.</li>
+<li>If you are stuck on the Bloated Float with the crash bug with the Elven Maiden quest running concurrently you'll need to load a previous save as the fix for it simply avoids the coincidental bug all together.</li>
+<li>If you've already visited a place with "twitchy" roots they'll be still twitchin', to fix them you'll need to start a new game but it's only a very minor problem and not really worth restarting over.</li>
+<li>All changes to load doors (such as the Bravil Skooma Den door being permanently locked) may not take effect if you have already visited their locations before installing the Unofficial Oblivion Patch as load doors' locations are stored in the save.</li>
+<li>If you use Thieves' Arsenal, some interior chain lights fixed to swing by the UOP won't swing as Thieves' Arsenal has its own set of meshes for them (and other formerly swinging lights) to enable the Water Arrows to work. UOP-fixed external angled chain lights and large cathedral lamps will swing; Thieves' Arsenal did not change those.</li>
+</ul>
+
+<p class="h"><a name="install">3. Installation (BAIN)</a></p>
+<b>1.)</b> Copy the <b>Unofficial Oblivion Patch.7z</b> into the folder you use for BAIN installers. The default for this would be <b>Bethesda Softworks\Oblivion Mods\</b>.
+<br><b>2.)</b> In the BAIN tab, make sure the UOP file is at the top of the package list. Right click on it, select "Move To" and use slot 0.
+<br><b>3.)</b> Left click on the file after it's moved. Pick the ESP options you want from the Esp/m menu. Then right click on the file and select "Install".
+<br><b>4.)</b> Once installed, enable the .esp files you selected via the Mods tab. It is recommended to run BOSS at this point to verify load order placement.
+<br><b>5.)</b> Make sure you've got some form of archive invalidation set. You can use Wrye Bash, OBMM, or the <a href="http://www.nexusmods.com/oblivion/mods/10724">ArchiveInvalidation Invalidated!</a> for this.
+<br><br>If you are updating the UOP from an older version, after making sure Step 2 is done, you can right click the file and select "Anneal" and it will update the files accordingly while also preserving anything later in your setup that needs to override them.
+
+<p class="h"><a name="installM">4. Installation (Manual Version)</a></p>
+<b>1.)</b> Extract <b>Unofficial Oblivion Patch.7z</b> into your <b>Bethesda Softworks\Oblivion\</b> folder.
+<br><b>2.)</b> Enable Unofficial Oblivion Patch.esp in the Oblivion launcher and the other optional plugins from the package.
+<br><b>3.)</b> Make sure you've got some form of archive invalidation set. You can use Wrye Bash, OBMM, or the <a href="http://www.nexusmods.com/oblivion/mods/10724">ArchiveInvalidation Invalidated!</a> for this.
+<br><br>Manual installation of this or any other mod is STRONGLY discouraged. You should make use of Wrye Bash if at all possible. Using OBMM will work, but is not recommended. Absolutely <b>DO NOT</b> use Nexus Mod Manager to install this! NMM does not handle the installation of Oblivion files well and will cause things like missing meshes to crop up in your game because it seems to randomly skip files for no apparent reason.
+
+<p class="h"><a name="uninstall">5. Uninstalling (BAIN)</a></p>
+<b>1.)</b> Launch Wrye Bash, go to the Installers tab.
+<br><b>2.)</b> Right click on the Unofficial Oblivion Patch package, select uninstall. That should be it.
+<br><br>Uninstalling the Unofficial Oblivion Patch in the middle of a current save is not recommended. Doing so should only be done if you plan to start a new character.
+
+<p class="h"><a name="uninstallM">6. Uninstalling (Manual)</a></p>
+<b>1.)</b> Use the <b>Unofficial Oblivion Patch.7z</b> archive as a reference to what files you need to delete.
+<br><br>Uninstalling the Unofficial Oblivion Patch in the middle of a current save is not recommended. Doing so should only be done if you plan to start a new character.
+
+<p class="h"><a name="faq">7. FAQ (Frequently Asked Questions)</a></p>
+
+<b>Question:</b> I see so many red conflicts with the Unofficial Oblivion Patch and other mods!!! Will my game explode?!?
+<br><b>Answer:</b> Nope! The file date of Unofficial Oblivion Patch.esp was set way back to the year 2001 so it will load first then your other plugins, in other words if something conflicts with UOP that plugin will override UOP's changes. Note: since UOP's changes are overridden some fixes might not work.
+<br><br><b>Q:</b> Unofficial Oblivion Patch.esp is loading before Oblivion.esm!!! Won't my game get screwed up?
+<br><b>A:</b> No, Oblivion loads ESM files (like Oblivion.esm) from oldest to newest first before loading ESP files (like Unofficial Oblivion Patch.esp) from oldest to newest.
+<br><br><b>Q:</b> Will I have to start a new game for the Unofficial Oblivion Patch to work?
+<br><b>A:</b> Nope, the fixes where made to work on both new and existing games through some very minor changes (position of some objects) will only work in a new game or if you haven't visited that area in the game yet, really not worth restarting over.
+<br><br><b>Q:</b> I don't want to/can't install the latest official patch... can I still use the Unofficial Oblivion Patch?
+<br><b>A:</b> Yes you can but UOP may exacerbate some existing bugs in the game if you don't run it with version of Oblivion it was created for so use it at your own risk!
+<br><br><b>Q:</b> Can I use the Unofficial Oblivion Patch with the German version of Oblivion or other languages?
+<br><b>A:</b> It should work fine but we can't test it also some things will appear in English instead of your game's language.
+
+<br><br><b>Q:</b> So I have an older version of the Unofficial Oblivion Patch, should I uninstall it first before upgrading or just upgrade over the top?
+<br><b>A:</b> Best to uninstall first through it isn't needed.
+
+<br><br><b>Q:</b> Will this conflict with OOO/MMM/Fran etc.? Is it alright to use together?
+<br><b>A:</b> Yes the Unofficial Oblivion Patch does conflict but nothing that is known to cause problems other then not receiving some of the advertised fixes from UOP, always load UOP before any other mod and you'll be fine.
+
+<br><br><b>Q:</b> Do I need to use previous versions of the Unofficial Oblivion Patch to get all the fixes?
+<br><b>A:</b> Nope, latest version includes all previous fixes.
+
+<br><br><b>Q:</b> So I've installed the Unofficial Oblivion Patch but it still shows as v1.2.0.416 in Oblivion, what's wrong?
+<br><b>A:</b> Nothing is wrong! The Unofficial Oblivion Patch is a collection of fixes in the form of a ESP along with fixes in other files (NIF, MP3, CMP, LIP, DDS, etc.), the Unofficial Oblivion Patch does not touch ANY Oblivion files on a default installation. If you want to see what version of the Unofficial Oblivion Patch you are running then open up the Oblivion Launcher click Data Files and then find and click the Unofficial Oblivion Patch.esp.
+
+<br><br><b>Q:</b> Does the Unofficial Oblivion Patch improve performance?
+<br><b>A:</b> FPS may improve in some areas, and especially in towns there should be a noticeable improvement in load times due to the optimization of many meshes.
+
+<p class="h"><a name="bugs">8. Known Oblivion Bugs</a></p>
+This is a list of bugs we know about and workarounds for them but ONLY Bethesda can truly fix them. Note: as of the official patch v1.2.0416 none of these bugs have been fixed.
+
+<br><br><b>Bug: </b>Animation bug, things like fire/opening doors etc. are very slow/not moving or stuttering very badly.
+<br><b>Solution: </b>Use <a href="http://www.nexusmods.com/oblivion/mods/22368">Wrye Bash</a> to fix this. On the saves tab, right click the affected save, select "Repair ABomb" and answer "Yes" when prompted.
+
+<br><br><b>Bug: </b>Disappearing items from containers/inventory, caused by repairing items over 100% and over loading the container with items.
+<br><b>Solution: </b>Just remove the items from the container with Take All, close and re-open it and some items should re-appear.
+
+<br><br><b>Bug: </b>Picking up the Sigil Stone in an Oblivion plane doesn't do what it's supposed to: the player stays put, the area fills with white fog, and the gate doesn't close.
+<br><b>Solution: </b>For some unknown reason the Oblivion plane you're in loses its hook to the gate in Tamriel you used, best solution is if you are afflicted with this bug is to open your console and type in <b>coc AnvilBay</b> and you'll end up in Anvil's bay. Also this may be avoidable if you never reload while inside Oblivion planes and then go back into the same gate. If you have to reload while in an Oblivion gate quit the game entirely and restart it to ensure that memory is properly flushed out. 
+
+<br><br><b>Bug: </b>Leveling up by hitting your horse or Peryite's thralls, or other things that don't fight back, hundreds of times can cause the game to lock up when saving.
+<br><b>Solution: </b>If you can't avoid power leveling like this, if you were hitting your horse, steal something worth 1 gold and pay the fine. If you were hitting Peryite's thralls or another NPC or creature, punch a guard and pay the fine. This seems to clear off the queued "events" which caused the bug.
+
+<br><br><b>Bug: </b>Seemingly unexplainable crashes or other strange happening...
+<br><b>Solution: </b>There are a few solutions you can try to solve these
+<br>1.) Make sure ONLY valid DDS files (textures) are in the ArchiveInvalidation.txt anything else like entries for meshes can cause crashes or entries for textures that don't exist can cause the texture to disappear in-game (goes purple).
+<br>2.) Setting uGridsToLoad in the Oblivion.ini to anything higher then 5 will cause strangeness in-game.
+<br>3.) Do not save your game while in combat, more specifically while hitting or being hit by monsters as it can cause crashes.
+<br>4.) Don't use cracked Oblivion executables, they can be rather notorious for causing instability.
+<br>5.) Don't tweak graphics/sound etc. in the Oblivion.ini (pushing Oblivion beyond or below its limits), it has been linked to causing crashes. 
+<br>6.) Don't load a gamesave from in-game, always exit to the main menu and load from there or completely quit (Oblivion does not reset the current game state properly from the in-game load menu)
+<br>7.) Don't switch between Oblivion and other applications (ie using Alt-Tab if you're playing in fullscreen mode, even opening the command prompt first.) Windows will start paging Oblivion memory to disk, and it may stutter, lose FPS or crash shortly afterwards
+
+<br><br><b>Bug: </b>You can't see the player marker and other markers on the local map of Tamriel (or other worldspaces).
+<br><b>Solution: </b>If a mod alters ANYTHING at all in the Tamriel wilderness cell of 3,3 (or other worldspaces) it WILL cause this bug to happen, if a mod is causing this bug for you the best thing you can do it go through your mods and disable them one by one until you find the culprit and report this information to the author of the mod. Also this bug can happen when going through certain cells but it's only temporary, no mods cause this one and there is no way to fix it either.
+
+<br><br><b>Bug: </b>Removing and putting a dead NPC's items back into its inventory may cause them to duplicate if they were generated from a leveled list. Removing them and putting them back once more will cause Oblivion to crash.
+<br><b>Solution: </b>Just avoid putting NPC items back into their inventory if you don't want them; drop them instead.
+
+<br><br><b>Bug: </b>LOD water vanishes when moving from a child worldspace to the parent world space (eg. Imperial City).
+<br><b>Solution: </b>This only occurs on first gamesave load, reloading the gamesave (any gamesave will do) will stop the problem until you exit Oblivion then you'll have to do it again.
+
+<p class="h"><a name="dis">9. Disclaimer</a></p>
+The Unofficial Oblivion Patch is provided free and "as is" for use at your own risk; the creators cannot be held responsible/liable for anything that happens while using it. Only use the Unofficial Oblivion Patch with the version of Oblivion is was created for! Using it on an older or newer version then the officially patched v1.2.0416 of Oblivion may cause strange things to happen! This product is not created by nor associated with Bethesda Softworks, Zenimax Media, nor any of their affiliates. Feel free to host the Unofficial Oblivion Patch anywhere you want but only in it's original unmodified package, please do not release your own modified versions of it. Feel free to use any of the Unofficial Oblivion Patch's fixed resources (NIF, DDS, etc.) in your mods.
+
+<p class="h"><a name="thanks">10. Thanks</a></p>
+<b>Arthmoor</b> - For keeping the UOP alive for over two years when Quarn and I were gone, and adding hundreds of fixes to it (including to our sometimes sub-optimal work) for help with cleaning up the UOP ESP for final release, beta-testing, reporting a multitude of bugs, generating a much improved ROAD record that fixes all roads in Tamriel, and for taking over support for the project in July of 2012.
+<br><b>The NIFTools Team</b> - big thanks for NIFSkope and the NIF importer/exporters which enabled us to fix many NIF mesh errors in Oblivion.
+<br><b>The TES4Gecko Team</b> - for this essential utility for working with ESP's and ESM's
+<br><b>The OBSE Team</b> - for the most brilliant engine hack ever: Oblivion Script Extender, and the jail skills fix coding
+<br><b>ElminsterAU</b> - for TES4View/Edit, another essential utility for ESP/ESM manipulation, cleaning and analysis
+<br><b>Wormheart</b> - For fixing dozens of interior meshes and all of the chandeliers, Havoking several of the lights, fixing a bunch of other meshes such as all the Daedric shrines and numerous load doors, and reporting hundreds of bugs and object placement errors
+<br><b>Khalim</b> - for auditing/fixing <b>571</b> cells of Cyrodiil, reporting a multitude of bugs and beta-testing
+<b>Tru021</b> - for auditing/fixing <b>521</b> cells of Cyrodiil, reporting a multitude of bugs and beta-testing
+<br><b>Unmmph!</b> - for auditing/fixing <b>150</b> cells of Cyrodiil
+<br><b>TheFlyingBuddha</b> - for auditing/fixing <b>100</b> cells of Cyrodiil
+<br><b>Ventus</b> - for auditing/fixing <b>50</b> cells of Cyrodiil
+<br><b>OblivionStalker</b> - for auditing/fixing <b>50</b> cells of Cyrodiil
+<br><b>Sialivi</b> - for auditing/fixing <b>31</b> cells of Cyrodiil, reporting an unbelievable and unprecedented multitude of bugs (especially mesh errors) and beta-testing the UOP
+<br><b>Beremat Kesawin</b> - for auditing/fixing <b>20</b> cells of Cyrodiil
+<br><b>JonSatriani</b> - for auditing/fixing <b>12</b> cells of Cyrodiil
+<br><b>MystykStar</b> - for auditing/fixing <b>12</b> cells of Cyrodiil
+<br><b>PhoenixAmon</b> - for fixing the UV mapping errors in 5 NIFs
+<br><b>Canopus</b> - for greatly improving UOP's setup batch files
+<br><b>Mmmpld</b> - for fixing problems with several NIFs
+<br><b>Bomret</b> - for fixing 39 normal maps which were incorrectly created
+<br><b>AlienSlof</b> - for fixing the missing alpha on the Black & Burgundy Outfit's normal map, bad alpha on the female Red Velvet Outfit, alpha on the Radish normal map, helping out a lot with graphics questions and beta-testing
+<br><b>Gruftikus</b> - for the 25 regenerated/fixed landscape LOD NIFs
+<br><b>LogicDragon</b> - for fixing the deer texture mapping problem and collision/flags on 39 NIFs
+<br><b>hexaae and Pacificmorrowind</b> - for finding and fixing the gap in the Anvil Fighters Guild, and for the improved silver weapons fixes
+<br><b>hexaae</b> - for the fixed boar footstep audio files and contributing numerous other fixes
+<br><b>RobinHood70</b> - for the jail skills engine fix
+<br><b>Amadaun</b> - for the fixed Imperial sewer exit mesh
+<br><b>migck</b> - for fixing the lich's hand-to-hand animation
+<br><b>Hanaisse</b> - for fixing the collision on the Bravil castle tower and Imperial City wallhouse
+<br><b>Brumbek</b> - for fixing the clipping on the Chorrol Mages' Guild upper wall piece
+<br><b>UberTom</b> - for the fixed Dwarven gauntlets
+<br><b>Gothic251</b> - for fixing several icons and beta-testing
+<br><b>Brash</b> - for discovering what caused the Crash-On-Bow-Equip and the workaround
+<br><b>Johnny</b> - for the Fathis Ules fix
+<br><b>Kirel</b> - for the first-person sitting perspective fix
+<br><b>Mentalor</b> - for the Stat Restore fix
+<br><b>Always Z</b> - for the funny yet informative error mesh
+<br><b>Dung_Beetle</b> - for the Mythic Dawn armor fix
+<br><b>Namegduf Live</b> - for the Hermaeus Mora's soul trap fix
+<br><b>Kyoma</b> - for the OBSE training fix plugin
+<br><b>WSRowland</b> - for some additional fixed lip sync files for the beggars
+<br><b>CessPitts</b> - for fixing the invulnerable Mannimarco bug
+<br><b>Wildcard</b> - for fixing errors with the Mages Guild Chorrol recommendation
+<br><b>Dev_AKM</b> - for the Qarl's Texture Pack III/UOP compatibility patch
+<br><b>MasterLeo</b> - for discovering the cause of Sigil Stones not closing Oblivion gates (although we can't fix it, it's helped plenty avoid it)
+<br><b>newster123</b> - for cleaning up the custom race dialog audio, and reporting several bugs
+<br><b>Kaminari</b> - for the first clue that enabled the tracking down the cause of UOP v2.2.0 causing previous saves to crash on load for a few people
+<br><b>Gothik</b> - for beta-testing the UOP until the problem was isolated and confirmed fixed
+<br><b>XMarksTheSpot</b> - for confirming the ESM bug with Tamriel cell (-47,-7) saving me a reinstall to ensure it wasn't just me
+<br><b>Bamspeedy</b> - for reporting a Sialivi-sized huge multitude of bugs and beta-testing
+<br><b>Mikal33</b> - for reporting a multitude of bugs
+<br><b>_Santera</b> - for reporting a multitude of bugs
+<br><b>ESM</b> - for reporting a multitude of bugs
+<br><b>Wolferoo</b> - for reporting a multitude of bugs
+<br><b>Tukog</b> - for reporting a multitude of bugs
+<br><b>ArgoChris</b> - for reporting a multitude of bugs
+<br><b>Fonger, Leydenne, RobinHood70 & Shikishima</b> - for beta-testing
+<br><b>Throttlekitty and everyone else at #TESModdersDen</b> - for enduring Kivan's endless questions and always being helpful
+<br>And finally a big thanks to everyone else who reported bugs or sent in bugged gamesaves!
+</body>
+</html>
